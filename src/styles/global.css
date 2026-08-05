@@ -18,7 +18,7 @@ nav { display: flex; gap: 20px; font-size: .9rem; }
 nav a { text-decoration: none; color: var(--muted); }
 main { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
 .hero { padding: 110px 0 100px; }
-.hero h1, .post h1 { margin: .25em 0; font-family: Georgia, "Noto Serif KR", serif; font-size: clamp(2.7rem, 8vw, 5.4rem); line-height: 1.08; letter-spacing: -.055em; }
+.hero h1, .post h1 { margin: .25em 0; font-family: Georgia, "Noto Serif KR", serif; font-size: clamp(2.55rem, 6.5vw, 4.35rem); line-height: 1.14; letter-spacing: -.045em; word-break: keep-all; text-wrap: balance; }
 .hero > p:last-child, .lead { max-width: 620px; color: var(--muted); font-size: 1.12rem; line-height: 1.8; }
 .eyebrow { color: var(--accent); font-size: .74rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
 .section-title { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 14px; border-bottom: 1px solid var(--ink); }
