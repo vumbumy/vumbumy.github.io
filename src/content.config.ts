@@ -10,7 +10,7 @@ const posts = defineCollection({
     updated: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(true),
-    author: z.string().default("Vumy"),
+    author: z.string().default("Hanbeom"),
   }),
 });
 

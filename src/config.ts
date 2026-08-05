@@ -1,7 +1,7 @@
 export const SITE = {
-  title: "일과 시스템 사이",
-  description: "일하며 마주친 기술과 조직의 문제를 구조화하고, 선택의 이유와 배운 점을 기록합니다.",
-  author: "Vumy",
+  title: "Hanbeom의 작업 노트",
+  description: "기술, 운영, 협업에서 부딪힌 문제와 그때 내린 선택을 기록합니다.",
+  author: "Hanbeom",
   locale: "ko_KR",
   language: "ko",
 };
