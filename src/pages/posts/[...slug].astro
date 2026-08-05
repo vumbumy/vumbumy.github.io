@@ -1,0 +1,36 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  canonical={Astro.url}
+  published={post.data.published}
+  updated={post.data.updated}
+  tags={post.data.tags}
+  type="article"
+>
+  <article class="post">
+    <header>
+      <p class="eyebrow">{post.data.tags.join(" · ")}</p>
+      <h1>{post.data.title}</h1>
+      <p class="lead">{post.data.description}</p>
+      <p class="post-meta">
+        <time datetime={post.data.published.toISOString()}>{post.data.published.toLocaleDateString("ko-KR")}</time>
+        {post.data.updated && <> · 수정 {post.data.updated.toLocaleDateString("ko-KR")}</>}
+      </p>
+    </header>
+    <div class="prose"><Content /></div>
+  </article>
+</BaseLayout>

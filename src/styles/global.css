@@ -1,0 +1,44 @@
+:root {
+  color-scheme: light;
+  --paper: #f5f2ea;
+  --ink: #17211c;
+  --muted: #657068;
+  --line: #d8d5ca;
+  --accent: #a9412b;
+  --max: 720px;
+}
+
+* { box-sizing: border-box; }
+html { font-family: Pretendard, "Noto Sans KR", system-ui, sans-serif; background: var(--paper); color: var(--ink); }
+body { margin: 0; min-height: 100vh; }
+a { color: inherit; text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent); text-underline-offset: .2em; }
+.site-header { max-width: 1080px; margin: 0 auto; padding: 28px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); }
+.brand { font-family: Georgia, "Noto Serif KR", serif; font-weight: 700; text-decoration: none; }
+nav { display: flex; gap: 20px; font-size: .9rem; }
+nav a { text-decoration: none; color: var(--muted); }
+main { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+.hero { padding: 110px 0 100px; }
+.hero h1, .post h1 { margin: .25em 0; font-family: Georgia, "Noto Serif KR", serif; font-size: clamp(2.7rem, 8vw, 5.4rem); line-height: 1.08; letter-spacing: -.055em; }
+.hero > p:last-child, .lead { max-width: 620px; color: var(--muted); font-size: 1.12rem; line-height: 1.8; }
+.eyebrow { color: var(--accent); font-size: .74rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.section-title { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 14px; border-bottom: 1px solid var(--ink); }
+.section-title h2 { margin: 0; font-size: 1rem; }
+.section-title span, .post-meta { color: var(--muted); font-size: .82rem; }
+.post-list article { padding: 34px 0 38px; border-bottom: 1px solid var(--line); }
+.post-list h3 { margin: 8px 0 10px; font-family: Georgia, "Noto Serif KR", serif; font-size: 1.7rem; }
+.post-list h3 a { text-decoration: none; }
+.post-list article > p:not(.post-meta) { color: var(--muted); line-height: 1.7; }
+.tags { display: flex; gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; color: var(--accent); font-size: .78rem; }
+.post { padding: 90px 0; }
+.post header { padding-bottom: 50px; border-bottom: 1px solid var(--line); }
+.post h1 { font-size: clamp(2.4rem, 7vw, 4.7rem); }
+.prose { padding-top: 38px; font-family: Georgia, "Noto Serif KR", serif; font-size: 1.06rem; line-height: 1.95; word-break: keep-all; }
+.prose h2 { margin: 2.3em 0 .7em; font-size: 1.55rem; }
+.prose strong { color: var(--accent); }
+footer { max-width: var(--max); margin: 80px auto 0; padding: 28px 0 50px; border-top: 1px solid var(--line); color: var(--muted); font-size: .78rem; }
+@media (max-width: 600px) {
+  .site-header { padding: 22px 20px; }
+  nav { gap: 12px; }
+  .hero { padding: 76px 0 70px; }
+  footer { margin-left: 20px; margin-right: 20px; }
+}

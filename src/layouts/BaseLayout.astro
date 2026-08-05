@@ -1,0 +1,90 @@
+---
+import { SITE } from "../config";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: URL;
+  published?: Date;
+  updated?: Date;
+  tags?: string[];
+  type?: "website" | "article";
+}
+
+const {
+  title = SITE.title,
+  description = SITE.description,
+  canonical = Astro.url,
+  published,
+  updated,
+  tags = [],
+  type = "website",
+} = Astro.props;
+const fullTitle = title === SITE.title ? title : `${title} | ${SITE.title}`;
+const base = import.meta.env.BASE_URL;
+const home = base.endsWith("/") ? base : `${base}/`;
+const rssUrl = new URL(`${home}rss.xml`, Astro.site);
+const sitemapUrl = new URL(`${home}sitemap-index.xml`, Astro.site);
+const jsonLd = type === "article"
+  ? {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: title,
+      description,
+      datePublished: published?.toISOString(),
+      dateModified: (updated || published)?.toISOString(),
+      author: { "@type": "Person", name: SITE.author },
+      mainEntityOfPage: canonical.href,
+      keywords: tags.join(", "),
+      inLanguage: SITE.language,
+    }
+  : {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: SITE.title,
+      description: SITE.description,
+      url: canonical.href,
+      inLanguage: SITE.language,
+    };
+---
+
+<!doctype html>
+<html lang={SITE.language}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={SITE.author} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" type="application/rss+xml" title={`${SITE.title} RSS`} href={rssUrl} />
+    <link rel="sitemap" href={sitemapUrl} />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={SITE.title} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={SITE.locale} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    {published && <meta property="article:published_time" content={published.toISOString()} />}
+    {updated && <meta property="article:modified_time" content={updated.toISOString()} />}
+    {tags.map((tag) => <meta property="article:tag" content={tag} />)}
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={home}>{SITE.title}</a>
+      <nav aria-label="주요 메뉴">
+        <a href={home}>글</a>
+        <a href={`${home}about/`}>소개</a>
+        <a href={`${home}rss.xml`}>RSS</a>
+      </nav>
+    </header>
+    <main><slot /></main>
+    <footer>© {new Date().getFullYear()} {SITE.author}. 생각은 공개하되, 회사의 비밀은 공개하지 않습니다.</footer>
+  </body>
+</html>
