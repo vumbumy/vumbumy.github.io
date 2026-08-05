@@ -22,6 +22,6 @@ npm run dev
 
 ## GitHub Pages
 
-저장소의 Settings → Pages → Source를 `GitHub Actions`로 지정합니다. `main` 브랜치에 푸시하면 워크플로가 계정 사이트와 프로젝트 사이트 경로를 자동 판별해 빌드합니다.
+저장소의 Settings → Pages → Source를 `GitHub Actions`로 지정합니다. 기본 `master` 브랜치에 푸시하면 워크플로가 계정 사이트와 프로젝트 사이트 경로를 자동 판별해 빌드합니다.
 
 SEO 기본 구성에는 canonical, Open Graph, Twitter Card, BlogPosting JSON-LD, sitemap, robots.txt, RSS가 포함됩니다.
