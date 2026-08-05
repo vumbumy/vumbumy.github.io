@@ -1,6 +1,6 @@
 export const SITE = {
-  title: "과제를 푸는 과정",
-  description: "해결해야 할 과제를 정의하고, 선택하고, 풀어간 과정을 되짚습니다.",
+  title: "문제를 푸는 일",
+  description: "기술과 조직에 걸친 문제를 정의하고, 선택지를 만들고, 해결해 나간 과정을 돌아봅니다.",
   author: "Hanbeom",
   locale: "ko_KR",
   language: "ko",
