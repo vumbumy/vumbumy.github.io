@@ -26,15 +26,8 @@ jobs:
       - name: Configure Pages URL
         shell: bash
         run: |
-          owner="${GITHUB_REPOSITORY_OWNER,,}"
-          repo="${GITHUB_REPOSITORY#*/}"
-          if [ "$repo" = "$owner.github.io" ]; then
-            echo "SITE_URL=https://$owner.github.io" >> "$GITHUB_ENV"
-            echo "BASE_PATH=/" >> "$GITHUB_ENV"
-          else
-            echo "SITE_URL=https://$owner.github.io" >> "$GITHUB_ENV"
-            echo "BASE_PATH=/$repo" >> "$GITHUB_ENV"
-          fi
+          echo "SITE_URL=https://blog.vumy.kr" >> "$GITHUB_ENV"
+          echo "BASE_PATH=/" >> "$GITHUB_ENV"
       - run: npm ci
       - run: npm run build
       - uses: actions/configure-pages@v5
