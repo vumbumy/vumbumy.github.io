@@ -5,7 +5,8 @@
   --muted: #657068;
   --line: #d8d5ca;
   --accent: #a9412b;
-  --max: 720px;
+  --max: 760px;
+  --wide: 1040px;
 }
 
 * { box-sizing: border-box; }
@@ -25,16 +26,39 @@ main { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
 .section-title { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 14px; border-bottom: 1px solid var(--ink); }
 .section-title h2 { margin: 0; font-size: 1rem; }
 .section-title span, .post-meta { color: var(--muted); font-size: .82rem; }
-.post-list article { padding: 26px 0 30px; border-bottom: 1px solid var(--line); }
+.post-list article { padding: 30px 0 34px; border-bottom: 1px solid var(--line); }
 .post-list h3 { margin: 8px 0 10px; font-family: Georgia, "Noto Serif KR", serif; font-size: 1.7rem; }
 .post-list h3 a { text-decoration: none; }
 .post-list article > p:not(.post-meta) { color: var(--muted); line-height: 1.7; }
 .tags { display: flex; gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; color: var(--accent); font-size: .78rem; }
-.post { padding: 60px 0; }
+.post-card-meta { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.post-card-meta > span { color: var(--accent); font-size: .74rem; font-weight: 700; }
+.card-decision { margin: 18px 0 0; padding: 12px 14px; border-left: 2px solid var(--accent); background: rgba(255,255,255,.36); font-size: .9rem; }
+.card-decision strong { display: inline-block; margin-right: 8px; color: var(--accent); font-size: .72rem; letter-spacing: .08em; }
+.post { width: min(calc(100vw - 40px), var(--wide)); margin-left: 50%; transform: translateX(-50%); padding: 54px 0 60px; }
 .post header { padding-bottom: 26px; border-bottom: 1px solid var(--line); }
-.post h1 { font-size: clamp(2.4rem, 7vw, 4.7rem); }
-.prose { padding-top: 22px; font-family: Georgia, "Noto Serif KR", serif; font-size: 1.06rem; line-height: 1.9; word-break: keep-all; }
-.prose h2 { margin: 1.8em 0 .6em; font-size: 1.55rem; }
+.post header { max-width: var(--max); margin-left: 240px; }
+.post h1 { font-size: clamp(2.35rem, 6vw, 4.3rem); }
+.decision-summary { display: grid; grid-template-columns: repeat(3, 1fr); margin: 28px 0 38px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); }
+.decision-summary > div { padding: 18px 18px 20px 0; }
+.decision-summary > div + div { padding-left: 18px; border-left: 1px solid var(--line); }
+.decision-summary dt { margin-bottom: 8px; color: var(--accent); font-size: .72rem; font-weight: 800; letter-spacing: .12em; }
+.decision-summary dd { margin: 0; font-size: .92rem; line-height: 1.65; }
+.article-grid { display: grid; grid-template-columns: 190px minmax(0, var(--max)); gap: 50px; align-items: start; }
+.toc { position: sticky; top: 28px; padding-top: 4px; color: var(--muted); font-size: .78rem; line-height: 1.55; }
+.toc p { margin: 0 0 12px; color: var(--ink); font-weight: 800; }
+.toc ol { margin: 0; padding: 0; list-style: none; }
+.toc li + li { margin-top: 9px; }
+.toc a { text-decoration: none; }
+.toc a:hover { color: var(--accent); }
+.prose { font-size: 1.04rem; line-height: 1.88; word-break: keep-all; }
+.prose > :first-child { margin-top: 0; }
+.prose h2 { margin: 2.15em 0 .7em; padding-top: .45em; border-top: 1px solid var(--line); font-family: Georgia, "Noto Serif KR", serif; font-size: 1.55rem; line-height: 1.4; }
+.prose h3 { margin: 1.7em 0 .55em; font-size: 1.15rem; }
+.prose p { margin: 0 0 1.15em; }
+.prose ul, .prose ol { padding-left: 1.4em; }
+.prose li + li { margin-top: .4em; }
+.prose blockquote { margin: 1.6em 0; padding: 2px 0 2px 20px; border-left: 3px solid var(--accent); color: var(--muted); }
 .prose strong { color: var(--accent); }
 footer { max-width: var(--max); margin: 56px auto 0; padding: 22px 0 38px; border-top: 1px solid var(--line); color: var(--muted); font-size: .78rem; }
 @media (max-width: 600px) {
@@ -42,5 +66,13 @@ footer { max-width: var(--max); margin: 56px auto 0; padding: 22px 0 38px; borde
   nav { gap: 12px; }
   .hero { padding: 56px 0 50px; }
   .post { padding: 44px 0; }
+  .decision-summary { grid-template-columns: 1fr; margin-bottom: 28px; }
+  .decision-summary > div { padding: 14px 0; }
+  .decision-summary > div + div { padding-left: 0; border-top: 1px solid var(--line); border-left: 0; }
   footer { margin-left: 20px; margin-right: 20px; }
+}
+@media (max-width: 900px) {
+  .post header { margin-left: 0; }
+  .article-grid { display: block; }
+  .toc { position: static; margin-bottom: 28px; padding: 16px; border: 1px solid var(--line); }
 }

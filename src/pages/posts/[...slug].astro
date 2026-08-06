@@ -9,7 +9,13 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
+const readingMinutes = Math.max(1, Math.ceil((post.body ?? "").replace(/\s/g, "").length / 500));
+const decisionSummary = [
+  ["문제", post.data.problem],
+  ["선택", post.data.decision],
+  ["결과", post.data.outcome],
+].filter(([, value]) => value);
 ---
 
 <BaseLayout
@@ -28,9 +34,23 @@ const { Content } = await render(post);
       <p class="lead">{post.data.description}</p>
       <p class="post-meta">
         <time datetime={post.data.published.toISOString()}>{post.data.published.toLocaleDateString("ko-KR")}</time>
+        <> · 약 {readingMinutes}분</>
         {post.data.updated && <> · 수정 {post.data.updated.toLocaleDateString("ko-KR")}</>}
       </p>
     </header>
-    <div class="prose"><Content /></div>
+    {decisionSummary.length > 0 && (
+      <dl class="decision-summary" aria-label="글 요약">
+        {decisionSummary.map(([label, value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}
+      </dl>
+    )}
+    <div class="article-grid">
+      {headings.length > 1 && (
+        <aside class="toc" aria-label="목차">
+          <p>이 글의 흐름</p>
+          <ol>{headings.filter((heading) => heading.depth === 2).map((heading) => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}</ol>
+        </aside>
+      )}
+      <div class="prose"><Content /></div>
+    </div>
   </article>
 </BaseLayout>

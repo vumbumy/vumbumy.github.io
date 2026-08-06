@@ -23,9 +23,13 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
     <div class="post-list">
       {posts.map((post) => (
         <article>
-          <p class="post-meta"><time datetime={post.data.published.toISOString()}>{post.data.published.toLocaleDateString("ko-KR")}</time></p>
+          <div class="post-card-meta">
+            <p class="post-meta"><time datetime={post.data.published.toISOString()}>{post.data.published.toLocaleDateString("ko-KR")}</time></p>
+            <span>{post.data.tags[0]}</span>
+          </div>
           <h3><a href={`${base}posts/${post.id}/`}>{post.data.title}</a></h3>
           <p>{post.data.description}</p>
+          {post.data.decision && <p class="card-decision"><strong>선택</strong> {post.data.decision}</p>}
           <ul class="tags" aria-label="태그">{post.data.tags.map((tag) => <li>#{tag}</li>)}</ul>
         </article>
       ))}
