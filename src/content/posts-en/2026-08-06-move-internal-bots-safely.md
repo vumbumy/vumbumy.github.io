@@ -1,36 +1,48 @@
 ---
-title: "Setting Boundaries Before Moving Internal Bots to the Cloud"
-description: "How I chose connectivity, access controls, and network isolation while moving internal bots off a small on-premise machine."
+title: "Setting Safe Limits Before Moving Internal Bots to the Cloud"
+description: "How I chose network access and isolation when moving internal bots from a small office computer to the cloud."
 published: 2026-08-06
 tags: [ProblemSolving, Cloud, Security, Operations]
-problem: "Internal bots needed more reliable hosting without increasing public exposure or unmanaged human access."
-decision: "I reused the existing cloud environment while requiring outbound-only connections, centralized access, and an isolated network segment."
-outcome: "The operating model gained traceable access and resource isolation without adding a new public entry point."
+problem: "Internal bots needed more stable hosting without more public access or direct human access."
+decision: "I used the existing cloud system with outgoing connections, central access control, and a separate network area."
+outcome: "The new plan keeps access records and separates the bots without adding a public entry point."
 draft: false
 ---
 
-Several internal automation bots were running on a single small machine. They worked, but the setup was not ideal for dependable, around-the-clock operation. Moving them to the cloud was not just a change of location. It was an opportunity to redraw the boundaries around connectivity, access, and isolation.
+Several internal bots were running on one small computer. They worked, but the setup was not good for stable service all day.
 
-## Redefining the problem
+Moving them to the cloud was more than moving files. It was a chance to set better rules for network access, human access, and separation from other systems.
 
-The real question was not where the server should run. We needed to decide how it would communicate with an external platform, how operators would reach it, and how strongly it should be separated from other cloud resources.
+## What was the problem?
 
-## How I compared the options
+The main question was not where the server should run. We needed to decide how the bots would connect to an outside service.
 
-The first decision concerned inbound traffic. Opening a port for incoming events would create another surface that needed firewall rules, authentication, and continuous monitoring. A configuration mistake could also introduce a new risk. I therefore chose a model in which the bot initiates an outbound connection and receives events through that established channel. It preserves the required functionality while avoiding another public entry point.
+We also needed safe access for operators. Finally, the bots had to stay separate from other cloud systems.
 
-I applied the same reasoning to storage. A separate database would offer stronger management and scaling features, but it would also add credentials, dependencies, and failure modes. The state these bots held did not justify that cost, so local JSON files were sufficient for the current scope. Simplicity can be an operational advantage when the scale is genuinely small.
+## How I compared the choices
 
-## The decision and implementation
+The first choice was about incoming traffic. Opening a public port would need firewall rules, login checks, and regular monitoring. A setup mistake could create a new risk.
 
-For administrative access, traceability mattered more than convenience. Personal SSH keys are familiar, but they make consistent auditing and key lifecycle management harder. Instead, access would go through the cloud provider's centralized identity and remote-management controls, so that permissions and activity could be recorded in one place.
+I chose a model where each bot starts an outgoing connection. It receives events through that connection. The bots can work without a new public entry point.
 
-I also compared a new network with reuse of the existing one. A separate network creates a clearer boundary but introduces more infrastructure to operate. Reusing the existing network reduces that overhead but can blur separation from other workloads. The compromise was to reuse the existing environment while placing the bots in their own isolated segment.
+I also looked at data storage. A separate database has useful features, but it adds passwords, cost, and more ways to fail. The bots held only a small amount of data, so local JSON files were enough for now.
 
-## Outcome and remaining questions
+## What I chose and did
 
-The chosen design receives the events it needs without exposing the server directly to the internet. Operator access is recorded through the centralized identity system, and the bots run in a segment separated from other resources. Local file storage remains a decision tied to today's scale; it should be revisited if state grows or multiple instances must coordinate.
+For staff access, clear records were more important than easy access. Personal SSH keys are simple, but they are harder to manage and review.
 
-## A principle to carry forward
+I chose the cloud provider's central login and remote access tools. This keeps access rights and activity records in one place.
 
-The essential part of this migration was not choosing a server location. It was deciding which connections to permit, how to record human access, and where to draw the boundary around other resources. Once a small automation tool becomes an ongoing service, moving the process alone is not enough. Keeping only the necessary entry points and making the operating boundary explicit makes everything that follows easier to manage.
+I also compared a new network with the existing network. A new network gives a strong boundary but adds more work. I chose the existing network and placed the bots in a separate area inside it.
+
+## What happened and what remains
+
+The plan does not expose the bots directly to the internet. Staff access is recorded, and the bots stay separate from other systems.
+
+Local file storage still fits the current size. We should review this choice if the data grows or if several bot servers need to share it.
+
+## What I will do next time
+
+When a small tool becomes a regular service, I will not only move the program. I will also review every network path, human access method, and system boundary.
+
+Keeping only needed access makes the service safer and easier to run.

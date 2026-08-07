@@ -1,34 +1,46 @@
 ---
-title: "Turning an Ambiguous Request into an Executable Scope"
-description: "A retrospective on translating a manual-work migration request into concrete requirements, a smaller scope, and a staged rollout."
+title: "Turning an Unclear Request into a Clear Work Plan"
+description: "How I changed a general request into clear needs, a smaller scope, and a step-by-step release plan."
 published: 2026-08-06
 tags: [ProblemSolving, Requirements, ScopeManagement]
-problem: "A request existed to move manual work into a web service, but neither the true migration scope nor the definition of done was clear."
-decision: "I inspected actual usage, reduced the scope, and separated a fast first release from the deeper integration that would follow."
-outcome: "The migration scope narrowed to seven active areas, with clear ownership and an agreed staged release strategy."
+problem: "A team wanted to move manual work to a web service, but the real scope and finish point were unclear."
+decision: "I checked how the current work was used, reduced the scope, and split the quick first release from later work."
+outcome: "The team reduced the work to seven active areas and agreed on ownership and a step-by-step release."
 draft: false
 ---
 
-The request sounded straightforward: move work managed manually into an internal web service. The direction was clear, but the boundary was not. The source contained thirty tabs, and the request also mentioned integrations with other internal services. Starting from that sentence alone might have produced screens quickly, but the scope and the definition of done would have kept moving.
+The request sounded simple: move manual work into an internal web service. The goal was clear, but the scope was not.
 
-## Redefining the problem
+The source had thirty tabs and links to other internal services. If we had started at once, the target would have kept changing.
 
-I first rewrote the request as separate capabilities: database storage, continued manual entry, customer-system integration, attendance data, single sign-on, and role-based access. The phrase “build one portal” contained several different questions about where data came from, which existing workflows should remain, and who could access what. Once separated, it became easier to distinguish implementation work from decisions that required other teams.
+## What was the problem?
 
-## How I compared the options
+I first split the request into clear needs. These included data storage, manual input, links to other systems, login, and access by role.
 
-Ownership had to be decided early as well. We needed to choose between a support group and the team building the service directly. The eventual split assigned infrastructure and runtime support to one group while leaving product development with the team closest to the request. This was more than task allocation: it established who would judge future changes and where operating responsibility would sit.
+The words “build one portal” hid many different questions. We had to know where the data came from, which work should stay, and who could use each feature.
 
-## The decision and implementation
+## How I compared the choices
 
-Inspecting the source material directly was the most effective way to reduce the scope. The thirty tabs included empty sheets, copies, and old versions. Treating every title as a migration target would have recreated work that no longer mattered. Reviewing actual usage reduced the real migration set to seven items. I also checked how three existing services and their development data were organized, avoiding a design that discovered integration constraints only after the new interface was built.
+We also had to decide who owned the work. One support group could help with the system and its operation. The team close to the request could build the product.
 
-Rather than integrate everything at once, I separated the first release from later work. The initial version would gather access to existing systems in one place through links, while data-level integration would proceed in stages. Waiting for authentication, permissions, and every data connection would delay all value. But treating a link directory as the final product would fail to reduce manual work. The quick release therefore remained an explicit intermediate step, with the remaining integration scope recorded separately.
+This choice was not only about sharing tasks. It also showed who would make later decisions and who would run the service.
 
-## Outcome and remaining questions
+## What I chose and did
 
-The target was narrowed from thirty nominal tabs to seven areas that were actually in use. Infrastructure support and service-development responsibilities were separated, and the first release focused on bringing existing access paths together. Authentication, authorization, and deeper data integration remain as follow-up work.
+I checked the source material myself. Many of the thirty tabs were empty, copied, or old. Moving all of them would create work with little value.
 
-## A principle to carry forward
+After checking real use, I reduced the list to seven active areas. I also checked how three existing services and their test data were set up.
 
-Clarifying an ambiguous request is not the same as writing a longer requirements document. It means checking real usage, reducing the scope, assigning responsibility, and separating immediate value from integration that still needs to happen. A quick first release is useful only when the next boundary is just as explicit.
+Then I split the release into steps. The first version would collect links to current services in one place. Deeper data links would come later. This gave users value sooner without hiding the work that still remained.
+
+## What happened and what remains
+
+The real target changed from thirty named tabs to seven active areas. The team also agreed on the roles for system support and product work.
+
+The first release will bring current access points together. Login, access rules, and deeper data links remain as later work.
+
+## What I will do next time
+
+For an unclear request, I will check real use before writing a long plan. I will remove unused work, set clear ownership, and split early value from later work.
+
+A quick first release is useful only when everyone can also see what comes next.

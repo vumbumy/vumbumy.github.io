@@ -7,8 +7,8 @@ export const SITE = {
 };
 
 export const SITE_EN = {
-  title: "The Work of Solving Problems",
-  description: "Reflections on defining and solving problems that span technology, systems, and organizations.",
+  title: "Solving Problems at Work",
+  description: "Notes on how I find and solve problems across technology, systems, and teams.",
   author: "Hanbeom",
   locale: "en_US",
   language: "en",

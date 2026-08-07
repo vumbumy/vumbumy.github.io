@@ -1,39 +1,47 @@
 ---
-title: "What to Clarify Before Choosing a Solution"
-description: "Why scope, ownership, and verification criteria should be written down before comparing solutions to a complex work problem."
+title: "What to Check Before Choosing a Solution"
+description: "Why I check the scope, owner, and safety rules before I compare solutions to a hard problem."
 published: 2026-08-05
 tags: [ProblemSolving, DecisionMaking]
-problem: "Solutions often appear quickly even when the scope of the problem and the boundaries of responsibility remain unclear."
-decision: "Before implementation, I write down the affected systems, ownership boundaries, and the evidence needed to call a change safe."
-outcome: "The basis for discussion and verification becomes clearer, and there is a known point to return to if the change fails."
+problem: "People may suggest solutions before the scope and ownership of a problem are clear."
+decision: "Before I start, I write down who and what may be affected, who owns each part, and how I will check safety."
+outcome: "The team gets a clear basis for discussion, testing, and recovery if the change fails."
 draft: false
 translationSlug: "첫-기록"
 ---
 
-At work, a solution often comes to mind before the problem itself is clear. In those situations, the most costly mistake is not choosing the wrong answer. It is defining the wrong boundary around the problem.
+At work, a solution often appears before the problem is clear. The biggest risk is not always a bad solution. Sometimes we are trying to solve the wrong problem.
 
-## Redefining the problem
+## What was the problem?
 
-Before comparing solutions, I need to know who will be affected, who can make the decision, and what must be verified. Technical choices should be made within those boundaries.
+Before comparing solutions, I need to know who will be affected. I also need to know who can make the decision and what must be tested.
 
-## How I compare the options
+Technical choices should stay inside these clear limits. Without them, the work can grow in the wrong direction.
 
-When a problem is complex, I write down three things before discussing implementation:
+## How I compared the choices
+
+For a hard problem, I write down three questions:
 
 1. Which people and systems will this change affect?
-2. Where does my authority end, and where does another team's responsibility begin?
-3. What evidence would let us say the decision was safe?
+2. Which parts do I own, and which parts belong to another team?
+3. What test will show that the change is safe?
 
-Even this short exercise makes requests more concrete and meetings shorter. It also reveals the point to which we can return if something goes wrong.
+These questions make a general request more clear. They also help the team have shorter and more useful meetings.
 
-## The decision and implementation
+## What I chose and did
 
-Waiting until every uncertainty is resolved means never beginning. Instead, I test within a small boundary and keep the existing path available. I also preserve a way back to the original state. In real systems, a safe experiment is often more useful than a perfect prediction.
+I do not wait until every unknown point is solved. That can stop all progress. Instead, I test the idea in a small area.
 
-## Outcome and remaining questions
+I keep the old way available during the test. I also prepare a clear way to go back. A small and safe test often gives better information than a long discussion.
 
-These questions do not remove every uncertainty. They do make the unknowns visible and show when the next decision will be needed.
+## What happened and what remains
 
-## A principle to carry forward
+These questions do not remove all uncertainty. However, they show what we know and what we still need to learn.
 
-This blog is where I intend to record those choices, along with what only became clear afterward.
+They also make the next decision point clear. If the change fails, the team knows where to return.
+
+## What I will do next time
+
+I will write down the scope, owner, and safety check before I compare technical solutions. This gives the team a shared starting point.
+
+This blog records these choices and the things I learned after making them.
