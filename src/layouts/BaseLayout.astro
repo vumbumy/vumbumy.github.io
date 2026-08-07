@@ -34,7 +34,6 @@ const resolvedDescription = description === SITE.description && lang === "en" ? 
 const fullTitle = resolvedTitle === defaultTitle ? resolvedTitle : `${resolvedTitle} | ${currentSite.title}`;
 const base = import.meta.env.BASE_URL;
 const home = base.endsWith("/") ? base : `${base}/`;
-const rssUrl = new URL(lang === "en" ? `${home}en/rss.xml` : `${home}rss.xml`, Astro.site);
 const sitemapUrl = new URL(`${home}sitemap-index.xml`, Astro.site);
 const jsonLd = type === "article"
   ? {
@@ -72,7 +71,6 @@ const jsonLd = type === "article"
     {alternateKo && <link rel="alternate" hreflang="ko" href={alternateKo} />}
     {alternateEn && <link rel="alternate" hreflang="en" href={alternateEn} />}
     {alternateKo && <link rel="alternate" hreflang="x-default" href={alternateKo} />}
-    <link rel="alternate" type="application/rss+xml" title={`${currentSite.title} RSS`} href={rssUrl} />
     <link rel="sitemap" href={sitemapUrl} />
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={currentSite.title} />
@@ -94,7 +92,6 @@ const jsonLd = type === "article"
       <nav aria-label={lang === "en" ? "Primary navigation" : "주요 메뉴"}>
         <a href={lang === "en" ? `${home}en/` : home}>{lang === "en" ? "Posts" : "글"}</a>
         <a href={lang === "en" ? `${home}en/about/` : `${home}about/`}>{lang === "en" ? "About" : "소개"}</a>
-        <a href={lang === "en" ? `${home}en/rss.xml` : `${home}rss.xml`}>RSS</a>
         <span class="language-toggle" aria-label={lang === "en" ? "Language" : "언어"}>
           <a class:list={{ active: lang === "ko" }} href={alternateKo?.pathname ?? home} hreflang="ko">KO</a>
           <span aria-hidden="true">/</span>
