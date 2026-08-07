@@ -41,7 +41,7 @@ const fullTitle = resolvedTitle === defaultTitle ? resolvedTitle : `${resolvedTi
 const base = import.meta.env.BASE_URL;
 const home = base.endsWith("/") ? base : `${base}/`;
 const sitemapUrl = new URL(`${home}sitemap-index.xml`, Astro.site);
-const resolvedImage = image ?? new URL(`${home}og-default.png`, Astro.site);
+const resolvedImage = image ?? new URL(`${home}${lang === "en" ? "og-default-en.png" : "og-default.png"}`, Astro.site);
 const resolvedImageAlt = imageAlt ?? currentSite.imageAlt;
 const canonicalUrl = canonical.href;
 const siteHome = new URL(lang === "en" ? `${home}en/` : home, Astro.site).href;

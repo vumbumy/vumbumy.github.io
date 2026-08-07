@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="소개" description="Hanbeom이 기술과 조직에 걸친 문제를 정의하고 해결해 나간 과정을 기록하는 개인 블로그입니다." alternateKo={new URL("/about/", Astro.site)} alternateEn={new URL("/en/about/", Astro.site)}>
+<BaseLayout title="소개" description="Hanbeom이 기술과 조직에 걸친 문제를 정의하고 해결해 나간 과정을 기록하는 개인 블로그입니다." image={new URL("/og-about.png", Astro.site)} imageAlt="문제를 푸는 일 소개" alternateKo={new URL("/about/", Astro.site)} alternateEn={new URL("/en/about/", Astro.site)}>
   <article class="post">
     <header><p class="eyebrow">ABOUT</p><h1>문제를 정의하고 풀어간 과정을 돌아봅니다.</h1></header>
     <div class="prose">
