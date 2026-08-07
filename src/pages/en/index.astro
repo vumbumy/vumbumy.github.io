@@ -10,10 +10,16 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
 
 <BaseLayout lang="en" alternateKo={new URL(base, Astro.site)} alternateEn={new URL(`${base}en/`, Astro.site)}>
   <section class="hero">
-    <p class="eyebrow">WORK NOTES</p>
-    <h1>{SITE_EN.title}</h1>
-    <p>{SITE_EN.description}</p>
-    <p class="publishing-note">AI turns my rough work notes into daily reviews. Before each post goes live, company and personal details are removed.</p>
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> STAFF ENGINEER'S JOURNAL</p>
+      <h1>{SITE_EN.title}</h1>
+      <p class="hero-description">{SITE_EN.description}</p>
+    </div>
+    <aside class="hero-note">
+      <span class="hero-note-label">HOW IT WORKS</span>
+      <p>AI turns my rough daily notes into clear reviews.</p>
+      <p>Company and personal details are removed before publishing.</p>
+    </aside>
   </section>
   <section aria-labelledby="recent-posts">
     <div class="section-title">
@@ -21,8 +27,8 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
       <span>{posts.length} posts</span>
     </div>
     <div class="post-list">
-      {posts.map((post) => (
-        <article>
+      {posts.map((post, index) => (
+        <article class:list={{ featured: index === 0 }}>
           <div class="post-card-meta">
             <p class="post-meta"><time datetime={post.data.published.toISOString()}>{post.data.published.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}</time></p>
             <span>{post.data.tags[0]}</span>
@@ -31,6 +37,7 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
           <p>{post.data.description}</p>
           {post.data.decision && <p class="card-decision"><strong>DECISION</strong> {post.data.decision}</p>}
           <ul class="tags" aria-label="Tags">{post.data.tags.map((tag) => <li>#{tag}</li>)}</ul>
+          <a class="card-link" href={`${base}en/posts/${post.id}/`} aria-label={`Read ${post.data.title}`}><span>Read article</span><span aria-hidden="true">↗</span></a>
         </article>
       ))}
     </div>

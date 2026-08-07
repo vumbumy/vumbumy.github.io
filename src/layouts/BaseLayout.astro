@@ -82,7 +82,7 @@ const jsonLd = type === "article"
     <meta name="author" content={currentSite.author} />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="theme-color" content="#f5f1e8" />
+    <meta name="theme-color" content="#f4f7fb" />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href={`${home}favicon.svg`} type="image/svg+xml" />
     {alternateKo && <link rel="alternate" hreflang="ko" href={alternateKo} />}
@@ -114,19 +114,44 @@ const jsonLd = type === "article"
     <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href={lang === "en" ? `${home}en/` : home}>{currentSite.title}</a>
-      <nav aria-label={lang === "en" ? "Primary navigation" : "주요 메뉴"}>
-        <a href={lang === "en" ? `${home}en/` : home}>{lang === "en" ? "Posts" : "글"}</a>
-        <a href={lang === "en" ? `${home}en/about/` : `${home}about/`}>{lang === "en" ? "About" : "소개"}</a>
-        <span class="language-toggle" aria-label={lang === "en" ? "Language" : "언어"}>
-          <a class:list={{ active: lang === "ko" }} href={alternateKo?.pathname ?? home} hreflang="ko">KO</a>
-          <span aria-hidden="true">/</span>
-          <a class:list={{ active: lang === "en" }} href={alternateEn?.pathname ?? `${home}en/`} hreflang="en">EN</a>
-        </span>
-      </nav>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <header class="site-header-wrap">
+      <div class="site-header">
+        <a class="brand" href={lang === "en" ? `${home}en/` : home}>
+          <span class="brand-mark" aria-hidden="true">H</span>
+          <span>{currentSite.title}</span>
+        </a>
+        <nav aria-label={lang === "en" ? "Primary navigation" : "주요 메뉴"}>
+          <a href={lang === "en" ? `${home}en/` : home}>{lang === "en" ? "Posts" : "글"}</a>
+          <a href={lang === "en" ? `${home}en/about/` : `${home}about/`}>{lang === "en" ? "About" : "소개"}</a>
+          <span class="language-toggle" aria-label={lang === "en" ? "Language" : "언어"}>
+            <a class:list={{ active: lang === "ko" }} href={alternateKo?.pathname ?? home} hreflang="ko">KO</a>
+            <a class:list={{ active: lang === "en" }} href={alternateEn?.pathname ?? `${home}en/`} hreflang="en">EN</a>
+          </span>
+          <button class="theme-toggle" type="button" aria-label={lang === "en" ? "Change color theme" : "색상 테마 전환"}>
+            <span class="theme-icon" aria-hidden="true"></span>
+          </button>
+        </nav>
+      </div>
     </header>
     <main><slot /></main>
-    <footer>© {new Date().getFullYear()} {currentSite.author}</footer>
+    <footer>
+      <span>© {new Date().getFullYear()} {currentSite.author}</span>
+      <span>{lang === "en" ? "Notes on solving technical and organizational problems." : "기술과 조직의 문제를 풀며 남긴 기록입니다."}</span>
+    </footer>
+    <script is:inline>
+      (() => {
+        const root = document.documentElement;
+        const saved = localStorage.getItem("theme");
+        if (saved === "dark" || saved === "light") root.dataset.theme = saved;
+        document.querySelector(".theme-toggle")?.addEventListener("click", () => {
+          const current = root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          const next = current === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          localStorage.setItem("theme", next);
+        });
+      })();
+    </script>
   </body>
 </html>
