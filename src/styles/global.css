@@ -17,6 +17,9 @@ a { color: inherit; text-decoration-color: color-mix(in srgb, var(--accent) 45%,
 .brand { font-family: Georgia, "Noto Serif KR", serif; font-weight: 700; text-decoration: none; }
 nav { display: flex; gap: 20px; font-size: .9rem; }
 nav a { text-decoration: none; color: var(--muted); }
+.language-toggle { display: inline-flex; gap: 5px; color: var(--line); }
+.language-toggle a { font-size: .76rem; font-weight: 700; }
+.language-toggle a.active { color: var(--accent); }
 main { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
 .hero { padding: 78px 0 68px; }
 .hero h1, .post h1 { margin: .25em 0; font-family: Georgia, "Noto Serif KR", serif; font-size: clamp(2.55rem, 6.5vw, 4.35rem); line-height: 1.14; letter-spacing: -.045em; word-break: keep-all; text-wrap: balance; }

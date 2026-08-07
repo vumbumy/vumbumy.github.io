@@ -11,7 +11,7 @@ npm run dev
 
 ## 글 작성
 
-`src/content/posts`에 Markdown 파일을 추가합니다. 공개 전에는 반드시 `draft: true`를 유지하고, 민감정보 검토가 끝난 글만 `draft: false`로 바꿉니다.
+한국어 글은 `src/content/posts`, 같은 글의 영문판은 `src/content/posts-en`에 동일한 파일명으로 추가합니다. 공개 전에는 반드시 `draft: true`를 유지하고, 민감정보 검토가 끝난 글만 `draft: false`로 바꿉니다.
 
 필수 공개 전 점검:
 
@@ -24,4 +24,4 @@ npm run dev
 
 저장소의 Settings → Pages → Source를 `GitHub Actions`로 지정합니다. 기본 `master` 브랜치에 푸시하면 워크플로가 계정 사이트와 프로젝트 사이트 경로를 자동 판별해 빌드합니다.
 
-SEO 기본 구성에는 canonical, Open Graph, Twitter Card, BlogPosting JSON-LD, sitemap, robots.txt, RSS가 포함됩니다.
+SEO 기본 구성에는 언어별 canonical과 hreflang, Open Graph, Twitter Card, BlogPosting JSON-LD, sitemap, robots.txt, 한·영 RSS가 포함됩니다. 한국어는 기본 URL, 영문은 `/en/` 아래에 배포됩니다.

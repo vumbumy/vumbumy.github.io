@@ -5,3 +5,11 @@ export const SITE = {
   locale: "ko_KR",
   language: "ko",
 };
+
+export const SITE_EN = {
+  title: "The Work of Solving Problems",
+  description: "Reflections on defining and solving problems that span technology, systems, and organizations.",
+  author: "Hanbeom",
+  locale: "en_US",
+  language: "en",
+};
