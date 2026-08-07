@@ -143,6 +143,30 @@ main { width: min(calc(100% - 48px), var(--wide)); margin: 0 auto; }
 .post-pagination strong { font-size: .92rem; line-height: 1.45; }
 .related-posts { max-width: 1000px; margin: 60px auto 0; }
 
+.about-page { padding: 86px 0 68px; }
+.about-hero { max-width: 900px; padding-bottom: 62px; }
+.about-hero .eyebrow { margin-bottom: 24px; }
+.about-hero h1 { margin: 0; font-size: clamp(3rem, 6.4vw, 5.4rem); line-height: 1.05; letter-spacing: -.06em; word-break: keep-all; text-wrap: balance; }
+.about-hero > p:last-child { max-width: 720px; margin: 28px 0 0; color: var(--muted); font-size: 1.12rem; line-height: 1.75; word-break: keep-all; }
+.about-principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.about-principles article { min-height: 240px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: 0 12px 40px rgba(30,37,65,.045); }
+.about-principles article > span { color: var(--accent); font-size: .74rem; font-weight: 800; letter-spacing: .1em; }
+.about-principles h2 { margin: 52px 0 12px; font-size: 1.17rem; line-height: 1.4; letter-spacing: -.025em; }
+.about-principles p { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.7; word-break: keep-all; }
+.about-section { margin-top: 84px; padding-top: 64px; display: grid; grid-template-columns: minmax(260px, .78fr) minmax(0, 1.22fr); gap: 84px; border-top: 1px solid var(--line); }
+.about-section .eyebrow { margin-bottom: 16px; }
+.about-section h2 { max-width: 480px; margin: 0; font-size: clamp(1.9rem, 3.5vw, 2.7rem); line-height: 1.24; letter-spacing: -.045em; word-break: keep-all; }
+.about-process ol { margin: 0; padding: 0; list-style: none; }
+.about-process li { padding: 0 0 25px; display: grid; grid-template-columns: 42px 1fr; gap: 16px; border-bottom: 1px solid var(--line); }
+.about-process li + li { padding-top: 25px; }
+.about-process li > span { display: grid; width: 36px; height: 36px; place-items: center; border-radius: 11px; background: var(--accent-soft); color: var(--accent); font-size: .78rem; font-weight: 800; }
+.about-process strong { font-size: 1rem; }
+.about-process li p { margin: 7px 0 0; color: var(--muted); font-size: .91rem; line-height: 1.65; word-break: keep-all; }
+.about-copy { max-width: 660px; color: var(--muted); font-size: 1rem; line-height: 1.85; word-break: keep-all; }
+.about-copy p { margin: 0; }
+.about-copy p + p { margin-top: 20px; }
+.about-cta { margin-top: 84px; }
+
 footer { width: min(calc(100% - 48px), var(--wide)); margin: 82px auto 0; padding: 28px 2px 44px; display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); color: var(--faint); font-size: .76rem; }
 
 @media (max-width: 920px) {
@@ -162,6 +186,10 @@ footer { width: min(calc(100% - 48px), var(--wide)); margin: 82px auto 0; paddin
   .article-grid { display: block; }
   .toc { position: static; max-width: var(--max); margin: 0 auto 18px; }
   .prose { max-width: var(--max); margin: 0 auto; padding: 32px 27px; }
+  .about-principles { grid-template-columns: 1fr; }
+  .about-principles article { min-height: 0; }
+  .about-principles h2 { margin-top: 28px; }
+  .about-section { grid-template-columns: 1fr; gap: 36px; }
   footer { margin-top: 58px; flex-direction: column; }
 }
 
@@ -174,6 +202,13 @@ footer { width: min(calc(100% - 48px), var(--wide)); margin: 82px auto 0; paddin
   .hero-note { padding: 19px; }
   .post-card { min-height: 270px; padding: 22px; }
   .post { padding: 58px 0 44px; }
+  .about-page { padding: 62px 0 44px; }
+  .about-hero { padding-bottom: 42px; }
+  .about-hero h1 { font-size: clamp(2.6rem, 13vw, 3.7rem); }
+  .about-hero > p:last-child { font-size: 1rem; }
+  .about-principles article { padding: 23px; }
+  .about-section { margin-top: 58px; padding-top: 46px; }
+  .about-cta { margin-top: 58px; }
   .decision-summary { grid-template-columns: 1fr; margin-bottom: 24px; }
   .prose { padding: 27px 20px; border-radius: 18px; font-size: .98rem; }
   .service-cta { margin-top: 40px; padding: 26px 23px; }
