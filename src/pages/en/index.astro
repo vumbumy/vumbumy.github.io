@@ -1,10 +1,12 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
 import { SITE_EN } from "../../config";
+import { sortPosts } from "../../lib/posts";
 
-const posts = (await getCollection("postsEn", ({ data }) => !data.draft))
-  .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+const posts = sortPosts(await getCollection("postsEn", ({ data }) => !data.draft));
+const latestPosts = posts.slice(0, 6);
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 
@@ -19,6 +21,7 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
       <span class="hero-note-label">HOW IT WORKS</span>
       <p>AI turns my rough daily notes into clear reviews.</p>
       <p>Company and personal details are removed before publishing.</p>
+      <a href={SITE_EN.profileUrl}>See my services <span aria-hidden="true">→</span></a>
     </aside>
   </section>
   <section aria-labelledby="recent-posts">
@@ -27,19 +30,8 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
       <span>{posts.length} posts</span>
     </div>
     <div class="post-list">
-      {posts.map((post, index) => (
-        <article class:list={{ featured: index === 0 }}>
-          <div class="post-card-meta">
-            <p class="post-meta"><time datetime={post.data.published.toISOString()}>{post.data.published.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}</time></p>
-            <span>{post.data.tags[0]}</span>
-          </div>
-          <h3><a href={`${base}en/posts/${post.id}/`}>{post.data.title}</a></h3>
-          <p>{post.data.description}</p>
-          {post.data.decision && <p class="card-decision"><strong>DECISION</strong> {post.data.decision}</p>}
-          <ul class="tags" aria-label="Tags">{post.data.tags.map((tag) => <li>#{tag}</li>)}</ul>
-          <a class="card-link" href={`${base}en/posts/${post.id}/`} aria-label={`Read ${post.data.title}`}><span>Read article</span><span aria-hidden="true">↗</span></a>
-        </article>
-      ))}
+      {latestPosts.map((post) => <PostCard post={post} href={`${base}en/posts/${post.id}/`} lang="en" />)}
     </div>
+    {posts.length > latestPosts.length && <p class="archive-cta"><a href={`${base}en/archive/`}>See all posts <span aria-hidden="true">→</span></a></p>}
   </section>
 </BaseLayout>

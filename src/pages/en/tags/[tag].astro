@@ -1,0 +1,25 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import PostCard from "../../../components/PostCard.astro";
+import { sortPosts, tagSlug } from "../../../lib/posts";
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection("postsEn", ({ data }) => !data.draft);
+  const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
+  return tags.map((tag) => ({ params: { tag: tagSlug(tag) }, props: { tag, posts: posts.filter((post) => post.data.tags.includes(tag)) } }));
+}) satisfies GetStaticPaths;
+
+const { tag, posts } = Astro.props;
+const sorted = sortPosts(posts);
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<BaseLayout lang="en" title={`${tag} posts`} description={`Hanbeom's notes about solving problems related to ${tag}.`}>
+  <section class="archive-page">
+    <header class="page-heading"><p class="eyebrow">TOPIC</p><h1>#{tag}</h1><p>{sorted.length} posts</p></header>
+    <div class="post-list compact-list">{sorted.map((post) => <PostCard post={post} href={`${base}en/posts/${post.id}/`} lang="en" />)}</div>
+    <p class="archive-cta"><a href={`${base}en/archive/`}>Back to the full archive <span aria-hidden="true">→</span></a></p>
+  </section>
+</BaseLayout>

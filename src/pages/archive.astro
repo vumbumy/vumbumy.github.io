@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PostCard from "../components/PostCard.astro";
+import { sortPosts, tagSlug } from "../lib/posts";
+
+const posts = sortPosts(await getCollection("posts", ({ data }) => !data.draft));
+const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort((a, b) => a.localeCompare(b, "ko"));
+const groups = Object.entries(Object.groupBy(posts, (post) => String(post.data.published.getFullYear())))
+  .sort(([a], [b]) => Number(b) - Number(a));
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<BaseLayout title="글 아카이브" description="기술과 조직의 문제를 풀어간 Hanbeom의 회고 글을 연도와 주제별로 모았습니다." alternateKo={new URL(`${base}archive/`, Astro.site)} alternateEn={new URL(`${base}en/archive/`, Astro.site)}>
+  <section class="archive-page">
+    <header class="page-heading">
+      <p class="eyebrow">ARCHIVE</p>
+      <h1>글 아카이브</h1>
+      <p>지금까지 기록한 문제와 선택을 연도와 주제별로 찾아볼 수 있습니다.</p>
+    </header>
+    <nav class="tag-cloud" aria-label="태그별 글">
+      {tags.map((tag) => <a href={`${base}tags/${tagSlug(tag)}/`}>#{tag}</a>)}
+    </nav>
+    {groups.map(([year, yearPosts]) => (
+      <section class="archive-group" aria-labelledby={`year-${year}`}>
+        <div class="section-title"><h2 id={`year-${year}`}>{year}</h2><span>{yearPosts?.length ?? 0}개</span></div>
+        <div class="post-list compact-list">{yearPosts?.map((post) => <PostCard post={post} href={`${base}posts/${post.id}/`} />)}</div>
+      </section>
+    ))}
+  </section>
+</BaseLayout>

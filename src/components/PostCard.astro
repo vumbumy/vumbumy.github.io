@@ -1,0 +1,26 @@
+---
+interface Props {
+  post: any;
+  href: string;
+  lang?: "ko" | "en";
+}
+
+const { post, href, lang = "ko" } = Astro.props;
+const locale = lang === "en" ? "en-US" : "ko-KR";
+const dateOptions: Intl.DateTimeFormatOptions = lang === "en"
+  ? { year: "numeric", month: "short", day: "numeric" }
+  : { year: "numeric", month: "numeric", day: "numeric" };
+---
+
+<article class="post-card">
+  <p class="post-card-meta">
+    <time datetime={post.data.published.toISOString()}>{post.data.published.toLocaleDateString(locale, dateOptions)}</time>
+    {post.data.tags[0] && <span aria-hidden="true">·</span>}
+    {post.data.tags[0] && <span>{post.data.tags[0]}</span>}
+  </p>
+  <h3><a href={href}>{post.data.title}</a></h3>
+  <p class="post-card-description">{post.data.description}</p>
+  <a class="card-link" href={href} aria-label={lang === "en" ? `Read ${post.data.title}` : `${post.data.title} 읽기`}>
+    <span>{lang === "en" ? "Read article" : "글 읽기"}</span><span aria-hidden="true">→</span>
+  </a>
+</article>

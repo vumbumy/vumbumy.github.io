@@ -15,6 +15,7 @@ interface Props {
   alternateEn?: URL;
   image?: URL;
   imageAlt?: string;
+  breadcrumbs?: Array<{ name: string; url: URL }>;
 }
 
 const {
@@ -30,6 +31,7 @@ const {
   alternateEn,
   image,
   imageAlt,
+  breadcrumbs = [],
 } = Astro.props;
 const currentSite = lang === "en" ? SITE_EN : SITE;
 const defaultTitle = lang === "en" ? SITE_EN.title : SITE.title;
@@ -43,7 +45,7 @@ const resolvedImage = image ?? new URL(`${home}og-default.png`, Astro.site);
 const resolvedImageAlt = imageAlt ?? currentSite.imageAlt;
 const canonicalUrl = canonical.href;
 const siteHome = new URL(lang === "en" ? `${home}en/` : home, Astro.site).href;
-const jsonLd = type === "article"
+const pageJsonLd = type === "article"
   ? {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
@@ -52,8 +54,8 @@ const jsonLd = type === "article"
       image: resolvedImage.href,
       datePublished: published?.toISOString(),
       dateModified: (updated || published)?.toISOString(),
-      author: { "@type": "Person", name: currentSite.author },
-      publisher: { "@type": "Person", name: currentSite.author },
+      author: { "@type": "Person", name: currentSite.author, url: currentSite.profileUrl, sameAs: [currentSite.linkedInUrl] },
+      publisher: { "@type": "Person", name: currentSite.author, url: currentSite.profileUrl },
       mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
       isPartOf: { "@type": "Blog", name: currentSite.title, url: siteHome },
       url: canonicalUrl,
@@ -67,15 +69,38 @@ const jsonLd = type === "article"
       description: currentSite.description,
       url: canonicalUrl,
       image: resolvedImage.href,
-      author: { "@type": "Person", name: currentSite.author },
+      author: { "@type": "Person", name: currentSite.author, url: currentSite.profileUrl, sameAs: [currentSite.linkedInUrl] },
       inLanguage: currentSite.language,
     };
+const jsonLd = breadcrumbs.length
+  ? {
+      "@context": "https://schema.org",
+      "@graph": [
+        { ...pageJsonLd, "@context": undefined },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumbs.map((item, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: item.name,
+            item: item.url.href,
+          })),
+        },
+      ],
+    }
+  : pageJsonLd;
 ---
 
 <!doctype html>
 <html lang={currentSite.language}>
   <head>
     <meta charset="UTF-8" />
+    <script is:inline>
+      (() => {
+        const saved = localStorage.getItem("theme");
+        if (saved === "dark" || saved === "light") document.documentElement.dataset.theme = saved;
+      })();
+    </script>
     <meta name="viewport" content="width=device-width" />
     <title>{fullTitle}</title>
     <meta name="description" content={resolvedDescription} />
@@ -124,12 +149,14 @@ const jsonLd = type === "article"
         </a>
         <nav aria-label={lang === "en" ? "Primary navigation" : "주요 메뉴"}>
           <a href={lang === "en" ? `${home}en/` : home}>{lang === "en" ? "Posts" : "글"}</a>
+          <a href={lang === "en" ? `${home}en/archive/` : `${home}archive/`}>{lang === "en" ? "Archive" : "아카이브"}</a>
           <a href={lang === "en" ? `${home}en/about/` : `${home}about/`}>{lang === "en" ? "About" : "소개"}</a>
+          <a class="service-link" href={currentSite.profileUrl}>{lang === "en" ? "My services" : "만든 서비스"}<span aria-hidden="true">↗</span></a>
           <span class="language-toggle" aria-label={lang === "en" ? "Language" : "언어"}>
             <a class:list={{ active: lang === "ko" }} href={alternateKo?.pathname ?? home} hreflang="ko">KO</a>
             <a class:list={{ active: lang === "en" }} href={alternateEn?.pathname ?? `${home}en/`} hreflang="en">EN</a>
           </span>
-          <button class="theme-toggle" type="button" aria-label={lang === "en" ? "Change color theme" : "색상 테마 전환"}>
+          <button class="theme-toggle" type="button" aria-label={lang === "en" ? "Change color theme" : "색상 테마 전환"} aria-pressed="false">
             <span class="theme-icon" aria-hidden="true"></span>
           </button>
         </nav>
@@ -143,13 +170,16 @@ const jsonLd = type === "article"
     <script is:inline>
       (() => {
         const root = document.documentElement;
-        const saved = localStorage.getItem("theme");
-        if (saved === "dark" || saved === "light") root.dataset.theme = saved;
-        document.querySelector(".theme-toggle")?.addEventListener("click", () => {
+        const button = document.querySelector(".theme-toggle");
+        const currentTheme = () => root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const syncButton = () => button?.setAttribute("aria-pressed", String(currentTheme() === "dark"));
+        syncButton();
+        button?.addEventListener("click", () => {
           const current = root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
           const next = current === "dark" ? "light" : "dark";
           root.dataset.theme = next;
           localStorage.setItem("theme", next);
+          syncButton();
         });
       })();
     </script>

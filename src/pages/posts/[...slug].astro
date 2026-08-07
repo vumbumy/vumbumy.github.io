@@ -2,6 +2,8 @@
 import type { GetStaticPaths } from "astro";
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import { adjacentPosts, relatedPosts, sortPosts, tagSlug } from "../../lib/posts";
 
 export const getStaticPaths = (async () => {
   const posts = await getCollection("posts", ({ data }) => !data.draft);
@@ -17,6 +19,10 @@ const decisionSummary = [
   ["결과", post.data.outcome],
 ].filter(([, value]) => value);
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const allPosts = sortPosts(await getCollection("posts", ({ data }) => !data.draft));
+const related = relatedPosts(post, allPosts);
+const { previous, next } = adjacentPosts(post, allPosts);
+const imageUrl = new URL(`${base}og/ko/${post.id}.png`, Astro.site);
 ---
 
 <BaseLayout
@@ -27,12 +33,19 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
   updated={post.data.updated}
   tags={post.data.tags}
   type="article"
+  image={imageUrl}
+  imageAlt={`${post.data.title} 공유 이미지`}
+  breadcrumbs={[
+    { name: "홈", url: new URL(base, Astro.site) },
+    { name: "글", url: new URL(`${base}archive/`, Astro.site) },
+    { name: post.data.title, url: Astro.url },
+  ]}
   alternateKo={new URL(`${base}posts/${post.id}/`, Astro.site)}
   alternateEn={new URL(`${base}en/posts/${post.data.translationSlug ?? post.id}/`, Astro.site)}
 >
   <article class="post">
     <header>
-      <p class="eyebrow">{post.data.tags.join(" · ")}</p>
+      <p class="eyebrow">{post.data.tags.map((tag, index) => <><a href={`${base}tags/${tagSlug(tag)}/`}>{tag}</a>{index < post.data.tags.length - 1 && <span>·</span>}</>)}</p>
       <h1>{post.data.title}</h1>
       <p class="lead">{post.data.description}</p>
       <p class="post-meta">
@@ -55,5 +68,16 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
       )}
       <div class="prose"><Content /></div>
     </div>
+    <aside class="service-cta">
+      <p class="eyebrow">MORE FROM HANBEOM</p>
+      <h2>문제를 푸는 방식이 담긴 서비스도 만들고 있습니다.</h2>
+      <p>제가 직접 만든 서비스와 프로젝트를 한곳에서 확인할 수 있습니다.</p>
+      <a href="https://vumy.kr/">만든 서비스 보기 <span aria-hidden="true">→</span></a>
+    </aside>
+    <nav class="post-pagination" aria-label="이전 글과 다음 글">
+      {previous ? <a href={`${base}posts/${previous.id}/`}><span>이전 글</span><strong>{previous.data.title}</strong></a> : <span></span>}
+      {next && <a class="next" href={`${base}posts/${next.id}/`}><span>다음 글</span><strong>{next.data.title}</strong></a>}
+    </nav>
+    {related.length > 0 && <section class="related-posts"><div class="section-title"><h2>관련 글</h2></div><div class="post-list compact-list">{related.map((item) => <PostCard post={item} href={`${base}posts/${item.id}/`} />)}</div></section>}
   </article>
 </BaseLayout>

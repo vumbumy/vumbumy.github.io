@@ -2,6 +2,8 @@
 import type { GetStaticPaths } from "astro";
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import PostCard from "../../../components/PostCard.astro";
+import { adjacentPosts, relatedPosts, sortPosts, tagSlug } from "../../../lib/posts";
 
 export const getStaticPaths = (async () => {
   const posts = await getCollection("postsEn", ({ data }) => !data.draft);
@@ -17,6 +19,10 @@ const decisionSummary = [
   ["OUTCOME", post.data.outcome],
 ].filter(([, value]) => value);
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const allPosts = sortPosts(await getCollection("postsEn", ({ data }) => !data.draft));
+const related = relatedPosts(post, allPosts);
+const { previous, next } = adjacentPosts(post, allPosts);
+const imageUrl = new URL(`${base}og/en/${post.id}.png`, Astro.site);
 ---
 
 <BaseLayout
@@ -28,12 +34,19 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
   updated={post.data.updated}
   tags={post.data.tags}
   type="article"
+  image={imageUrl}
+  imageAlt={`${post.data.title} social sharing image`}
+  breadcrumbs={[
+    { name: "Home", url: new URL(`${base}en/`, Astro.site) },
+    { name: "Posts", url: new URL(`${base}en/archive/`, Astro.site) },
+    { name: post.data.title, url: Astro.url },
+  ]}
   alternateKo={new URL(`${base}posts/${post.data.translationSlug ?? post.id}/`, Astro.site)}
   alternateEn={new URL(`${base}en/posts/${post.id}/`, Astro.site)}
 >
   <article class="post">
     <header>
-      <p class="eyebrow">{post.data.tags.join(" · ")}</p>
+      <p class="eyebrow">{post.data.tags.map((tag, index) => <><a href={`${base}en/tags/${tagSlug(tag)}/`}>{tag}</a>{index < post.data.tags.length - 1 && <span>·</span>}</>)}</p>
       <h1>{post.data.title}</h1>
       <p class="lead">{post.data.description}</p>
       <p class="post-meta">
@@ -56,5 +69,16 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
       )}
       <div class="prose"><Content /></div>
     </div>
+    <aside class="service-cta">
+      <p class="eyebrow">MORE FROM HANBEOM</p>
+      <h2>I also build services based on how I solve problems.</h2>
+      <p>See the services and projects that I made.</p>
+      <a href="https://vumy.kr/">See my services <span aria-hidden="true">→</span></a>
+    </aside>
+    <nav class="post-pagination" aria-label="Previous and next posts">
+      {previous ? <a href={`${base}en/posts/${previous.id}/`}><span>Previous</span><strong>{previous.data.title}</strong></a> : <span></span>}
+      {next && <a class="next" href={`${base}en/posts/${next.id}/`}><span>Next</span><strong>{next.data.title}</strong></a>}
+    </nav>
+    {related.length > 0 && <section class="related-posts"><div class="section-title"><h2>Related posts</h2></div><div class="post-list compact-list">{related.map((item) => <PostCard post={item} href={`${base}en/posts/${item.id}/`} lang="en" />)}</div></section>}
   </article>
 </BaseLayout>
