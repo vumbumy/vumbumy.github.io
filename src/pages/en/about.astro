@@ -3,34 +3,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout lang="en" title="About" description="Hanbeom's notes on solving problems across technology and teams." alternateKo={new URL("/about/", Astro.site)} alternateEn={new URL("/en/about/", Astro.site)}>
-  <article class="about-page">
-    <header class="about-hero">
-      <p class="eyebrow"><span></span>ABOUT THIS BLOG</p>
-      <h1>I write about the path to a solution.</h1>
-      <p>I look back at how I find and solve problems across technology, systems, and teams.</p>
-    </header>
-
-    <section class="about-principles" aria-label="What this blog records">
-      <article><span>01</span><h2>Define the real problem</h2><p>I separate the real problem and limits from the first request.</p></article>
-      <article><span>02</span><h2>Explain each choice</h2><p>I show the options I had and why I chose one of them.</p></article>
-      <article><span>03</span><h2>Review the result</h2><p>I write about good results, surprises, and what I would change next time.</p></article>
-    </section>
-
-    <section class="about-section about-process">
-      <div><p class="eyebrow">PUBLISHING PROCESS</p><h2>From work notes to a public review</h2></div>
-      <ol>
-        <li><span>1</span><div><strong>Rough work notes</strong><p>I write short notes about the problem and my choices.</p></div></li>
-        <li><span>2</span><div><strong>AI helps with structure</strong><p>AI puts the problem, choice, action, and result in a clear order.</p></div></li>
-        <li><span>3</span><div><strong>Private details are removed</strong><p>I remove names, internal links, security details, and other private facts.</p></div></li>
-        <li><span>4</span><div><strong>Published at 1 p.m. KST</strong><p>A Korean post and a simple English post go online each day.</p></div></li>
-      </ol>
-    </section>
-
-    <section class="about-section about-boundary">
-      <div><p class="eyebrow">PUBLIC, NOT PRIVATE</p><h2>I share the lesson, not company secrets.</h2></div>
-      <div class="about-copy"><p>I change or remove private work details before a post goes online. I do not share names, internal links or IP addresses, contracts, or security details.</p><p>The goal is not to report an event. It is to keep a way of thinking that can help with another problem.</p></div>
-    </section>
-
-    <aside class="service-cta about-cta"><p class="eyebrow">FROM NOTES TO PRODUCTS</p><h2>You can also see how this way of solving problems becomes a real service.</h2><p>My services and projects are in one place.</p><a href="https://vumy.kr/">See my services <span aria-hidden="true">→</span></a></aside>
+  <article class="post">
+    <header><p class="eyebrow">ABOUT</p><h1>Looking back at how I find and solve problems.</h1></header>
+    <div class="prose">
+      <p>I write about problems that involve technology, systems, and teams. I look at the real problem, the limits I faced, the choices I had, and what I did next.</p>
+      <p>This is not only a list of success stories. I also write about unexpected results and what I would change next time.</p>
+      <p>Each post starts with rough notes from my workday. AI helps me turn them into a daily review. A new post is published every day at 1 p.m. Korea Standard Time.</p>
+      <p>Before a post goes live, I remove private work details. I do not share company or customer names, internal addresses, security details, contracts, or personal information.</p>
+      <p>You can also see <a href="https://vumy.kr/">the services I built</a> from this way of solving problems.</p>
+    </div>
   </article>
 </BaseLayout>
