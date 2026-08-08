@@ -74,15 +74,14 @@ const textLines = (lines, { x, y, lineHeight, className }) => lines
 async function renderCard({ output, title, subtitle, lang = "ko", footer = "ENGINEERING NOTE" }) {
   const titleUnits = [...title].reduce((sum, char) => sum + charWidth(char), 0);
   const titleSize = lang === "ko"
-    ? (titleUnits <= 22 ? 100 : titleUnits <= 27 ? 88 : 80)
-    : (titleUnits <= 34 ? 88 : titleUnits <= 43 ? 76 : 68);
+    ? (titleUnits <= 22 ? 92 : titleUnits <= 27 ? 81 : 74)
+    : (titleUnits <= 34 ? 81 : titleUnits <= 43 ? 70 : 63);
   const titleLines = wrapText(title, 1040 / titleSize, lang === "ko" ? 2 : 3);
-  const subtitleX = lang === "ko" ? 282 : 330;
-  const subtitleLines = wrapText(subtitle, (1136 - subtitleX) / 49, 2);
+  const subtitleX = 64;
+  const subtitleLines = wrapText(subtitle, (1136 - subtitleX) / 44, 2);
   const titleY = titleLines.length === 1 ? 284 : titleLines.length === 2 ? 222 : 180;
   const titleLineHeight = Math.round(titleSize * 1.12);
   const subtitleY = 430;
-  const choiceLabel = lang === "ko" ? "핵심 선택" : "KEY CHOICE";
   const siteTitle = lang === "ko" ? "문제를 푸는 일" : "The Work of Solving Problems";
 
   const svg = `<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
@@ -91,9 +90,8 @@ async function renderCard({ output, title, subtitle, lang = "ko", footer = "ENGI
         text { font-family: "Noto Sans KR", sans-serif; }
         .brand { fill: ${COLORS.ink}; font-size: 33px; font-weight: 850; letter-spacing: .5px; }
         .title { fill: ${COLORS.ink}; font-size: ${titleSize}px; font-weight: 900; letter-spacing: -1.2px; }
-        .subtitle { fill: ${COLORS.muted}; font-size: 49px; font-weight: 720; letter-spacing: .6px; }
-        .choice { fill: ${COLORS.violet}; font-size: 43px; font-weight: 850; letter-spacing: .5px; }
-        .footer { fill: ${COLORS.footer}; font-size: 27px; font-weight: 800; letter-spacing: 2px; }
+        .subtitle { fill: ${COLORS.muted}; font-size: 44px; font-weight: 720; letter-spacing: .6px; }
+        .footer { fill: ${COLORS.footer}; font-size: 28px; font-weight: 800; letter-spacing: 2px; }
         .domain { fill: ${COLORS.violet}; }
       </style>
     </defs>
@@ -103,7 +101,6 @@ async function renderCard({ output, title, subtitle, lang = "ko", footer = "ENGI
     <rect x="72" y="58" width="30" height="30" rx="10" fill="${COLORS.violetSoft}"/>
     <text x="118" y="80" class="brand">${escapeXml(siteTitle)}</text>
     ${textLines(titleLines, { x: 64, y: titleY, lineHeight: titleLineHeight, className: "title" })}
-    <text x="64" y="${subtitleY}" class="choice">${choiceLabel}</text>
     ${textLines(subtitleLines, { x: subtitleX, y: subtitleY, lineHeight: 58, className: "subtitle" })}
     <line x1="64" y1="542" x2="1136" y2="542" stroke="${COLORS.line}" stroke-width="2"/>
     <text x="64" y="590" class="footer">${escapeXml(footer)}</text>
