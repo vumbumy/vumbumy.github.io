@@ -45,6 +45,9 @@ const resolvedImage = image ?? new URL(`${home}${lang === "en" ? "og-default-en.
 const resolvedImageAlt = imageAlt ?? currentSite.imageAlt;
 const canonicalUrl = canonical.href;
 const siteHome = new URL(lang === "en" ? `${home}en/` : home, Astro.site).href;
+const configuredGaId = (import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? "").trim();
+const gaMeasurementId = /^G-[A-Z0-9]+$/.test(configuredGaId) ? configuredGaId : "";
+const googleSiteVerification = (import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION ?? "").trim();
 const pageJsonLd = type === "article"
   ? {
       "@context": "https://schema.org",
@@ -105,6 +108,7 @@ const jsonLd = breadcrumbs.length
     <title>{fullTitle}</title>
     <meta name="description" content={resolvedDescription} />
     <meta name="author" content={currentSite.author} />
+    {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="theme-color" content="#f4f7fb" />
@@ -137,6 +141,13 @@ const jsonLd = breadcrumbs.length
     {type === "article" && <meta property="article:author" content={currentSite.author} />}
     {tags.map((tag) => <meta property="article:tag" content={tag} />)}
     <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    {gaMeasurementId && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}></script>}
+    {gaMeasurementId && (
+      <script
+        is:inline
+        set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${gaMeasurementId}',{send_page_view:true});`}
+      />
+    )}
   </head>
   <body>
     <div class="ambient ambient-one" aria-hidden="true"></div>
@@ -183,5 +194,23 @@ const jsonLd = breadcrumbs.length
         });
       })();
     </script>
+    {gaMeasurementId && (
+      <script is:inline>
+        (() => {
+          document.addEventListener("click", (event) => {
+            const link = event.target instanceof Element ? event.target.closest("a") : null;
+            if (!link) return;
+            const url = new URL(link.href, location.href);
+            if (url.hostname !== "vumy.kr" && url.hostname !== "www.vumy.kr") return;
+            if (typeof window.gtag !== "function") return;
+            window.gtag("event", "service_link_click", {
+              link_url: url.href,
+              link_text: link.textContent?.trim() || "",
+              source_path: location.pathname,
+            });
+          });
+        })();
+      </script>
+    )}
   </body>
 </html>
