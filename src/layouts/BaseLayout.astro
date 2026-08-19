@@ -162,7 +162,7 @@ const jsonLd = breadcrumbs.length
           <a href={lang === "en" ? `${home}en/` : home}>{lang === "en" ? "Posts" : "글"}</a>
           <a href={lang === "en" ? `${home}en/archive/` : `${home}archive/`}>{lang === "en" ? "Archive" : "아카이브"}</a>
           <a href={lang === "en" ? `${home}en/about/` : `${home}about/`}>{lang === "en" ? "About" : "소개"}</a>
-          <a class="service-link" href={currentSite.profileUrl}>{lang === "en" ? "My services" : "만든 서비스"}<span aria-hidden="true">↗</span></a>
+          <a class="service-link" href={currentSite.profileUrl}>{lang === "en" ? "Profile · Projects" : "프로필·프로젝트"}<span aria-hidden="true">↗</span></a>
           <span class="language-toggle" aria-label={lang === "en" ? "Language" : "언어"}>
             <a class:list={{ active: lang === "ko" }} href={alternateKo?.pathname ?? home} hreflang="ko">KO</a>
             <a class:list={{ active: lang === "en" }} href={alternateEn?.pathname ?? `${home}en/`} hreflang="en">EN</a>
