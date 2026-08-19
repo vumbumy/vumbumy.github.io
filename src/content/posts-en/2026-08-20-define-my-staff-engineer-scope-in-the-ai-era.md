@@ -1,8 +1,8 @@
 ---
 title: "My Role and Goals in the AI Era"
-description: "A Stripe Staff Engineer article helped me review my recent work and define my role and goals in the AI era."
+description: "An article about engineering work at Stripe helped me review my recent work and goals in the AI era."
 published: 2026-08-20
-tags: [Staff Engineer, AI, technical-leadership]
+tags: [engineering, AI, technical-leadership]
 problem: "I needed to define my role between direct building and wider technical responsibility in a faster AI work environment."
 decision: "I set four parts of my role: building, problem framing, helping others, and quality checks."
 outcome: "I defined four parts of my current role and set goals that do not depend on doing everything alone."

@@ -1,6 +1,6 @@
 export const SITE = {
   title: "문제를 푸는 일",
-  description: "스태프 엔지니어로 일하며 기술과 조직에 걸친 문제를 정의하고, 선택지를 검토하고, 해결해 나간 과정을 기록합니다.",
+  description: "기술과 조직에 걸친 문제를 어떻게 정의하고, 선택지를 검토하고, 해결해 나갔는지 기록합니다.",
   author: "Hanbeom",
   locale: "ko_KR",
   language: "ko",
