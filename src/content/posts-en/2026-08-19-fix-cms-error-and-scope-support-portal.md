@@ -1,46 +1,61 @@
 ---
-title: "How I Fixed a CMS Error and Scoped a 30-Sheet Portal Request"
-description: "Two real cases show how I found a CMS data problem and turned an unclear portal request into work that teams could review."
+title: "Before Changing Code, I Made the Decision Clear"
+description: "I restored a broken CMS data rule and turned a 30-sheet portal request into clear choices about scope and ownership."
 published: 2026-08-19
-tags: [Problem Solving, Incident Response, Requirement Analysis]
-problem: "I needed to fix a CMS upload failure and define a support portal request with no clear scope or owner."
-decision: "I repaired the missing CMS data with SQL and reviewed 30 sheets before asking teams to decide the portal scope and owner."
-outcome: "CMS uploads worked again, and the portal request gained a clear menu structure, feature boundary, and decision material."
+tags: [Staff Engineering, Incident Response, Decision Making]
+problem: "One problem needed a fast service recovery. The other had no clear scope or owner."
+decision: "I checked the CMS data rule before changing code. For the portal, I reviewed 30 tabs before asking teams to choose the scope and owner."
+outcome: "The CMS recovered with a small change. The portal gained seven targets, an owner, and a phased launch plan."
 draft: false
 ---
 
-I recently handled two very different problems. One was a live CMS error that blocked every image upload. The other was a request to move support work from 30 spreadsheet tabs into one portal.
+A staff engineer does not only solve hard technical problems. The work also includes unclear decisions. This happens when no one knows if code or data is broken. It also happens when many teams cannot agree on scope and ownership.
 
-The first problem needed a quick recovery. The second had no clear scope or owner. In both cases, I checked the structure of the problem before changing code or starting more meetings.
+I faced both types of problems recently. In a CMS incident, I found a required system rule and made a small repair. In a support portal project, I changed unclear work into material that teams could review and decide on.
 
-## The problem I owned
+## Case 1. CMS 500 error: Find the broken rule
 
-The CMS returned a 500 error whenever an editor uploaded an image. New content could not be published without images. The operations team could not continue its normal work.
+The live CMS returned a 500 error for every image upload. Editors could not publish new content. The operations team needed a fast recovery.
 
-The portal request was less urgent but more unclear. Support work was spread across 30 tabs. No one had decided which work should move into the portal. The team also needed to decide which features belonged in the main customer system and which needed a small separate tool.
+It was easy to suspect the upload code or a recent release. However, a quick code change could hide the real problem. I first checked the data structure that Wagtail needs for image storage.
 
-## Facts and limits I checked
+Wagtail needs a top-level Collection node. This root record was missing after a database migration. The application code was working. A required part of the data structure was missing.
 
-It was easy to suspect the image upload code. I checked how Wagtail stores images first. Wagtail needs a top-level Collection node for this process. That root record was missing after a database migration. The application code was working, but the data structure was incomplete.
+### Choose the smallest recovery path
 
-For the portal, the request document was not enough. I opened all 30 tabs and grouped the work. I separated repeated work, work that software could automate, and work that still needed human judgement. This gave us facts for discussing the system boundary.
+There were two choices. I could add special code and deploy it. I could also restore the missing data. The cause was clear, so I did not change the application.
 
-## The choice I made
+I restored the root Collection record with SQL. I then checked image uploads again. This kept the change small and avoided a new application release.
 
-I did not change and redeploy the CMS code. Only the missing data needed repair. I chose an urgent SQL patch to restore the root Collection record because it was the shortest safe recovery path.
+After recovery, I added root Collection creation to the database setup process. The incident showed a rule that the system must always keep. The setup process now includes that rule.
 
-For the portal, I did not ask teams to choose an owner first. It was hard to choose an owner while the work was still unclear. I chose to turn the sheet review into features and menu groups before asking for an ownership decision.
+## Case 2. A 30-sheet portal request: Prepare the decision first
 
-## What I actually did
+The second problem was a request for an internal support portal. Work was spread across 30 spreadsheet tabs. The request also included data links, customer data, login, and access control. No one had chosen the development team.
 
-I repaired the missing root Collection record in the CMS database. I then checked that image uploads worked again without an application change. I also added root Collection creation to the database setup process to prevent the same issue.
+Choosing an owner first would not solve the problem. Each team could imagine a different product. I needed to make the work clear before asking for a team decision.
 
-For the portal, I changed the 30-tab list into menu groups and feature boundaries. The result showed which features could stay in the main system and which could use a smaller tool. I gave this material to the decision makers and asked them to decide the owner and direction.
+### Change work data into system boundaries
 
-## Confirmed results and remaining work
+I opened all 30 tabs. I removed copies, old versions, and repeated items. I grouped work that could be automated and work that still needed human judgement. This reduced the real migration targets to seven.
 
-Image uploads and content publishing worked again in the CMS. We confirmed that the migration had missed required data. The database setup process was also updated.
+I then changed the list into menu groups and features. The result showed which parts belonged in the main customer system. It also showed which parts could stay in a smaller tool. Existing services were included in the review.
 
-The portal request became a structure that people could review by menu and feature. There was now enough material to discuss scope and ownership. Building the portal and moving each part of the work were still future tasks.
+I used this material to ask two clear questions. Which team should own development? Should we build one full system now, or start with a smaller first launch?
 
-I did not create a new general method from these cases. I checked whether code or data was broken in the incident. For the portal, I made the work visible before asking for an owner. These checks made the next action clear in each case.
+The business team took ownership. For the first launch, existing services would be linked from one place. Full integration would happen later. The decision was possible because the scope and choices were visible.
+
+## The output was more than a fix
+
+| Area | CMS incident | Support portal |
+| --- | --- | --- |
+| First view | Image upload returned 500 | Move 30 sheets to the web |
+| What I checked | A required Wagtail data rule | Real work and feature boundaries |
+| Action | Restore the missing root data with SQL | Prepare menus, features, and launch choices |
+| Result | Service recovery and a better setup process | Seven targets, one owner, and a first launch plan |
+
+In the CMS case, I reduced technical uncertainty. In the portal case, I reduced uncertainty between teams. The tools were different because the problems were different.
+
+I do not want to turn two cases into a general method. I can only describe what I did. I did not accept the first symptom or request as the full problem. I checked the facts that blocked the next decision. I chose a small next step. I also left an output that other people could use later.
+
+For me, this is an important part of staff engineering. The goal is not to solve more problems alone. The goal is to help technical systems and teams make better decisions.
