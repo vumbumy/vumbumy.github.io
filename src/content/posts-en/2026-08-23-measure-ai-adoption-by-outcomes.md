@@ -1,9 +1,9 @@
 ---
-title: "Why I Tracked AI Use Separately from Performance"
-description: "I kept AI use as evidence for cost planning, without treating it as performance. I also separated automatic totals from human decisions."
+title: "How I Rebuilt the Rules for Tracking AI Use"
+description: "I aligned metrics and logs that covered different areas. I then set tracking rules for budget and seat planning, with clear limits for automation."
 published: 2026-08-23
 tags: [Problem Solving, AI Operations, Cost Management]
-problem: "I needed evidence for budget and seat planning without treating AI use as work performance."
+problem: "Metrics and logs covered different areas. I needed one tracking method that could support budget and seat planning."
 decision: "I limited usage data to spending and cost decisions. I automated totals and advice, but left operating changes to people."
 outcome: "I defined repeatable tracking rules and automation limits. Building the automation and setting seat and usage limits are still unfinished."
 draft: false
