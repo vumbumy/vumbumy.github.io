@@ -28,9 +28,10 @@ SEO 기본 구성에는 언어별 canonical과 hreflang, Open Graph, Twitter Car
 
 ## 검색·유입 분석
 
-GitHub 저장소의 `Settings → Secrets and variables → Actions → Variables`에 다음 값을 등록하면 빌드 시 분석 기능이 활성화됩니다.
+GA4 측정 ID `G-W51HH4TWYK`를 전체 페이지에 직접 연결했습니다. 기본 페이지 조회와 함께 `vumy.kr` 링크 클릭을 `service_link_click` 이벤트로 기록합니다. Google Tag Manager는 설치하지 않아 페이지 조회가 중복 집계되지 않습니다.
 
-- `GA_MEASUREMENT_ID`: GA4 웹 데이터 스트림의 측정 ID (`G-`로 시작)
+Search Console 인증은 GitHub 저장소의 `Settings → Secrets and variables → Actions → Variables`에 다음 값을 등록하면 빌드 시 활성화됩니다.
+
 - `GOOGLE_SITE_VERIFICATION`: Search Console에서 제공한 HTML 메타태그의 `content` 값
 
-값이 없으면 관련 메타태그와 스크립트는 생성되지 않습니다. GA4가 활성화되면 기본 페이지 조회와 함께 `vumy.kr` 링크 클릭을 `service_link_click` 이벤트로 기록합니다. Search Console에는 `https://blog.vumy.kr/sitemap-index.xml`을 제출합니다.
+Search Console에는 `https://blog.vumy.kr/sitemap-index.xml`을 제출합니다.

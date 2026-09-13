@@ -45,8 +45,7 @@ const resolvedImage = image ?? new URL(`${home}${lang === "en" ? "og-default-en.
 const resolvedImageAlt = imageAlt ?? currentSite.imageAlt;
 const canonicalUrl = canonical.href;
 const siteHome = new URL(lang === "en" ? `${home}en/` : home, Astro.site).href;
-const configuredGaId = (import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? "").trim();
-const gaMeasurementId = /^G-[A-Z0-9]+$/.test(configuredGaId) ? configuredGaId : "";
+const gaMeasurementId = "G-W51HH4TWYK";
 const googleSiteVerification = (import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION ?? "").trim();
 const pageJsonLd = type === "article"
   ? {
@@ -202,12 +201,15 @@ const jsonLd = breadcrumbs.length
             if (!link) return;
             const url = new URL(link.href, location.href);
             if (url.hostname !== "vumy.kr" && url.hostname !== "www.vumy.kr") return;
-            if (typeof window.gtag !== "function") return;
-            window.gtag("event", "service_link_click", {
+            const eventData = {
+              event: "service_link_click",
               link_url: url.href,
               link_text: link.textContent?.trim() || "",
               source_path: location.pathname,
-            });
+            };
+            if (typeof window.gtag === "function") {
+              window.gtag("event", "service_link_click", eventData);
+            }
           });
         })();
       </script>
