@@ -9,30 +9,30 @@ outcome: "I recalculated the estimate. The final schedule and the actual launch 
 draft: false
 ---
 
-While estimating a project, I looked at work from earlier projects. We had used AI to build screens quickly. I thought the time spent on each screen might help me make a better estimate for the next project.
+While estimating a project, I looked at an earlier project built quickly with AI. It had produced many screens and APIs in a short time. I thought that pace might help estimate another project of a similar size. But this time, I needed to estimate the time to live use, including the work after building screens.
 
-But the project histories were hard to compare. One project was adding new features. Another had already moved into live use. Their screen counts covered different kinds of work. I had to check what each count meant.
+I compared the fast development record with a project that had already launched. The same number of screens could describe different amounts of completed work.
 
-## I separated commit dates from full workdays
+## How much of the fast development record could I use?
 
-For one project, I counted active dates, screens, APIs, and database tables from the Git history. An active date meant a date with a commit. People also worked on other tasks. It did not mean a full day spent on this project.
+First, I counted active dates, screens, APIs, and tables from the Git history. This showed the pace of feature development. However, an active date was a date with a commit. People also worked on other tasks, so it did not prove a full day of work on this project.
 
-The screen, API, and table rates also used the same active dates. Adding these rates as separate amounts of work would count the same time more than once. Before using the numbers, I needed to explain what they measured.
+The screen, API, and table rates used those same dates. Adding them as separate amounts of work would count the same time more than once. I needed to check what each number measured before using it.
 
-For another project, I checked the time from development to launch. I also checked changes made after launch. This covered more work than the first project's fast feature creation.
+The larger limit was completion. There were records of starting external connections, but none had confirmed completion. Rapid growth in screens and server code did not prove that real identity checks or payments worked.
 
-## I counted screens and working external connections separately
+## I compared it with a project already in live use
 
-The project with fast feature growth had started external connections, but their actual completion was not confirmed. Having screens and server code did not prove that real identity checks or payments worked from start to finish.
+I checked another project's development history. It had launched and included changes made after customers began using its screens. I had been comparing the pace of adding features with the pace of changing a live service.
 
-The project already in live use included changes made after customers began using its screens. Comparing only the first version would miss this work. The difference in screen rates did not, by itself, show a difference in developer or tool performance.
+I did not read the difference as a simple difference in developer or AI tool performance. I used the fast admin screen record for admin screens. For changes to customer flows, I used the project that had reached live use.
 
-I therefore looked at admin screens and changes to customer flows separately. For external connections, I used separate records and outside procedures. I did not estimate them from screen counts.
+I treated external connections separately. Even the fast project had no confirmed completion for those connections. Screen counts could not support a shorter estimate for that work. I needed records of earlier connection work and the outside procedures involved.
 
-## I recalculated the estimate with different kinds of work
+## I changed the basis of the full estimate
 
-First, I applied the fast development record to a screen-based estimate. Then I used work from the live project for customer screens. I added external connections, shared setup, testing, and data migration separately. The estimated range changed depending on which project record I used.
+At first, I applied the fast development record to a screen-based estimate. Then I used separate records for admin and customer screens. I added external connections, shared setup, testing, and data migration. Including work from the live project increased the estimated workload compared with using only the fast screen rate.
 
-The confirmed result is a revised estimate with clearer evidence. A final schedule has not been agreed through this analysis, and the new project has not completed its launch. Some external connection and launch conditions still need checking.
+The result was a clearer basis for the full estimate. I could separate screen development speed from the work still needed for launch. Agreement on the final schedule and checks on external connection conditions remain open.
 
-Fast screen development with AI was useful evidence. But it described screen development. To estimate the time needed for live use, I also had to include work that was still unfinished and changes that appeared after launch.
+For future estimates, I will avoid using AI feature counts alone to shorten the full schedule. Development records can support estimates for that kind of work. Time for external connections and launch needs evidence from records where that work actually finished.
