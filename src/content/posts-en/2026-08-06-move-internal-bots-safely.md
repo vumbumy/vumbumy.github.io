@@ -2,7 +2,7 @@
 title: "Setting Safe Limits Before Moving Internal Bots to the Cloud"
 description: "How I chose network access and isolation when moving internal bots from a small office computer to the cloud."
 published: 2026-08-06
-tags: [ProblemSolving, Cloud, Security, Operations]
+tags: [problem-solving, cloud, security, operations]
 problem: "Internal bots needed more stable hosting without more public access or direct human access."
 decision: "I used the existing cloud system with outgoing connections, central access control, and a separate network area."
 outcome: "The new plan keeps access records and separates the bots without adding a public entry point."

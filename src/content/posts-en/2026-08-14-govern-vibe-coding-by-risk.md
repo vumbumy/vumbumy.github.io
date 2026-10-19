@@ -2,7 +2,7 @@
 title: "Risk-Based Guardrails for Fast Vibe Coding"
 description: "A review of how platform support can change based on risks in data, access, and ownership, while keeping the speed of vibe coding."
 published: 2026-08-14
-tags: ["Problem Solving", "Platform Governance"]
+tags: [problem-solving, platform-governance]
 problem: "How can we manage sensitive data, access rights, and service ownership without controlling all vibe coding?"
 decision: "Separate migration targets by user-facing screens and data sensitivity. Apply platform guardrails and pre-release reviews to high-risk services."
 outcome: "The risk levels and migration order are set. Standard repositories, login links, and step-by-step migration still remain."

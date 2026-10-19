@@ -2,7 +2,7 @@
 title: "What We Found While Fixing Invisible Images"
 description: "A record of reviewing external image display as both a usability need and a visitor tracking risk, then moving to internal storage"
 published: 2026-08-09
-tags: [Problem Solving, Security, Content Operations]
+tags: [problem-solving, security, content-operations]
 problem: "External images had to appear again while reducing the risk of third parties tracking visitors."
 decision: "Instead of loading external images directly, I chose to copy them to internal storage and serve them from there."
 outcome: "I fixed lost existing images, external image display, and video preview and playback issues. A later request about table editing remains."

@@ -2,7 +2,7 @@
 title: "Turning an Unclear Request into a Clear Work Plan"
 description: "How I changed a general request into clear needs, a smaller scope, and a step-by-step release plan."
 published: 2026-08-06
-tags: [ProblemSolving, Requirements, ScopeManagement]
+tags: [problem-solving, requirements, scope-management]
 problem: "A team wanted to move manual work to a web service, but the real scope and finish point were unclear."
 decision: "I checked how the current work was used, reduced the scope, and split the quick first release from later work."
 outcome: "The team reduced the work to seven active areas and agreed on ownership and a step-by-step release."

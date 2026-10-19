@@ -2,7 +2,7 @@
 title: "How to Set the Scope of API Requests That May Overlap"
 description: "A review of how we agreed on the immediate scope and later expansion points when API requests from different groups might overlap."
 published: 2026-08-08
-tags: [Problem Solving, API Design, Scope Management]
+tags: [problem-solving, api-design, scope-management]
 problem: "We needed to avoid delay and duplicate work because the current request might overlap with an API another group was preparing."
 decision: "We decided to start the current request as planned, check possible overlap separately, and confirm the detailed scope with the people involved."
 outcome: "We set the direction for the first work, but the exact limits of added features and overlap still need discussion."

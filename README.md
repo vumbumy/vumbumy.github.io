@@ -11,6 +11,8 @@ npm run dev
 
 ## 글 작성
 
+글의 흐름·사실과 완료 상태·번역·수정·발행 절차는 [EDITORIAL.md](EDITORIAL.md)를 단일 기준으로 따른다.
+
 한국어 글은 `src/content/posts`, 같은 글의 영문판은 `src/content/posts-en`에 동일한 파일명으로 추가합니다. 영문판은 IELTS 5 수준의 평이한 어휘와 짧은 문장을 기준으로 작성합니다. 공개 전에는 반드시 `draft: true`를 유지하고, 민감정보 검토가 끝난 글만 `draft: false`로 바꿉니다.
 
 필수 공개 전 점검:

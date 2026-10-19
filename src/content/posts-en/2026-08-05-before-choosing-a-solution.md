@@ -2,7 +2,7 @@
 title: "What to Check Before Choosing a Solution"
 description: "Why I check the scope, owner, and safety rules before I compare solutions to a hard problem."
 published: 2026-08-05
-tags: [ProblemSolving, DecisionMaking]
+tags: [problem-solving, decision-making]
 problem: "People may suggest solutions before the scope and ownership of a problem are clear."
 decision: "Before I start, I write down who and what may be affected, who owns each part, and how I will check safety."
 outcome: "The team gets a clear basis for discussion, testing, and recovery if the change fails."

@@ -2,7 +2,7 @@
 title: "Turning One Support Request into a Guide for the Next Person"
 description: "How I changed one development setup fix into a simple guide that another person could use."
 published: 2026-08-07
-tags: [ProblemSolving, Onboarding]
+tags: [problem-solving, onboarding]
 problem: "If I only fix one person's setup problem, the next new team member may need the same help."
 decision: "I wrote a simple copy-and-paste guide so the next person could set up the tool with less help."
 outcome: "The first problem was fixed and a guide was made, but the next person has not tested it yet."

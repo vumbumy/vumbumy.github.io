@@ -2,7 +2,7 @@
 title: "Treating Verification as a Product"
 description: "To handle AI's output speed, automated checks and human approval should differ by risk level."
 published: 2026-08-13
-tags: [Problem Solving, AI Governance, Verification]
+tags: [problem-solving, ai-governance, verification]
 problem: "AI creates outputs faster than the organization can check their quality and purpose."
 decision: "Use automated checks for low-risk work. Add human approval and independent critical review as responsibility grows."
 outcome: "The risk levels and verification rules are defined. Their full use in real operations is not yet confirmed."

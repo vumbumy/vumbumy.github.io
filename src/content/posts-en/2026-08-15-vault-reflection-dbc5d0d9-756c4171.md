@@ -2,12 +2,15 @@
 title: "What Must Come Before a Real-Time Dashboard"
 description: "This article looks at system load and unclear metric definitions when combining data from several systems."
 published: 2026-08-15
-tags: [Problem Solving, System Design, Data Governance]
+updated: 2026-10-19
+tags: [problem-solving, system-design, data-governance]
 problem: "We needed a dashboard structure that would protect core systems and keep shared metrics consistent."
 decision: "The dashboard would read from a reporting data store instead of core systems. Metric definitions and ownership rules must be agreed first."
 outcome: "We chose a separate read path and listed the data to check. Metrics, access rights, and integration remain undecided."
 draft: false
 ---
+
+> This article and the [related record](/en/posts/2026-08-24-vault-reflection-f3363722-e8fc5f98/) cover the same dashboard review. This article focuses on the choice to protect the live system. The different publication dates do not mean more implementation or a completed connection.
 
 A request for an internal dashboard first looked like a simple move from a mockup to a live service. However, the mockup mixed values from different systems. These included support status, attendance, sales results, and team mapping.
 

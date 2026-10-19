@@ -2,9 +2,10 @@
 title: "How I Rebuilt the Rules for Tracking AI Use"
 description: "I aligned metrics and logs that covered different areas. I then set tracking rules for budget and seat planning, with clear limits for automation."
 published: 2026-08-23
-tags: [Problem Solving, AI Operations, Cost Management]
+updated: 2026-10-19
+tags: [problem-solving, ai-operations, cost-management]
 problem: "Metrics and logs covered different areas. I needed one tracking method that could support budget and seat planning."
-decision: "I limited usage data to spending and cost decisions. I automated totals and advice, but left operating changes to people."
+decision: "I limited usage data to spending and cost decisions. I chose totals and advice as automation targets, with operating changes left to people."
 outcome: "I defined repeatable tracking rules and automation limits. Building the automation and setting seat and usage limits are still unfinished."
 draft: false
 ---

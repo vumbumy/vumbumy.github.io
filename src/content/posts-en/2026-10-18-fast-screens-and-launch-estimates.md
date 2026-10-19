@@ -2,6 +2,7 @@
 title: "Screens Were Built Fast. Why Did the Launch Estimate Stay Long?"
 description: "I compared two project histories and revised an estimate by separating screen work, external connections, and changes after launch."
 published: 2026-10-18
+updated: 2026-10-19
 tags: [estimation, ai-development, launch]
 problem: "I needed to check whether fast screen development with AI could support the full estimate for another project."
 decision: "I separated screen work, external connections, and changes after launch, then used different evidence for each."
@@ -35,4 +36,3 @@ At first, I applied the fast development record to a screen-based estimate. Then
 
 The result was a clearer basis for the full estimate. I could separate screen development speed from the work still needed for launch. Agreement on the final schedule and checks on external connection conditions remain open.
 
-For future estimates, I will avoid using AI feature counts alone to shorten the full schedule. Development records can support estimates for that kind of work. Time for external connections and launch needs evidence from records where that work actually finished.

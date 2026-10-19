@@ -2,12 +2,15 @@
 title: "Why I Kept a Real-Time Dashboard Away from the Live System"
 description: "A record of choosing a data path that could provide live metrics to several teams without adding load to the live system"
 published: 2026-08-24
+updated: 2026-10-19
 tags: [problem-solving, data-design]
 problem: "I needed to provide customer management metrics to real-time dashboards without increasing load on the live system."
 decision: "I chose a data path where the dashboards read metrics from a reporting database instead of calling the live system."
 outcome: "I linked each metric to its data source and status value, then chose the reporting database path. Some metric definitions and access rights are still not confirmed."
 draft: false
 ---
+
+> This article and the [related record](/en/posts/2026-08-15-vault-reflection-dbc5d0d9-756c4171/) cover the same dashboard review. This article focuses on matching metrics to source data and status values. The different publication dates do not mean more implementation or a completed connection.
 
 Two real-time dashboard requests came in for an internal customer management system. One team wanted a combined view by group. Another team wanted live sales results. My task was not to build the screens. I needed to decide where to read the metrics and how to provide them.
 
