@@ -15,10 +15,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-12-shift-from-ai-factory-to-active-enablement.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-12-shift-from-ai-factory-to-active-enablement.ko.svg" alt="중앙 조직이 맡을 일의 변화. 이미 있는 것: 현업이 직접 만드는 AI 도구 → 선택한 역할: 서비스에 참여해 위험과 막힘 확인 → 남은 합의: 전담 조직·투자·성과 기준. 역할 방향의 정리 · 조직 운영 효과는 미검증" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-12-shift-from-ai-factory-to-active-enablement.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-12-shift-from-ai-factory-to-active-enablement.webp" alt="별도의 제작 설비보다 현업의 실제 작업에 참여해 막힘을 살피는 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>중앙 조직이 맡을 일의 변화 — 역할 방향의 정리 · 조직 운영 효과는 미검증</figcaption>
+  <figcaption>별도의 제작 설비보다 현업의 실제 작업에 참여해 막힘을 살피는 장면</figcaption>
 </figure>
 
 

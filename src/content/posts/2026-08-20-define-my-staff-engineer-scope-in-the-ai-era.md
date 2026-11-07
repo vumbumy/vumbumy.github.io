@@ -15,10 +15,10 @@ Stripe의 환경을 그대로 내 상황에 대입할 수는 없다. 다만 최�
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.ko.svg" alt="직접 실행과 조직 지원을 함께. 직접 구축: 제품을 만들고 운영 문제 해결 → 문제 구조화: 범위·선택·미정 사항을 명확하게 → 동료 지원과 검증: 지원·검토로 다른 사람의 실행 연결. 현재 역할 정리 · 혼자 더 많이 처리하는 것이 목표는 아님" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.webp" alt="직접 만들기와 문제 정리, 동료 지원과 검토를 함께 맡는 역할" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>직접 실행과 조직 지원을 함께 — 현재 역할 정리 · 혼자 더 많이 처리하는 것이 목표는 아님</figcaption>
+  <figcaption>직접 만들기와 문제 정리, 동료 지원과 검토를 함께 맡는 역할</figcaption>
 </figure>
 
 

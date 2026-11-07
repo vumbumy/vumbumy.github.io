@@ -15,10 +15,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-09-external-images-usability-security.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-09-external-images-usability-security.ko.svg" alt="외부 이미지의 제공 경로를 바꾸기. 기존 경로: 방문자가 외부 이미지를 직접 요청 → 선택한 방향: 이미지를 내부 저장소로 가져오기 → 제공 방식: 내부에서 방문자에게 이미지 제공. 선택한 제공 경로의 개념도 · 구현 상세는 생략" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-09-external-images-usability-security.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-09-external-images-usability-security.webp" alt="외부 그림을 내부에서 준비해 독자에게 제공하는 과정을 비유한 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>외부 이미지의 제공 경로를 바꾸기 — 선택한 제공 경로의 개념도 · 구현 상세는 생략</figcaption>
+  <figcaption>외부 그림을 내부에서 준비해 독자에게 제공하는 과정을 비유한 장면</figcaption>
 </figure>
 
 

@@ -15,10 +15,10 @@ For this work, I chose a small test target before changing the whole setup. The 
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-11-replace-a-public-ingress-path.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-11-replace-a-public-ingress-path.en.svg" alt="Checks before an ingress change. Small target: Choose a limited test service → Access path: Review network and firewall rules → Switch condition: Verify access before switching. Test target chosen; switch requires more checks" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-11-replace-a-public-ingress-path.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-11-replace-a-public-ingress-path.webp" alt="Inspecting a small test entrance while the existing path remains open" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Checks before an ingress change — Test target chosen; switch requires more checks</figcaption>
+  <figcaption>Inspecting a small test entrance while the existing path remains open</figcaption>
 </figure>
 
 

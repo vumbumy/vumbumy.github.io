@@ -15,10 +15,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-20-vault-reflection-b293cdfe-32517701.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-20-vault-reflection-b293cdfe-32517701.ko.svg" alt="개인 권한을 보관하는 배포를 멈추다. 앱의 의존성: 여러 사용자의 개인 계정 권한 → 운영 요구: 서버에서 권한을 계속 보관 → 배포 판단: 해당 기능을 제외하기 전에는 반려. 서버 배포 반려 완료 · 대안 적용은 미완료" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-20-vault-reflection-b293cdfe-32517701.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-20-vault-reflection-b293cdfe-32517701.webp" alt="여러 사람의 개인 열쇠를 보관해야 하는 도구의 설치를 멈추는 비유" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>개인 권한을 보관하는 배포를 멈추다 — 서버 배포 반려 완료 · 대안 적용은 미완료</figcaption>
+  <figcaption>여러 사람의 개인 열쇠를 보관해야 하는 도구의 설치를 멈추는 비유</figcaption>
 </figure>
 
 

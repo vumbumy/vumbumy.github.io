@@ -17,10 +17,10 @@ As the AX Builder team lead and a member of the CTO staff, I often face this kin
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-11-06-turn-team-tools-into-operated-services.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-11-06-turn-team-tools-into-operated-services.en.svg" alt="Separate data review from the live switch. Copy and review: Keep live work in the old system → Live switch: Stop edits; move data, intake, notices → Follow-up: Review old bots and pending links. Live switch complete; review and some links pending" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-11-06-turn-team-tools-into-operated-services.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-11-06-turn-team-tools-into-operated-services.webp" alt="Moving records and incoming work to a shared space while old dependencies remain" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Separate data review from the live switch — Live switch complete; review and some links pending</figcaption>
+  <figcaption>Moving records and incoming work to a shared space while old dependencies remain</figcaption>
 </figure>
 
 

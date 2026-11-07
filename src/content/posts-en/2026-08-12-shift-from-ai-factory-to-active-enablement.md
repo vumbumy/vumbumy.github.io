@@ -19,10 +19,10 @@ They could not easily find where data was stored. There was no place to check sa
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-12-shift-from-ai-factory-to-active-enablement.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-12-shift-from-ai-factory-to-active-enablement.en.svg" alt="A different role for the central team. Already happening: Business teams build with AI → Chosen role: Join the work and review risks → Open decisions: Team, investment, and measures. Role direction; operating impact not yet verified" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-12-shift-from-ai-factory-to-active-enablement.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-12-shift-from-ai-factory-to-active-enablement.webp" alt="Joining business teams already building tools to investigate a real blocker" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>A different role for the central team — Role direction; operating impact not yet verified</figcaption>
+  <figcaption>Joining business teams already building tools to investigate a real blocker</figcaption>
 </figure>
 
 

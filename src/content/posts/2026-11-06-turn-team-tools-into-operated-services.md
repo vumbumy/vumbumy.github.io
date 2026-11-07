@@ -17,10 +17,10 @@ AX 빌더 팀장이자 CTO Staff로 일하면서 이런 요청을 자주 마주�
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-11-06-turn-team-tools-into-operated-services.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-11-06-turn-team-tools-into-operated-services.ko.svg" alt="데이터 검수와 운영 전환을 나누기. 사전 이관·검수: 실제 업무 입력은 기존 시스템 → 최종 전환: 기존 수정 중단·데이터·접수·알림 → 후속 안정화: 기존 봇과 미완료 자동 연동 확인. 운영 전환 완료 · 후속 검수와 일부 연동은 진행 중" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-11-06-turn-team-tools-into-operated-services.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-11-06-turn-team-tools-into-operated-services.webp" alt="업무를 이어가며 자료와 접수 경로를 새 공간으로 옮기는 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>데이터 검수와 운영 전환을 나누기 — 운영 전환 완료 · 후속 검수와 일부 연동은 진행 중</figcaption>
+  <figcaption>업무를 이어가며 자료와 접수 경로를 새 공간으로 옮기는 장면</figcaption>
 </figure>
 
 

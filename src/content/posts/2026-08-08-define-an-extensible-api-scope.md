@@ -15,10 +15,10 @@ API 요청을 검토할 때 어려운 점은 구현 자체보다 범위를 어�
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-08-define-an-extensible-api-scope.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-08-define-an-extensible-api-scope.ko.svg" alt="착수와 중복 검토를 분리했다. 현재 요청: 변경 필요 여부 확인 → 진행 판단: 요청 범위는 착수하기로 결정 → 추가 논의: 겹치는 API와 확장 범위 확인. 진행 방향 결정 · 세부 경계는 추가 논의" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-08-define-an-extensible-api-scope.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-08-define-an-extensible-api-scope.webp" alt="서로 겹치는 연결 부품을 대조하며 현재 작업과 추가 논의를 나누는 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>착수와 중복 검토를 분리했다 — 진행 방향 결정 · 세부 경계는 추가 논의</figcaption>
+  <figcaption>서로 겹치는 연결 부품을 대조하며 현재 작업과 추가 논의를 나누는 장면</figcaption>
 </figure>
 
 

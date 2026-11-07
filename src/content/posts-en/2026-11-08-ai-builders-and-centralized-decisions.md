@@ -17,10 +17,10 @@ I support several teams as both the AX Builder team lead and a member of the CTO
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-11-08-ai-builders-and-centralized-decisions.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-11-08-ai-builders-and-centralized-decisions.en.svg" alt="Different questions need different responses. An existing answer: Make instructions easy to find → An action by an owner: Name who registers and approves → An open decision: Find the business decision owner. Types of support questions; wait-time impact unmeasured" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-11-08-ai-builders-and-centralized-decisions.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-11-08-ai-builders-and-centralized-decisions.webp" alt="People building with AI while decision requests gather at one review table" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Different questions need different responses — Types of support questions; wait-time impact unmeasured</figcaption>
+  <figcaption>People building with AI while decision requests gather at one review table</figcaption>
 </figure>
 
 

@@ -15,10 +15,10 @@ This time, I did not start by removing access. I first checked whether repositor
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-10-remove-deploy-access-after-automation.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-10-remove-deploy-access-after-automation.en.svg" alt="Before reducing deployment access. Alternative path: Move to repository-based releases → Verify: Confirm automated deployment works → Access review: Ready to reduce direct access. Automation verified; access removal not established" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-10-remove-deploy-access-after-automation.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-10-remove-deploy-access-after-automation.webp" alt="Checking an automated delivery path before reducing direct access" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Before reducing deployment access — Automation verified; access removal not established</figcaption>
+  <figcaption>Checking an automated delivery path before reducing direct access</figcaption>
 </figure>
 
 

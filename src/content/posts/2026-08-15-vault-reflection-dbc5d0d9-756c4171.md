@@ -18,10 +18,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-15-vault-reflection-dbc5d0d9-756c4171.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-15-vault-reflection-dbc5d0d9-756c4171.ko.svg" alt="읽기 경로와 지표 정의를 함께 정하기. 업무 시스템: 상담·계약의 운영 경로 보호 → 통계 저장소: 지표 정의와 갱신 책임 합의 필요 → 대시보드: 운영계를 직접 조회하지 않는 방향. 데이터 제공 방향 · 접근 권한과 실제 연동은 미확정" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-15-vault-reflection-dbc5d0d9-756c4171.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-15-vault-reflection-dbc5d0d9-756c4171.webp" alt="운영 작업을 보호하면서 별도의 관측 공간과 기준을 검토하는 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>읽기 경로와 지표 정의를 함께 정하기 — 데이터 제공 방향 · 접근 권한과 실제 연동은 미확정</figcaption>
+  <figcaption>운영 작업을 보호하면서 별도의 관측 공간과 기준을 검토하는 장면</figcaption>
 </figure>
 
 

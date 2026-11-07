@@ -17,10 +17,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-14-govern-vibe-coding-by-risk.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-14-govern-vibe-coding-by-risk.ko.svg" alt="위험에 따라 개입 수준을 나누기. 유형 확인: 시트 자동화인가, 접속형 화면인가 → 위험 확인: 민감 데이터와 읽기·쓰기 권한 → 전환 우선순위: 고위험 화면부터 표준 환경 검토. 위험 판정 기준 · 인증 연동과 이전은 남음" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-14-govern-vibe-coding-by-risk.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-14-govern-vibe-coding-by-risk.webp" alt="도구와 데이터의 위험에 맞춰 보호 수준을 논의하는 작업장" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>위험에 따라 개입 수준을 나누기 — 위험 판정 기준 · 인증 연동과 이전은 남음</figcaption>
+  <figcaption>도구와 데이터의 위험에 맞춰 보호 수준을 논의하는 작업장</figcaption>
 </figure>
 
 

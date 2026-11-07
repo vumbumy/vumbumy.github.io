@@ -17,10 +17,10 @@ AX 빌더 팀장과 CTO Staff를 겸하면서 여러 팀의 작업을 지원하�
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-11-08-ai-builders-and-centralized-decisions.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-11-08-ai-builders-and-centralized-decisions.ko.svg" alt="질문마다 다른 응답이 필요했다. 이미 있는 답: 절차와 예제로 찾기 쉽게 → 담당자의 실행: 등록·승인의 담당과 순서 명시 → 아직 없는 결정: 업무 기준을 정할 책임자와 논의. 지원 경험에서 나눈 질문 유형 · 대기 시간 감소는 미검증" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-11-08-ai-builders-and-centralized-decisions.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-11-08-ai-builders-and-centralized-decisions.webp" alt="각자 AI의 도움으로 만드는 사람들과 한 테이블에 몰린 결정 요청" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>질문마다 다른 응답이 필요했다 — 지원 경험에서 나눈 질문 유형 · 대기 시간 감소는 미검증</figcaption>
+  <figcaption>각자 AI의 도움으로 만드는 사람들과 한 테이블에 몰린 결정 요청</figcaption>
 </figure>
 
 

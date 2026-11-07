@@ -15,10 +15,10 @@ The source had thirty tabs and links to other internal services. If we had start
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-06-scope-an-ambiguous-request.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-06-scope-an-ambiguous-request.en.svg" alt="From a broad request to a smaller release. Inspect the source: Separate empty tabs and copies → Define scope: Confirm seven target sections → Release plan: Link existing services first. Scope agreed; service launch not established" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-06-scope-an-ambiguous-request.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-06-scope-an-ambiguous-request.webp" alt="Colleagues sorting duplicate and empty papers to choose a workable scope" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>From a broad request to a smaller release — Scope agreed; service launch not established</figcaption>
+  <figcaption>Colleagues sorting duplicate and empty papers to choose a workable scope</figcaption>
 </figure>
 
 

@@ -15,10 +15,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-27-design-self-service-with-guardrails.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-27-design-self-service-with-guardrails.ko.svg" alt="현업의 제작과 공통 기반의 책임. 현업 제작: 캠페인 화면과 콘텐츠 → 공통 기반: 폼·데이터 전달·추적·배포 검사 → 확인 과제: 민감 데이터용 인증 구조. 공용 폼과 저장소 기반 이관 · 인증 과제는 남음" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-27-design-self-service-with-guardrails.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-27-design-self-service-with-guardrails.webp" alt="각기 다른 화면 제작을 공통 부품과 기반이 받치는 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>현업의 제작과 공통 기반의 책임 — 공용 폼과 저장소 기반 이관 · 인증 과제는 남음</figcaption>
+  <figcaption>각기 다른 화면 제작을 공통 부품과 기반이 받치는 장면</figcaption>
 </figure>
 
 

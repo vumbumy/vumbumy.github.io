@@ -19,10 +19,10 @@ Verification is not only the final step before release. It is an operating syste
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-13-make-verification-the-product.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-13-make-verification-the-product.en.svg" alt="Verification between creation and release. Create: Standard templates and isolation → Check by risk: Automated and independent review → Release: Human approval for high-risk work. Documented principles; full rollout unverified" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-13-make-verification-the-product.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-13-make-verification-the-product.webp" alt="A concept for matching the depth of review to the risk of each output" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Verification between creation and release — Documented principles; full rollout unverified</figcaption>
+  <figcaption>A concept for matching the depth of review to the risk of each output</figcaption>
 </figure>
 
 

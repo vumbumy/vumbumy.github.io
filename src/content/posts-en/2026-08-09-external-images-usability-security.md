@@ -15,10 +15,10 @@ Users expect their content to look as they created it. In an operations tool, ad
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-09-external-images-usability-security.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-09-external-images-usability-security.en.svg" alt="Change how external images are served. Original path: Visitors request an external image → Chosen direction: Import the image into storage → Serving path: Serve the image from within. Chosen serving path; implementation details omitted" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-09-external-images-usability-security.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-09-external-images-usability-security.webp" alt="A visual metaphor for preparing an external image before serving it to readers" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Change how external images are served — Chosen serving path; implementation details omitted</figcaption>
+  <figcaption>A visual metaphor for preparing an external image before serving it to readers</figcaption>
 </figure>
 
 

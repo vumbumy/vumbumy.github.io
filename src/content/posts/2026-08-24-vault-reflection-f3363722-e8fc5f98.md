@@ -18,10 +18,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-24-vault-reflection-f3363722-e8fc5f98.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-24-vault-reflection-f3363722-e8fc5f98.ko.svg" alt="통계 조회를 운영계에서 분리하는 방향. 출처와 상태값: 지표별 원본 데이터 확인 → 통계 DB 경유: 운영계를 직접 읽는 부하 피하기 → 연동 전 확인: 정의·귀속·접근 권한 확정 필요. 검토한 조회 방향 · 전체 연동 완료는 아님" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-24-vault-reflection-f3363722-e8fc5f98.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-24-vault-reflection-f3363722-e8fc5f98.webp" alt="업무를 멈추지 않도록 별도 자료에서 현황을 살피려는 비유" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>통계 조회를 운영계에서 분리하는 방향 — 검토한 조회 방향 · 전체 연동 완료는 아님</figcaption>
+  <figcaption>업무를 멈추지 않도록 별도 자료에서 현황을 살피려는 비유</figcaption>
 </figure>
 
 

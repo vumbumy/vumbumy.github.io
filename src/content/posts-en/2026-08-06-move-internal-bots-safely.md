@@ -15,10 +15,10 @@ Moving them to the cloud was more than moving files. It was a chance to set bett
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-06-move-internal-bots-safely.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-06-move-internal-bots-safely.en.svg" alt="Operating boundaries for bots. Connection: The bot connects outward → Operator access: Central identity and audit → Runtime: A separate network segment. Connection, access, and isolation choices" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-06-move-internal-bots-safely.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-06-move-internal-bots-safely.webp" alt="Moving small automation tools into a protected shared workspace" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Operating boundaries for bots — Connection, access, and isolation choices</figcaption>
+  <figcaption>Moving small automation tools into a protected shared workspace</figcaption>
 </figure>
 
 

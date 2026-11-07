@@ -15,10 +15,10 @@ AI가 코드를 빠르게 만드는 모습은 분명 매력적이다. 그러나 
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-13-make-verification-the-product.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-13-make-verification-the-product.ko.svg" alt="생성과 운영 승격 사이의 검증. 산출물 생성: 표준 틀과 격리 환경 → 위험별 검증: 자동 검사와 별도 비판 검토 → 운영 승격: 고위험 작업에는 사람 승인. 문서화한 검증 원칙 · 전체 적용 여부는 미확인" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-13-make-verification-the-product.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-13-make-verification-the-product.webp" alt="산출물의 위험에 따라 검사 깊이를 달리하는 검증 구상" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>생성과 운영 승격 사이의 검증 — 문서화한 검증 원칙 · 전체 적용 여부는 미확인</figcaption>
+  <figcaption>산출물의 위험에 따라 검사 깊이를 달리하는 검증 구상</figcaption>
 </figure>
 
 

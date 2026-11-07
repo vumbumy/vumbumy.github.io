@@ -15,10 +15,10 @@ Another person would join later. I did not want to give the same help again. I d
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-07-turn-support-into-onboarding-docs.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-07-turn-support-into-onboarding-docs.en.svg" alt="From one support request to onboarding. Current blocker: Help connect to the dev database → Reusable result: A copy-and-paste setup guide → Next check: Can another user follow it alone?. Guide written; next-user validation pending" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-07-turn-support-into-onboarding-docs.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-07-turn-support-into-onboarding-docs.webp" alt="Leaving reusable guidance after helping a colleague set up a tool" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>From one support request to onboarding — Guide written; next-user validation pending</figcaption>
+  <figcaption>Leaving reusable guidance after helping a colleague set up a tool</figcaption>
 </figure>
 
 

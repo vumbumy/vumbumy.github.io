@@ -18,10 +18,10 @@ If the dashboards kept querying the live system, their use could add load to it.
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-24-vault-reflection-f3363722-e8fc5f98.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-24-vault-reflection-f3363722-e8fc5f98.en.svg" alt="Separate analytics reads from live work. Sources and states: Identify the source for each metric → Analytics database: Avoid direct load on live services → Before connecting: Confirm meaning, ownership, access. Reviewed read path; full integration not complete" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-24-vault-reflection-f3363722-e8fc5f98.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-24-vault-reflection-f3363722-e8fc5f98.webp" alt="Planning to inspect a separate copy of information while live work continues" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Separate analytics reads from live work — Reviewed read path; full integration not complete</figcaption>
+  <figcaption>Planning to inspect a separate copy of information while live work continues</figcaption>
 </figure>
 
 

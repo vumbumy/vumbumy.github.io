@@ -15,10 +15,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-07-turn-support-into-onboarding-docs.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-07-turn-support-into-onboarding-docs.ko.svg" alt="한 사람의 지원에서 다음 온보딩으로. 지금의 막힘: 개발 DB 연결을 함께 확인 → 남긴 결과: 붙여넣어 시작하는 설정 가이드 → 다음 확인: 다른 사용자의 단독 실행 여부. 가이드 작성 완료 · 다음 사용자 검증은 남음" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-07-turn-support-into-onboarding-docs.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-07-turn-support-into-onboarding-docs.webp" alt="한 사람의 설정 지원을 다음 사람도 사용할 수 있는 안내로 남기는 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>한 사람의 지원에서 다음 온보딩으로 — 가이드 작성 완료 · 다음 사용자 검증은 남음</figcaption>
+  <figcaption>한 사람의 설정 지원을 다음 사람도 사용할 수 있는 안내로 남기는 장면</figcaption>
 </figure>
 
 

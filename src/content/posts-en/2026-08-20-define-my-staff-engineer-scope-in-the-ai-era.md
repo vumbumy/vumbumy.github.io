@@ -15,10 +15,10 @@ My work environment is different from Stripe. Still, the article helped me revie
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.en.svg" alt="Hands-on work and support across teams. Build and operate: Own product and operating problems → Frame the problem: Clarify scope, choices, and unknowns → Support and verify: Help others act and review results. Current scope; higher personal output is not the goal" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.webp" alt="A role spanning hands-on work, problem framing, support, and review" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Hands-on work and support across teams — Current scope; higher personal output is not the goal</figcaption>
+  <figcaption>A role spanning hands-on work, problem framing, support, and review</figcaption>
 </figure>
 
 

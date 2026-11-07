@@ -15,10 +15,10 @@ I reviewed the code and checked how the app received and stored access informati
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-20-vault-reflection-b293cdfe-32517701.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-20-vault-reflection-b293cdfe-32517701.en.svg" alt="Stop a deployment that stores personal access. App dependency: Access to several personal accounts → Operating need: Keep that access on the server → Deployment decision: Reject until the feature is removed. Deployment rejected; alternatives not implemented" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-20-vault-reflection-b293cdfe-32517701.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-20-vault-reflection-b293cdfe-32517701.webp" alt="Pausing installation of a tool that would retain several people&#x27;s personal keys" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Stop a deployment that stores personal access — Deployment rejected; alternatives not implemented</figcaption>
+  <figcaption>Pausing installation of a tool that would retain several people&#x27;s personal keys</figcaption>
 </figure>
 
 

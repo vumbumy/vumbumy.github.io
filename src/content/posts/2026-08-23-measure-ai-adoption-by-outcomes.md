@@ -16,10 +16,10 @@ AI 도구의 사용량을 예산과 좌석 운영에 활용해야 했지만, 그
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-23-measure-ai-adoption-by-outcomes.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-23-measure-ai-adoption-by-outcomes.ko.svg" alt="다른 범위를 보던 관측값 맞추기. 전체 메트릭: 모든 실행 환경의 총 소비량 → 사용자 로그: 환경 누락·표본·보존기간 확인 → 운영 판단: 집계·추천과 실제 변경을 분리. 운영 지표의 기준 정리 · 성과나 실제 결제액과 구분" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-23-measure-ai-adoption-by-outcomes.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-23-measure-ai-adoption-by-outcomes.webp" alt="집계 범위가 다른 전체량과 표본을 맞춰보는 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>다른 범위를 보던 관측값 맞추기 — 운영 지표의 기준 정리 · 성과나 실제 결제액과 구분</figcaption>
+  <figcaption>집계 범위가 다른 전체량과 표본을 맞춰보는 장면</figcaption>
 </figure>
 
 

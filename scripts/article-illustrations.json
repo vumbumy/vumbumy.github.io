@@ -1,0 +1,170 @@
+[
+  {
+    "id": "2026-08-06-move-internal-bots-safely",
+    "altKo": "작은 장비의 자동화 도구를 보호된 공동 작업 공간으로 옮기는 장면",
+    "altEn": "Moving small automation tools into a protected shared workspace",
+    "publicPath": "/images/illustrations/2026-08-06-move-internal-bots-safely.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-06-scope-an-ambiguous-request",
+    "altKo": "겹친 문서와 빈 종이를 분리하며 실제로 만들 범위를 고르는 장면",
+    "altEn": "Colleagues sorting duplicate and empty papers to choose a workable scope",
+    "publicPath": "/images/illustrations/2026-08-06-scope-an-ambiguous-request.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-07-turn-support-into-onboarding-docs",
+    "altKo": "한 사람의 설정 지원을 다음 사람도 사용할 수 있는 안내로 남기는 장면",
+    "altEn": "Leaving reusable guidance after helping a colleague set up a tool",
+    "publicPath": "/images/illustrations/2026-08-07-turn-support-into-onboarding-docs.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-08-define-an-extensible-api-scope",
+    "altKo": "서로 겹치는 연결 부품을 대조하며 현재 작업과 추가 논의를 나누는 장면",
+    "altEn": "Comparing overlapping parts while separating current work from open extensions",
+    "publicPath": "/images/illustrations/2026-08-08-define-an-extensible-api-scope.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-09-external-images-usability-security",
+    "altKo": "외부 그림을 내부에서 준비해 독자에게 제공하는 과정을 비유한 장면",
+    "altEn": "A visual metaphor for preparing an external image before serving it to readers",
+    "publicPath": "/images/illustrations/2026-08-09-external-images-usability-security.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-10-remove-deploy-access-after-automation",
+    "altKo": "자동 전달 경로를 확인한 뒤 직접 접근 권한을 정리하려는 장면",
+    "altEn": "Checking an automated delivery path before reducing direct access",
+    "publicPath": "/images/illustrations/2026-08-10-remove-deploy-access-after-automation.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-11-replace-a-public-ingress-path",
+    "altKo": "기존 출입 경로를 유지하며 작은 시험 경로를 점검하는 장면",
+    "altEn": "Inspecting a small test entrance while the existing path remains open",
+    "publicPath": "/images/illustrations/2026-08-11-replace-a-public-ingress-path.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-12-shift-from-ai-factory-to-active-enablement",
+    "altKo": "별도의 제작 설비보다 현업의 실제 작업에 참여해 막힘을 살피는 장면",
+    "altEn": "Joining business teams already building tools to investigate a real blocker",
+    "publicPath": "/images/illustrations/2026-08-12-shift-from-ai-factory-to-active-enablement.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-13-make-verification-the-product",
+    "altKo": "산출물의 위험에 따라 검사 깊이를 달리하는 검증 구상",
+    "altEn": "A concept for matching the depth of review to the risk of each output",
+    "publicPath": "/images/illustrations/2026-08-13-make-verification-the-product.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-14-govern-vibe-coding-by-risk",
+    "altKo": "도구와 데이터의 위험에 맞춰 보호 수준을 논의하는 작업장",
+    "altEn": "A workshop where safeguards are matched to the risk of the work",
+    "publicPath": "/images/illustrations/2026-08-14-govern-vibe-coding-by-risk.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-15-vault-reflection-dbc5d0d9-756c4171",
+    "altKo": "운영 작업을 보호하면서 별도의 관측 공간과 기준을 검토하는 장면",
+    "altEn": "Planning a separate observation area without disturbing live work",
+    "publicPath": "/images/illustrations/2026-08-15-vault-reflection-dbc5d0d9-756c4171.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-20-define-my-staff-engineer-scope-in-the-ai-era",
+    "altKo": "직접 만들기와 문제 정리, 동료 지원과 검토를 함께 맡는 역할",
+    "altEn": "A role spanning hands-on work, problem framing, support, and review",
+    "publicPath": "/images/illustrations/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-20-vault-reflection-b293cdfe-32517701",
+    "altKo": "여러 사람의 개인 열쇠를 보관해야 하는 도구의 설치를 멈추는 비유",
+    "altEn": "Pausing installation of a tool that would retain several people's personal keys",
+    "publicPath": "/images/illustrations/2026-08-20-vault-reflection-b293cdfe-32517701.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-21-vault-reflection-093d1293-123b3568",
+    "altKo": "로그인 화면 너머의 접근 통제는 따로 확인해야 함을 표현한 장면",
+    "altEn": "Examining a login facade while the inner access controls remain uncertain",
+    "publicPath": "/images/illustrations/2026-08-21-vault-reflection-093d1293-123b3568.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-23-measure-ai-adoption-by-outcomes",
+    "altKo": "집계 범위가 다른 전체량과 표본을 맞춰보는 장면",
+    "altEn": "Reconciling a complete total with samples collected from different environments",
+    "publicPath": "/images/illustrations/2026-08-23-measure-ai-adoption-by-outcomes.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-24-vault-reflection-f3363722-e8fc5f98",
+    "altKo": "업무를 멈추지 않도록 별도 자료에서 현황을 살피려는 비유",
+    "altEn": "Planning to inspect a separate copy of information while live work continues",
+    "publicPath": "/images/illustrations/2026-08-24-vault-reflection-f3363722-e8fc5f98.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-27-design-self-service-with-guardrails",
+    "altKo": "각기 다른 화면 제작을 공통 부품과 기반이 받치는 장면",
+    "altEn": "Different page designs supported by shared components and foundations",
+    "publicPath": "/images/illustrations/2026-08-27-design-self-service-with-guardrails.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-10-18-fast-screens-and-launch-estimates",
+    "altKo": "빠르게 만든 화면 뒤에 남아 있는 연동과 운영 전환 작업",
+    "altEn": "The integration and operating work behind a quickly built screen",
+    "publicPath": "/images/illustrations/2026-10-18-fast-screens-and-launch-estimates.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-11-06-turn-team-tools-into-operated-services",
+    "altKo": "업무를 이어가며 자료와 접수 경로를 새 공간으로 옮기는 장면",
+    "altEn": "Moving records and incoming work to a shared space while old dependencies remain",
+    "publicPath": "/images/illustrations/2026-11-06-turn-team-tools-into-operated-services.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-08-05-before-choosing-a-solution",
+    "altKo": "조립을 시작하기 전에 문제의 범위와 확인할 것을 함께 살피는 장면",
+    "altEn": "Clarifying the scope and what to check before starting to build",
+    "publicPath": "/images/illustrations/2026-08-05-before-choosing-a-solution.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "2026-11-08-ai-builders-and-centralized-decisions",
+    "altKo": "각자 AI의 도움으로 만드는 사람들과 한 테이블에 몰린 결정 요청",
+    "altEn": "People building with AI while decision requests gather at one review table",
+    "publicPath": "/images/illustrations/2026-11-08-ai-builders-and-centralized-decisions.webp",
+    "width": 1536,
+    "height": 1024
+  }
+]

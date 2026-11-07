@@ -15,10 +15,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-11-replace-a-public-ingress-path.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-11-replace-a-public-ingress-path.ko.svg" alt="인입 전환 전에 확인할 조건. 작은 대상: 영향을 제한할 테스트 선정 → 접근 경로: 네트워크와 방화벽 정책 검토 → 전환 조건: 안전한 접근 확인 뒤 진행. 테스트 대상 선정 · 실제 전환은 선행 조건 확인 후" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-11-replace-a-public-ingress-path.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-11-replace-a-public-ingress-path.webp" alt="기존 출입 경로를 유지하며 작은 시험 경로를 점검하는 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>인입 전환 전에 확인할 조건 — 테스트 대상 선정 · 실제 전환은 선행 조건 확인 후</figcaption>
+  <figcaption>기존 출입 경로를 유지하며 작은 시험 경로를 점검하는 장면</figcaption>
 </figure>
 
 

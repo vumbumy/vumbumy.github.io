@@ -16,10 +16,10 @@ I compared the fast development record with a project that had already launched.
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-10-18-fast-screens-and-launch-estimates.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-10-18-fast-screens-and-launch-estimates.en.svg" alt="Separate screen output from launch estimates. Fast build history: Active days, screens, APIs, tables → Completion scope: Integration, cutover, live fixes → Estimate again: Use evidence for each kind of work. Estimates reviewed; final schedule and outcome unknown" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-10-18-fast-screens-and-launch-estimates.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-10-18-fast-screens-and-launch-estimates.webp" alt="The integration and operating work behind a quickly built screen" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Separate screen output from launch estimates — Estimates reviewed; final schedule and outcome unknown</figcaption>
+  <figcaption>The integration and operating work behind a quickly built screen</figcaption>
 </figure>
 
 

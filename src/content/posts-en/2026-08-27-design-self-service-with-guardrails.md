@@ -15,10 +15,10 @@ I separated page design from the parts that needed shared control. People could 
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-27-design-self-service-with-guardrails.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-27-design-self-service-with-guardrails.en.svg" alt="Page creation and shared responsibilities. Business teams: Campaign screens and content → Shared foundation: Forms, data, tracking, release checks → Further checks: Identity for sensitive data. Form and repository handed over; identity work remains" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-27-design-self-service-with-guardrails.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-27-design-self-service-with-guardrails.webp" alt="Different page designs supported by shared components and foundations" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Page creation and shared responsibilities — Form and repository handed over; identity work remains</figcaption>
+  <figcaption>Different page designs supported by shared components and foundations</figcaption>
 </figure>
 
 

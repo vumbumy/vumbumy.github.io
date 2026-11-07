@@ -11,10 +11,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-08-define-an-extensible-api-scope.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-08-define-an-extensible-api-scope.en.svg" alt="Separate starting work from overlap review. Current request: Check whether needs have changed → Decision: Proceed with the current request → Further review: Check API overlap and extensions. Direction agreed; detailed boundaries pending" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-08-define-an-extensible-api-scope.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-08-define-an-extensible-api-scope.webp" alt="Comparing overlapping parts while separating current work from open extensions" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Separate starting work from overlap review — Direction agreed; detailed boundaries pending</figcaption>
+  <figcaption>Comparing overlapping parts while separating current work from open extensions</figcaption>
 </figure>
 
 

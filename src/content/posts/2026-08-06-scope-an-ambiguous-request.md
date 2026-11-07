@@ -13,10 +13,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-06-scope-an-ambiguous-request.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-06-scope-an-ambiguous-request.ko.svg" alt="전체 이전에서 단계별 오픈으로. 원본 확인: 빈 탭·사본·옛 버전 분리 → 전환 범위: 실제 대상 7개로 확정 → 오픈 전략: 기존 서비스는 링크로 먼저 연결. 범위와 전략 합의 · 서비스 오픈 성과는 아님" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-06-scope-an-ambiguous-request.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-06-scope-an-ambiguous-request.webp" alt="겹친 문서와 빈 종이를 분리하며 실제로 만들 범위를 고르는 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>전체 이전에서 단계별 오픈으로 — 범위와 전략 합의 · 서비스 오픈 성과는 아님</figcaption>
+  <figcaption>겹친 문서와 빈 종이를 분리하며 실제로 만들 범위를 고르는 장면</figcaption>
 </figure>
 
 

@@ -22,10 +22,10 @@ This was not only a choice about system connections. It also set the limits of o
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-15-vault-reflection-dbc5d0d9-756c4171.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-15-vault-reflection-dbc5d0d9-756c4171.en.svg" alt="Define metrics as well as the read path. Business system: Protect live consultation work → Analytics store: Agree on metrics and ownership → Dashboard: Avoid direct reads from production. Proposed data path; access and integration pending" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-15-vault-reflection-dbc5d0d9-756c4171.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-15-vault-reflection-dbc5d0d9-756c4171.webp" alt="Planning a separate observation area without disturbing live work" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Define metrics as well as the read path — Proposed data path; access and integration pending</figcaption>
+  <figcaption>Planning a separate observation area without disturbing live work</figcaption>
 </figure>
 
 

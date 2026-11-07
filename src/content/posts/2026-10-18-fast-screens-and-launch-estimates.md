@@ -16,10 +16,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-10-18-fast-screens-and-launch-estimates.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-10-18-fast-screens-and-launch-estimates.ko.svg" alt="화면 제작 실적과 오픈 일정을 분리하기. 빠른 제작 이력: 활동 날짜·화면·API·테이블 → 비교할 완료 범위: 외부 연동·운영 전환·후속 수정 → 일정 재산정: 작업 종류별 근거를 따로 적용. 추정 근거 재검토 · 최종 일정과 결과는 미확인" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-10-18-fast-screens-and-launch-estimates.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-10-18-fast-screens-and-launch-estimates.webp" alt="빠르게 만든 화면 뒤에 남아 있는 연동과 운영 전환 작업" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>화면 제작 실적과 오픈 일정을 분리하기 — 추정 근거 재검토 · 최종 일정과 결과는 미확인</figcaption>
+  <figcaption>빠르게 만든 화면 뒤에 남아 있는 연동과 운영 전환 작업</figcaption>
 </figure>
 
 

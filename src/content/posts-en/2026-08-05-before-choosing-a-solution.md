@@ -14,10 +14,10 @@ At work, a solution often appears before the problem is clear. The biggest risk 
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-05-before-choosing-a-solution.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-05-before-choosing-a-solution.en.svg" alt="Before choosing a solution. Impact: Who and what will be affected? → Decision owner: What can I decide, and who else must? → Checks: How to verify and where to return. A perspective for recording problems" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-05-before-choosing-a-solution.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-05-before-choosing-a-solution.webp" alt="Clarifying the scope and what to check before starting to build" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Before choosing a solution — A perspective for recording problems</figcaption>
+  <figcaption>Clarifying the scope and what to check before starting to build</figcaption>
 </figure>
 
 

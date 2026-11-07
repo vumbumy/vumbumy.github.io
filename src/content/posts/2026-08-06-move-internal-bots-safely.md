@@ -13,10 +13,10 @@ draft: false
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-06-move-internal-bots-safely.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
-    <img src="/images/articles/2026-08-06-move-internal-bots-safely.ko.svg" alt="봇 이전에서 정한 운영 경계. 연결 방식: 봇이 먼저 외부로 연결 → 운영자 접근: 중앙 권한과 접근 기록 → 실행 환경: 분리된 네트워크 구역. 연결·접근·격리 원칙을 정한 단계" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-06-move-internal-bots-safely.webp" target="_blank" rel="noopener noreferrer" aria-label="일러스트 크게 보기">
+    <img src="/images/illustrations/2026-08-06-move-internal-bots-safely.webp" alt="작은 장비의 자동화 도구를 보호된 공동 작업 공간으로 옮기는 장면" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>봇 이전에서 정한 운영 경계 — 연결·접근·격리 원칙을 정한 단계</figcaption>
+  <figcaption>작은 장비의 자동화 도구를 보호된 공동 작업 공간으로 옮기는 장면</figcaption>
 </figure>
 
 

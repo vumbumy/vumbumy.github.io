@@ -22,10 +22,10 @@ The total usage data included all three environments. So, the user analysis and 
 
 
 <figure class="article-figure">
-  <a href="/images/articles/2026-08-23-measure-ai-adoption-by-outcomes.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
-    <img src="/images/articles/2026-08-23-measure-ai-adoption-by-outcomes.en.svg" alt="Align measurements with different scopes. Total metrics: Consumption across all environments → User logs: Check missing sources and sampling → Operating decision: Separate advice from actual changes. Operating measures; not performance or billed cost" width="760" height="700" loading="lazy" decoding="async" />
+  <a href="/images/illustrations/2026-08-23-measure-ai-adoption-by-outcomes.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size illustration">
+    <img src="/images/illustrations/2026-08-23-measure-ai-adoption-by-outcomes.webp" alt="Reconciling a complete total with samples collected from different environments" width="1536" height="1024" loading="lazy" decoding="async" />
   </a>
-  <figcaption>Align measurements with different scopes — Operating measures; not performance or billed cost</figcaption>
+  <figcaption>Reconciling a complete total with samples collected from different environments</figcaption>
 </figure>
 
 
