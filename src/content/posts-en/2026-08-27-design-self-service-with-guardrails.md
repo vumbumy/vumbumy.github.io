@@ -1,7 +1,8 @@
 ---
-title: "The Boundary Between Custom Landing Pages and a Shared Base"
+title: "Landing Pages for Marketing: Shared Forms, Tracking, and Deployment"
 description: "I kept page creation fast while placing data links and release rules in a shared base."
 published: 2026-08-27
+updated: 2026-11-08
 tags: [problem-solving, self-service, guardrails]
 problem: "People needed to create campaign pages while keeping form data, tracking, and release quality consistent."
 decision: "People could build page screens, while shared modules and automatic checks controlled forms, data transfer, tracking, releases, and repository access."

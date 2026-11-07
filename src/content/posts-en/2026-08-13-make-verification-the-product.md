@@ -1,7 +1,8 @@
 ---
-title: "Treating Verification as a Product"
+title: "How I Defined Release Checks for AI-Built Internal Tools"
 description: "To handle AI's output speed, automated checks and human approval should differ by risk level."
 published: 2026-08-13
+updated: 2026-11-08
 tags: [problem-solving, ai-governance, verification]
 problem: "AI creates outputs faster than the organization can check their quality and purpose."
 decision: "Use automated checks for low-risk work. Add human approval and independent critical review as responsibility grows."

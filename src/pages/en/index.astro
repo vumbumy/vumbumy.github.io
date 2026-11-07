@@ -7,6 +7,7 @@ import { sortPosts } from "../../lib/posts";
 
 const posts = sortPosts(await getCollection("postsEn", ({ data }) => !data.draft));
 const latestPosts = posts.slice(0, 6);
+const featuredPosts = ["2026-08-27-design-self-service-with-guardrails", "2026-08-13-make-verification-the-product", "2026-08-10-remove-deploy-access-after-automation"].map((id) => posts.find((post) => post.id === id)).filter((post): post is NonNullable<typeof post> => Boolean(post));
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 
@@ -18,11 +19,15 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
       <p class="hero-description">{SITE_EN.description}</p>
     </div>
     <aside class="hero-note">
-      <span class="hero-note-label">HOW IT WORKS</span>
-      <p>AI turns my rough daily notes into private review drafts.</p>
-      <p>I check the details and approve each post before it goes live.</p>
+      <span class="hero-note-label">WHAT I WRITE ABOUT</span>
+      <p>I write about data, access, deployment, and operations when teams put AI-built tools to work.</p>
+      <p>These posts describe work I did, what I checked, and the choices I made.</p>
       <a href={SITE_EN.profileUrl}>View profile · projects <span aria-hidden="true">→</span></a>
     </aside>
+  </section>
+  <section aria-labelledby="start-here">
+    <div class="section-title"><h2 id="start-here">Start here</h2><span>From building to review and release</span></div>
+    <div class="post-list">{featuredPosts.map((post) => <PostCard post={post} href={`${base}en/posts/${post.id}/`} lang="en" />)}</div>
   </section>
   <section aria-labelledby="recent-posts">
     <div class="section-title">

@@ -7,6 +7,7 @@ import { sortPosts } from "../lib/posts";
 
 const posts = sortPosts(await getCollection("posts", ({ data }) => !data.draft));
 const latestPosts = posts.slice(0, 6);
+const featuredPosts = ["2026-08-27-design-self-service-with-guardrails", "2026-08-13-make-verification-the-product", "2026-08-10-remove-deploy-access-after-automation"].map((id) => posts.find((post) => post.id === id)).filter((post): post is NonNullable<typeof post> => Boolean(post));
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 
@@ -18,11 +19,15 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
       <p class="hero-description">{SITE.description}</p>
     </div>
     <aside class="hero-note">
-      <span class="hero-note-label">HOW IT WORKS</span>
-      <p>매일 남긴 업무 메모를 AI가 비공개 회고 초안으로 정리합니다.</p>
-      <p>민감정보를 확인하고 직접 승인한 글만 공개합니다.</p>
+      <span class="hero-note-label">WHAT I WRITE ABOUT</span>
+      <p>AI로 만든 도구를 실제 업무에 연결할 때 생기는 데이터·권한·배포·운영의 문제를 다룹니다.</p>
+      <p>직접 맡은 일에서 확인한 사실과 선택한 방법을 기록합니다.</p>
       <a href={SITE.profileUrl}>프로필·프로젝트 보기 <span aria-hidden="true">→</span></a>
     </aside>
+  </section>
+  <section aria-labelledby="start-here">
+    <div class="section-title"><h2 id="start-here">먼저 읽을 글</h2><span>제작에서 검증과 배포까지</span></div>
+    <div class="post-list">{featuredPosts.map((post) => <PostCard post={post} href={`${base}posts/${post.id}/`} />)}</div>
   </section>
   <section aria-labelledby="recent-posts">
     <div class="section-title">

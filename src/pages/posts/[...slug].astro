@@ -72,7 +72,7 @@ const imageUrl = new URL(`${base}og/ko/${post.id}.png`, Astro.site);
       <p class="eyebrow">MORE FROM HANBEOM</p>
       <h2>Hanbeom의 소개와 프로젝트</h2>
       <p>제 소개와 개인적으로 만든 프로젝트를 따로 정리해 두었습니다.</p>
-      <a href="https://vumy.kr/">프로필·프로젝트 보기 <span aria-hidden="true">→</span></a>
+      <a href="https://vumy.kr/?utm_source=insight_blog&utm_medium=referral&utm_campaign=profile_link">프로필·프로젝트 보기 <span aria-hidden="true">→</span></a>
     </aside>
     <nav class="post-pagination" aria-label="이전 글과 다음 글">
       {previous ? <a href={`${base}posts/${previous.id}/`}><span>이전 글</span><strong>{previous.data.title}</strong></a> : <span></span>}

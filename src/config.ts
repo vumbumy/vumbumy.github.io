@@ -5,7 +5,7 @@ export const SITE = {
   locale: "ko_KR",
   language: "ko",
   imageAlt: "문제를 푸는 일 — Hanbeom의 기술·조직 문제 해결 회고",
-  profileUrl: "https://vumy.kr/",
+  profileUrl: "https://vumy.kr/?utm_source=insight_blog&utm_medium=referral&utm_campaign=profile_link",
   linkedInUrl: "https://www.linkedin.com/in/vumy/",
 };
 
@@ -16,6 +16,6 @@ export const SITE_EN = {
   locale: "en_US",
   language: "en",
   imageAlt: "Solving Problems at Work — notes by Hanbeom",
-  profileUrl: "https://vumy.kr/",
+  profileUrl: "https://vumy.kr/?utm_source=insight_blog&utm_medium=referral&utm_campaign=profile_link",
   linkedInUrl: "https://www.linkedin.com/in/vumy/",
 };

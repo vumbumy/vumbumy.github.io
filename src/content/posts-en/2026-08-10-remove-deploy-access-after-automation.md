@@ -1,7 +1,8 @@
 ---
-title: "What to Check Before Removing Deployment Access"
+title: "Why I Tested Automated Deployment Before Reducing Direct Access"
 description: "A review of how I checked the automated deployment path before removing direct deployment access."
 published: 2026-08-10
+updated: 2026-11-08
 tags: [problem-solving, security, deployment-automation, access-control]
 problem: "I needed a safe order for reducing direct deployment access without breaking the existing deployment process."
 decision: "I first checked the repository-based automated deployment. Then I decided to limit direct access to the fewest people."
