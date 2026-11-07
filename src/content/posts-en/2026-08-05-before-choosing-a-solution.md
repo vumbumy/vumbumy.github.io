@@ -12,6 +12,15 @@ translationSlug: "첫-기록"
 
 At work, a solution often appears before the problem is clear. The biggest risk is not always a bad solution. Sometimes we are trying to solve the wrong problem.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-05-before-choosing-a-solution.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-05-before-choosing-a-solution.en.svg" alt="Before choosing a solution. Impact: Who and what will be affected? → Decision owner: What can I decide, and who else must? → Checks: How to verify and where to return. A perspective for recording problems" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Before choosing a solution — A perspective for recording problems</figcaption>
+</figure>
+
+
 ## What was the problem?
 
 Before comparing solutions, I need to know who will be affected. I also need to know who can make the decision and what must be tested.

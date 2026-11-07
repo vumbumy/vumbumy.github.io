@@ -15,6 +15,15 @@ draft: false
 
 AX 빌더 팀장이자 CTO Staff로 일하면서 이런 요청을 자주 마주한다. 현업이 필요한 도구를 직접 만드는 일과, 그 도구를 회사 업무에 계속 사용할 수 있게 만드는 일이 한 작업 안에 들어온다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-11-06-turn-team-tools-into-operated-services.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-11-06-turn-team-tools-into-operated-services.ko.svg" alt="데이터 검수와 운영 전환을 나누기. 사전 이관·검수: 실제 업무 입력은 기존 시스템 → 최종 전환: 기존 수정 중단·데이터·접수·알림 → 후속 안정화: 기존 봇과 미완료 자동 연동 확인. 운영 전환 완료 · 후속 검수와 일부 연동은 진행 중" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>데이터 검수와 운영 전환을 나누기 — 운영 전환 완료 · 후속 검수와 일부 연동은 진행 중</figcaption>
+</figure>
+
+
 ## 데이터 확인과 운영 전환을 나눴다
 
 먼저 기존 데이터를 새 시스템에 옮기고 사업부에 확인을 요청했다. 자주 보는 고객과 현장을 열어 내용이 같은지, 첨부파일이 빠지지 않았는지, 필요한 메뉴에 접근할 수 있는지 봐 달라고 했다.

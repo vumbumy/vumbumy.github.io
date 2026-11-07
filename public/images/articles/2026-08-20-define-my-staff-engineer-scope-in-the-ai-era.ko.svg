@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="700" viewBox="0 0 760 700" role="img" aria-labelledby="title description">
+<title id="title">직접 실행과 조직 지원을 함께</title>
+<desc id="description">직접 구축: 제품을 만들고 운영 문제 해결; 문제 구조화: 범위·선택·미정 사항을 명확하게; 동료 지원과 검증: 지원·검토로 다른 사람의 실행 연결. 현재 역할 정리 · 혼자 더 많이 처리하는 것이 목표는 아님</desc>
+<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#cfd9de"/></pattern></defs>
+<rect width="760" height="700" rx="24" fill="#f4f7f8"/>
+<rect width="760" height="700" rx="24" fill="url(#dots)" opacity=".45"/>
+<g font-family="Noto Sans CJK KR,Apple SD Gothic Neo,Malgun Gothic,Arial,sans-serif">
+<rect x="40" y="40" width="5" height="26" rx="2" fill="#267c82"/>
+<text x="58" y="60" font-size="18" fill="#426b70" font-weight="700">본문 한눈에 보기</text>
+<text x="40" y="110" font-size="30" fill="#24384a" font-weight="700">직접 실행과 조직 지원을 함께</text>
+<rect x="40" y="148" width="680" height="118" rx="16" fill="#fff" stroke="#d6e0e4"/>
+<rect x="62" y="175" width="48" height="48" rx="15" fill="#e5f1f0"/>
+<text x="73" y="207" font-size="23" fill="#216f75" font-weight="700">01</text>
+<text x="132" y="194" font-size="29" fill="#24384a" font-weight="700">직접 구축</text>
+<text x="132" y="233" font-size="23" fill="#536874" font-weight="400">제품을 만들고 운영 문제 해결</text>
+<rect x="40" y="293" width="680" height="118" rx="16" fill="#fff" stroke="#d6e0e4"/>
+<rect x="62" y="320" width="48" height="48" rx="15" fill="#e5f1f0"/>
+<text x="73" y="352" font-size="23" fill="#216f75" font-weight="700">02</text>
+<text x="132" y="339" font-size="29" fill="#24384a" font-weight="700">문제 구조화</text>
+<text x="132" y="378" font-size="23" fill="#536874" font-weight="400">범위·선택·미정 사항을 명확하게</text>
+<rect x="40" y="438" width="680" height="118" rx="16" fill="#fff" stroke="#d6e0e4"/>
+<rect x="62" y="465" width="48" height="48" rx="15" fill="#e5f1f0"/>
+<text x="73" y="497" font-size="23" fill="#216f75" font-weight="700">03</text>
+<text x="132" y="484" font-size="29" fill="#24384a" font-weight="700">동료 지원과 검증</text>
+<text x="132" y="523" font-size="23" fill="#536874" font-weight="400">지원·검토로 다른 사람의 실행 연결</text>
+<path d="M40 598h680" stroke="#d1dce1"/>
+<text x="40" y="634" font-size="19" fill="#536874" font-weight="400">현재 역할 정리 · 혼자 더 많이 처리하는 것이 목표는 아님</text>
+<text x="40" y="672" font-size="13" fill="#6b8089" font-weight="600">HANBEOM  /  WORK NOTES</text>
+</g></svg>

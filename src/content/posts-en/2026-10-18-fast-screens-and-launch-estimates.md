@@ -14,6 +14,15 @@ While estimating a project, I looked at an earlier project built quickly with AI
 
 I compared the fast development record with a project that had already launched. The same number of screens could describe different amounts of completed work.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-10-18-fast-screens-and-launch-estimates.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-10-18-fast-screens-and-launch-estimates.en.svg" alt="Separate screen output from launch estimates. Fast build history: Active days, screens, APIs, tables → Completion scope: Integration, cutover, live fixes → Estimate again: Use evidence for each kind of work. Estimates reviewed; final schedule and outcome unknown" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Separate screen output from launch estimates — Estimates reviewed; final schedule and outcome unknown</figcaption>
+</figure>
+
+
 ## How much of the fast development record could I use?
 
 First, I counted active dates, screens, APIs, and tables from the Git history. This showed the pace of feature development. However, an active date was a date with a commit. People also worked on other tasks, so it did not prove a full day of work on this project.

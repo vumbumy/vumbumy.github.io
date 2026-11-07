@@ -20,6 +20,15 @@ The request for real-time data made the problem harder. Regular queries to syste
 
 This was not only a choice about system connections. It also set the limits of operational responsibility.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-15-vault-reflection-dbc5d0d9-756c4171.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-15-vault-reflection-dbc5d0d9-756c4171.en.svg" alt="Define metrics as well as the read path. Business system: Protect live consultation work → Analytics store: Agree on metrics and ownership → Dashboard: Avoid direct reads from production. Proposed data path; access and integration pending" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Define metrics as well as the read path — Proposed data path; access and integration pending</figcaption>
+</figure>
+
+
 ## What was the problem?
 
 The main question was not where to build the dashboard interface. We needed a safe way to read shared data without harming core systems.

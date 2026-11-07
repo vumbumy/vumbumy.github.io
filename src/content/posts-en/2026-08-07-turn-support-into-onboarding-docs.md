@@ -13,6 +13,15 @@ Setup problems often stop one new team member from working. In this case, a pers
 
 Another person would join later. I did not want to give the same help again. I decided that the work was not finished until the next person had a guide.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-07-turn-support-into-onboarding-docs.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-07-turn-support-into-onboarding-docs.en.svg" alt="From one support request to onboarding. Current blocker: Help connect to the dev database → Reusable result: A copy-and-paste setup guide → Next check: Can another user follow it alone?. Guide written; next-user validation pending" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>From one support request to onboarding — Guide written; next-user validation pending</figcaption>
+</figure>
+
+
 ## What was the problem?
 
 The clear problem was a failed connection. However, there was also a second problem. The setup depended on someone giving the same explanation each time.

@@ -13,6 +13,15 @@ draft: false
 
 나는 화면을 만드는 영역과 공통으로 통제할 영역을 나눴다. 현업은 정적 페이지를 만들 수 있게 하고, 상담 폼과 데이터 전달, 추적, 배포 검사는 재사용 가능한 코드와 저장소 규칙에 넣었다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-27-design-self-service-with-guardrails.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-27-design-self-service-with-guardrails.ko.svg" alt="현업의 제작과 공통 기반의 책임. 현업 제작: 캠페인 화면과 콘텐츠 → 공통 기반: 폼·데이터 전달·추적·배포 검사 → 확인 과제: 민감 데이터용 인증 구조. 공용 폼과 저장소 기반 이관 · 인증 과제는 남음" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>현업의 제작과 공통 기반의 책임 — 공용 폼과 저장소 기반 이관 · 인증 과제는 남음</figcaption>
+</figure>
+
+
 ## 실제로 맡은 문제
 
 내가 맡은 범위는 두 갈래였다. 기존 상담 신청 폼을 어디서나 불러 쓸 수 있는 웹 컴포넌트 패키지로 분리하는 일, 그리고 캠페인 페이지를 현업이 직접 추가할 수 있는 셀프서비스 저장소의 토대를 만드는 일이었다. 토대를 구축한 뒤에는 이후 운영 담당자에게 넘기는 것까지가 내 관여 범위였다.

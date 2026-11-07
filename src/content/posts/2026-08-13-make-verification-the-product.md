@@ -13,6 +13,15 @@ AI가 코드를 빠르게 만드는 모습은 분명 매력적이다. 그러나 
 
 그래서 생산량보다 검증 체계를 먼저 제품으로 봐야 한다는 판단이 나왔다. 검증은 출시 직전의 마지막 절차가 아니다. 무엇을 통과로 볼지 정하고, 위험에 맞는 비용을 쓰며, 배포 이후에도 결과를 살피는 하나의 운영 체계다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-13-make-verification-the-product.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-13-make-verification-the-product.ko.svg" alt="생성과 운영 승격 사이의 검증. 산출물 생성: 표준 틀과 격리 환경 → 위험별 검증: 자동 검사와 별도 비판 검토 → 운영 승격: 고위험 작업에는 사람 승인. 문서화한 검증 원칙 · 전체 적용 여부는 미확인" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>생성과 운영 승격 사이의 검증 — 문서화한 검증 원칙 · 전체 적용 여부는 미확인</figcaption>
+</figure>
+
+
 ## 문제를 다시 정의하기
 
 병목은 AI가 충분히 빨리 만들지 못한다는 데 있지 않았다. 사람이 모든 결과를 같은 깊이로 읽을 수 없다는 점이 더 큰 제약이었다. 검토가 밀리면 내용을 다 이해하지 못한 채 결론만 받아들이기 쉽다. 왜 그런 선택을 했는지 기록까지 남지 않으면 다음 변경에서 판단 근거를 다시 만들게 된다.

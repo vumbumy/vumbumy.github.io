@@ -15,6 +15,15 @@ My work did not end with building new screens. I also had to set when business s
 
 As the AX Builder team lead and a member of the CTO staff, I often face this kind of request. Helping business staff build a tool and making that tool ready for continued business use are parts of the same job.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-11-06-turn-team-tools-into-operated-services.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-11-06-turn-team-tools-into-operated-services.en.svg" alt="Separate data review from the live switch. Copy and review: Keep live work in the old system → Live switch: Stop edits; move data, intake, notices → Follow-up: Review old bots and pending links. Live switch complete; review and some links pending" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Separate data review from the live switch — Live switch complete; review and some links pending</figcaption>
+</figure>
+
+
 ## I separated data review from the live switch
 
 First, I copied the existing data into the new system and asked business staff to check it. I asked them to open familiar customers and sites, check the attachments, and confirm access to the menus they needed.

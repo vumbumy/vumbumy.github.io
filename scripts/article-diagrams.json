@@ -1,0 +1,884 @@
+[
+  {
+    "id": "2026-08-06-move-internal-bots-safely",
+    "lang": "ko",
+    "title": "봇 이전에서 정한 운영 경계",
+    "cards": [
+      [
+        "연결 방식",
+        "봇이 먼저 외부로 연결"
+      ],
+      [
+        "운영자 접근",
+        "중앙 권한과 접근 기록"
+      ],
+      [
+        "실행 환경",
+        "분리된 네트워크 구역"
+      ]
+    ],
+    "foot": "연결·접근·격리 원칙을 정한 단계",
+    "layout": "categories"
+  },
+  {
+    "id": "2026-08-06-move-internal-bots-safely",
+    "lang": "en",
+    "title": "Operating boundaries for bots",
+    "cards": [
+      [
+        "Connection",
+        "The bot connects outward"
+      ],
+      [
+        "Operator access",
+        "Central identity and audit"
+      ],
+      [
+        "Runtime",
+        "A separate network segment"
+      ]
+    ],
+    "foot": "Connection, access, and isolation choices",
+    "layout": "categories"
+  },
+  {
+    "id": "2026-08-06-scope-an-ambiguous-request",
+    "lang": "ko",
+    "title": "전체 이전에서 단계별 오픈으로",
+    "cards": [
+      [
+        "원본 확인",
+        "빈 탭·사본·옛 버전 분리"
+      ],
+      [
+        "전환 범위",
+        "실제 대상 7개로 확정"
+      ],
+      [
+        "오픈 전략",
+        "기존 서비스는 링크로 먼저 연결"
+      ]
+    ],
+    "foot": "범위와 전략 합의 · 서비스 오픈 성과는 아님",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-06-scope-an-ambiguous-request",
+    "lang": "en",
+    "title": "From a broad request to a smaller release",
+    "cards": [
+      [
+        "Inspect the source",
+        "Separate empty tabs and copies"
+      ],
+      [
+        "Define scope",
+        "Confirm seven target sections"
+      ],
+      [
+        "Release plan",
+        "Link existing services first"
+      ]
+    ],
+    "foot": "Scope agreed; service launch not established",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-07-turn-support-into-onboarding-docs",
+    "lang": "ko",
+    "title": "한 사람의 지원에서 다음 온보딩으로",
+    "cards": [
+      [
+        "지금의 막힘",
+        "개발 DB 연결을 함께 확인"
+      ],
+      [
+        "남긴 결과",
+        "붙여넣어 시작하는 설정 가이드"
+      ],
+      [
+        "다음 확인",
+        "다른 사용자의 단독 실행 여부"
+      ]
+    ],
+    "foot": "가이드 작성 완료 · 다음 사용자 검증은 남음",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-07-turn-support-into-onboarding-docs",
+    "lang": "en",
+    "title": "From one support request to onboarding",
+    "cards": [
+      [
+        "Current blocker",
+        "Help connect to the dev database"
+      ],
+      [
+        "Reusable result",
+        "A copy-and-paste setup guide"
+      ],
+      [
+        "Next check",
+        "Can another user follow it alone?"
+      ]
+    ],
+    "foot": "Guide written; next-user validation pending",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-08-define-an-extensible-api-scope",
+    "lang": "ko",
+    "title": "착수와 중복 검토를 분리했다",
+    "cards": [
+      [
+        "현재 요청",
+        "변경 필요 여부 확인"
+      ],
+      [
+        "진행 판단",
+        "요청 범위는 착수하기로 결정"
+      ],
+      [
+        "추가 논의",
+        "겹치는 API와 확장 범위 확인"
+      ]
+    ],
+    "foot": "진행 방향 결정 · 세부 경계는 추가 논의",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-08-define-an-extensible-api-scope",
+    "lang": "en",
+    "title": "Separate starting work from overlap review",
+    "cards": [
+      [
+        "Current request",
+        "Check whether needs have changed"
+      ],
+      [
+        "Decision",
+        "Proceed with the current request"
+      ],
+      [
+        "Further review",
+        "Check API overlap and extensions"
+      ]
+    ],
+    "foot": "Direction agreed; detailed boundaries pending",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-09-external-images-usability-security",
+    "lang": "ko",
+    "title": "외부 이미지의 제공 경로를 바꾸기",
+    "cards": [
+      [
+        "기존 경로",
+        "방문자가 외부 이미지를 직접 요청"
+      ],
+      [
+        "선택한 방향",
+        "이미지를 내부 저장소로 가져오기"
+      ],
+      [
+        "제공 방식",
+        "내부에서 방문자에게 이미지 제공"
+      ]
+    ],
+    "foot": "선택한 제공 경로의 개념도 · 구현 상세는 생략",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-09-external-images-usability-security",
+    "lang": "en",
+    "title": "Change how external images are served",
+    "cards": [
+      [
+        "Original path",
+        "Visitors request an external image"
+      ],
+      [
+        "Chosen direction",
+        "Import the image into storage"
+      ],
+      [
+        "Serving path",
+        "Serve the image from within"
+      ]
+    ],
+    "foot": "Chosen serving path; implementation details omitted",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-10-remove-deploy-access-after-automation",
+    "lang": "ko",
+    "title": "접근 권한을 줄이기 전의 순서",
+    "cards": [
+      [
+        "대체 경로",
+        "저장소 기반 자동 배포로 전환"
+      ],
+      [
+        "동작 검증",
+        "자동 배포가 실제 작동하는지 확인"
+      ],
+      [
+        "권한 정리",
+        "직접 접근을 최소화할 준비"
+      ]
+    ],
+    "foot": "자동 배포 검증 완료 · 권한 회수 완료와 구분",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-10-remove-deploy-access-after-automation",
+    "lang": "en",
+    "title": "Before reducing deployment access",
+    "cards": [
+      [
+        "Alternative path",
+        "Move to repository-based releases"
+      ],
+      [
+        "Verify",
+        "Confirm automated deployment works"
+      ],
+      [
+        "Access review",
+        "Ready to reduce direct access"
+      ]
+    ],
+    "foot": "Automation verified; access removal not established",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-11-replace-a-public-ingress-path",
+    "lang": "ko",
+    "title": "인입 전환 전에 확인할 조건",
+    "cards": [
+      [
+        "작은 대상",
+        "영향을 제한할 테스트 선정"
+      ],
+      [
+        "접근 경로",
+        "네트워크와 방화벽 정책 검토"
+      ],
+      [
+        "전환 조건",
+        "안전한 접근 확인 뒤 진행"
+      ]
+    ],
+    "foot": "테스트 대상 선정 · 실제 전환은 선행 조건 확인 후",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-11-replace-a-public-ingress-path",
+    "lang": "en",
+    "title": "Checks before an ingress change",
+    "cards": [
+      [
+        "Small target",
+        "Choose a limited test service"
+      ],
+      [
+        "Access path",
+        "Review network and firewall rules"
+      ],
+      [
+        "Switch condition",
+        "Verify access before switching"
+      ]
+    ],
+    "foot": "Test target chosen; switch requires more checks",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-12-shift-from-ai-factory-to-active-enablement",
+    "lang": "ko",
+    "title": "중앙 조직이 맡을 일의 변화",
+    "cards": [
+      [
+        "이미 있는 것",
+        "현업이 직접 만드는 AI 도구"
+      ],
+      [
+        "선택한 역할",
+        "서비스에 참여해 위험과 막힘 확인"
+      ],
+      [
+        "남은 합의",
+        "전담 조직·투자·성과 기준"
+      ]
+    ],
+    "foot": "역할 방향의 정리 · 조직 운영 효과는 미검증",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-12-shift-from-ai-factory-to-active-enablement",
+    "lang": "en",
+    "title": "A different role for the central team",
+    "cards": [
+      [
+        "Already happening",
+        "Business teams build with AI"
+      ],
+      [
+        "Chosen role",
+        "Join the work and review risks"
+      ],
+      [
+        "Open decisions",
+        "Team, investment, and measures"
+      ]
+    ],
+    "foot": "Role direction; operating impact not yet verified",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-13-make-verification-the-product",
+    "lang": "ko",
+    "title": "생성과 운영 승격 사이의 검증",
+    "cards": [
+      [
+        "산출물 생성",
+        "표준 틀과 격리 환경"
+      ],
+      [
+        "위험별 검증",
+        "자동 검사와 별도 비판 검토"
+      ],
+      [
+        "운영 승격",
+        "고위험 작업에는 사람 승인"
+      ]
+    ],
+    "foot": "문서화한 검증 원칙 · 전체 적용 여부는 미확인",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-13-make-verification-the-product",
+    "lang": "en",
+    "title": "Verification between creation and release",
+    "cards": [
+      [
+        "Create",
+        "Standard templates and isolation"
+      ],
+      [
+        "Check by risk",
+        "Automated and independent review"
+      ],
+      [
+        "Release",
+        "Human approval for high-risk work"
+      ]
+    ],
+    "foot": "Documented principles; full rollout unverified",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-14-govern-vibe-coding-by-risk",
+    "lang": "ko",
+    "title": "위험에 따라 개입 수준을 나누기",
+    "cards": [
+      [
+        "유형 확인",
+        "시트 자동화인가, 접속형 화면인가"
+      ],
+      [
+        "위험 확인",
+        "민감 데이터와 읽기·쓰기 권한"
+      ],
+      [
+        "전환 우선순위",
+        "고위험 화면부터 표준 환경 검토"
+      ]
+    ],
+    "foot": "위험 판정 기준 · 인증 연동과 이전은 남음",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-14-govern-vibe-coding-by-risk",
+    "lang": "en",
+    "title": "Match oversight to service risk",
+    "cards": [
+      [
+        "Service type",
+        "Sheet automation or a web app?"
+      ],
+      [
+        "Risk",
+        "Sensitive data and read/write access"
+      ],
+      [
+        "Priority",
+        "Review high-risk apps first"
+      ]
+    ],
+    "foot": "Risk criteria; identity and migration work remain",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-15-vault-reflection-dbc5d0d9-756c4171",
+    "lang": "ko",
+    "title": "읽기 경로와 지표 정의를 함께 정하기",
+    "cards": [
+      [
+        "업무 시스템",
+        "상담·계약의 운영 경로 보호"
+      ],
+      [
+        "통계 저장소",
+        "지표 정의와 갱신 책임 합의 필요"
+      ],
+      [
+        "대시보드",
+        "운영계를 직접 조회하지 않는 방향"
+      ]
+    ],
+    "foot": "데이터 제공 방향 · 접근 권한과 실제 연동은 미확정",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-15-vault-reflection-dbc5d0d9-756c4171",
+    "lang": "en",
+    "title": "Define metrics as well as the read path",
+    "cards": [
+      [
+        "Business system",
+        "Protect live consultation work"
+      ],
+      [
+        "Analytics store",
+        "Agree on metrics and ownership"
+      ],
+      [
+        "Dashboard",
+        "Avoid direct reads from production"
+      ]
+    ],
+    "foot": "Proposed data path; access and integration pending",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-20-define-my-staff-engineer-scope-in-the-ai-era",
+    "lang": "ko",
+    "title": "직접 실행과 조직 지원을 함께",
+    "cards": [
+      [
+        "직접 구축",
+        "제품을 만들고 운영 문제 해결"
+      ],
+      [
+        "문제 구조화",
+        "범위·선택·미정 사항을 명확하게"
+      ],
+      [
+        "동료 지원과 검증",
+        "지원·검토로 다른 사람의 실행 연결"
+      ]
+    ],
+    "foot": "현재 역할 정리 · 혼자 더 많이 처리하는 것이 목표는 아님",
+    "layout": "categories"
+  },
+  {
+    "id": "2026-08-20-define-my-staff-engineer-scope-in-the-ai-era",
+    "lang": "en",
+    "title": "Hands-on work and support across teams",
+    "cards": [
+      [
+        "Build and operate",
+        "Own product and operating problems"
+      ],
+      [
+        "Frame the problem",
+        "Clarify scope, choices, and unknowns"
+      ],
+      [
+        "Support and verify",
+        "Help others act and review results"
+      ]
+    ],
+    "foot": "Current scope; higher personal output is not the goal",
+    "layout": "categories"
+  },
+  {
+    "id": "2026-08-20-vault-reflection-b293cdfe-32517701",
+    "lang": "ko",
+    "title": "개인 권한을 보관하는 배포를 멈추다",
+    "cards": [
+      [
+        "앱의 의존성",
+        "여러 사용자의 개인 계정 권한"
+      ],
+      [
+        "운영 요구",
+        "서버에서 권한을 계속 보관"
+      ],
+      [
+        "배포 판단",
+        "해당 기능을 제외하기 전에는 반려"
+      ]
+    ],
+    "foot": "서버 배포 반려 완료 · 대안 적용은 미완료",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-20-vault-reflection-b293cdfe-32517701",
+    "lang": "en",
+    "title": "Stop a deployment that stores personal access",
+    "cards": [
+      [
+        "App dependency",
+        "Access to several personal accounts"
+      ],
+      [
+        "Operating need",
+        "Keep that access on the server"
+      ],
+      [
+        "Deployment decision",
+        "Reject until the feature is removed"
+      ]
+    ],
+    "foot": "Deployment rejected; alternatives not implemented",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-21-vault-reflection-093d1293-123b3568",
+    "lang": "ko",
+    "title": "화면에서 확인한 것과 남은 검증",
+    "cards": [
+      [
+        "관찰 범위",
+        "익명 응답과 브라우저 코드"
+      ],
+      [
+        "확인한 사실",
+        "앱 전달과 클라이언트 역할 판별"
+      ],
+      [
+        "미확인 범위",
+        "서버 함수의 권한과 실제 데이터 반환"
+      ]
+    ],
+    "foot": "능동 데이터 추출 없이 관찰 · 데이터 유출 확정 아님",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-21-vault-reflection-093d1293-123b3568",
+    "lang": "en",
+    "title": "What the browser showed, and what it did not",
+    "cards": [
+      [
+        "Observation",
+        "Anonymous responses and browser code"
+      ],
+      [
+        "Confirmed",
+        "App delivery and client-side role checks"
+      ],
+      [
+        "Not confirmed",
+        "Server access and actual data exposure"
+      ]
+    ],
+    "foot": "Observation only; data exposure not established",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-23-measure-ai-adoption-by-outcomes",
+    "lang": "ko",
+    "title": "다른 범위를 보던 관측값 맞추기",
+    "cards": [
+      [
+        "전체 메트릭",
+        "모든 실행 환경의 총 소비량"
+      ],
+      [
+        "사용자 로그",
+        "환경 누락·표본·보존기간 확인"
+      ],
+      [
+        "운영 판단",
+        "집계·추천과 실제 변경을 분리"
+      ]
+    ],
+    "foot": "운영 지표의 기준 정리 · 성과나 실제 결제액과 구분",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-23-measure-ai-adoption-by-outcomes",
+    "lang": "en",
+    "title": "Align measurements with different scopes",
+    "cards": [
+      [
+        "Total metrics",
+        "Consumption across all environments"
+      ],
+      [
+        "User logs",
+        "Check missing sources and sampling"
+      ],
+      [
+        "Operating decision",
+        "Separate advice from actual changes"
+      ]
+    ],
+    "foot": "Operating measures; not performance or billed cost",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-24-vault-reflection-f3363722-e8fc5f98",
+    "lang": "ko",
+    "title": "통계 조회를 운영계에서 분리하는 방향",
+    "cards": [
+      [
+        "출처와 상태값",
+        "지표별 원본 데이터 확인"
+      ],
+      [
+        "통계 DB 경유",
+        "운영계를 직접 읽는 부하 피하기"
+      ],
+      [
+        "연동 전 확인",
+        "정의·귀속·접근 권한 확정 필요"
+      ]
+    ],
+    "foot": "검토한 조회 방향 · 전체 연동 완료는 아님",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-24-vault-reflection-f3363722-e8fc5f98",
+    "lang": "en",
+    "title": "Separate analytics reads from live work",
+    "cards": [
+      [
+        "Sources and states",
+        "Identify the source for each metric"
+      ],
+      [
+        "Analytics database",
+        "Avoid direct load on live services"
+      ],
+      [
+        "Before connecting",
+        "Confirm meaning, ownership, access"
+      ]
+    ],
+    "foot": "Reviewed read path; full integration not complete",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-27-design-self-service-with-guardrails",
+    "lang": "ko",
+    "title": "현업의 제작과 공통 기반의 책임",
+    "cards": [
+      [
+        "현업 제작",
+        "캠페인 화면과 콘텐츠"
+      ],
+      [
+        "공통 기반",
+        "폼·데이터 전달·추적·배포 검사"
+      ],
+      [
+        "확인 과제",
+        "민감 데이터용 인증 구조"
+      ]
+    ],
+    "foot": "공용 폼과 저장소 기반 이관 · 인증 과제는 남음",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-08-27-design-self-service-with-guardrails",
+    "lang": "en",
+    "title": "Page creation and shared responsibilities",
+    "cards": [
+      [
+        "Business teams",
+        "Campaign screens and content"
+      ],
+      [
+        "Shared foundation",
+        "Forms, data, tracking, release checks"
+      ],
+      [
+        "Further checks",
+        "Identity for sensitive data"
+      ]
+    ],
+    "foot": "Form and repository handed over; identity work remains",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-10-18-fast-screens-and-launch-estimates",
+    "lang": "ko",
+    "title": "화면 제작 실적과 오픈 일정을 분리하기",
+    "cards": [
+      [
+        "빠른 제작 이력",
+        "활동 날짜·화면·API·테이블"
+      ],
+      [
+        "비교할 완료 범위",
+        "외부 연동·운영 전환·후속 수정"
+      ],
+      [
+        "일정 재산정",
+        "작업 종류별 근거를 따로 적용"
+      ]
+    ],
+    "foot": "추정 근거 재검토 · 최종 일정과 결과는 미확인",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-10-18-fast-screens-and-launch-estimates",
+    "lang": "en",
+    "title": "Separate screen output from launch estimates",
+    "cards": [
+      [
+        "Fast build history",
+        "Active days, screens, APIs, tables"
+      ],
+      [
+        "Completion scope",
+        "Integration, cutover, live fixes"
+      ],
+      [
+        "Estimate again",
+        "Use evidence for each kind of work"
+      ]
+    ],
+    "foot": "Estimates reviewed; final schedule and outcome unknown",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-11-06-turn-team-tools-into-operated-services",
+    "lang": "ko",
+    "title": "데이터 검수와 운영 전환을 나누기",
+    "cards": [
+      [
+        "사전 이관·검수",
+        "실제 업무 입력은 기존 시스템"
+      ],
+      [
+        "최종 전환",
+        "기존 수정 중단·데이터·접수·알림"
+      ],
+      [
+        "후속 안정화",
+        "기존 봇과 미완료 자동 연동 확인"
+      ]
+    ],
+    "foot": "운영 전환 완료 · 후속 검수와 일부 연동은 진행 중",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-11-06-turn-team-tools-into-operated-services",
+    "lang": "en",
+    "title": "Separate data review from the live switch",
+    "cards": [
+      [
+        "Copy and review",
+        "Keep live work in the old system"
+      ],
+      [
+        "Live switch",
+        "Stop edits; move data, intake, notices"
+      ],
+      [
+        "Follow-up",
+        "Review old bots and pending links"
+      ]
+    ],
+    "foot": "Live switch complete; review and some links pending",
+    "layout": "flow"
+  },
+  {
+    "id": "2026-11-08-ai-builders-and-centralized-decisions",
+    "lang": "ko",
+    "title": "질문마다 다른 응답이 필요했다",
+    "cards": [
+      [
+        "이미 있는 답",
+        "절차와 예제로 찾기 쉽게"
+      ],
+      [
+        "담당자의 실행",
+        "등록·승인의 담당과 순서 명시"
+      ],
+      [
+        "아직 없는 결정",
+        "업무 기준을 정할 책임자와 논의"
+      ]
+    ],
+    "foot": "지원 경험에서 나눈 질문 유형 · 대기 시간 감소는 미검증",
+    "layout": "categories"
+  },
+  {
+    "id": "2026-11-08-ai-builders-and-centralized-decisions",
+    "lang": "en",
+    "title": "Different questions need different responses",
+    "cards": [
+      [
+        "An existing answer",
+        "Make instructions easy to find"
+      ],
+      [
+        "An action by an owner",
+        "Name who registers and approves"
+      ],
+      [
+        "An open decision",
+        "Find the business decision owner"
+      ]
+    ],
+    "foot": "Types of support questions; wait-time impact unmeasured",
+    "layout": "categories"
+  },
+  {
+    "id": "2026-08-05-before-choosing-a-solution",
+    "lang": "ko",
+    "title": "해결책을 고르기 전에 적을 것",
+    "cards": [
+      [
+        "영향 범위",
+        "누가, 어떤 시스템이 영향을 받나"
+      ],
+      [
+        "결정 책임",
+        "내가 정할 것과 다른 팀이 정할 것"
+      ],
+      [
+        "확인 기준",
+        "검증 방법과 되돌아갈 지점"
+      ]
+    ],
+    "foot": "블로그에서 문제를 기록하는 관점",
+    "layout": "categories"
+  },
+  {
+    "id": "2026-08-05-before-choosing-a-solution",
+    "lang": "en",
+    "title": "Before choosing a solution",
+    "cards": [
+      [
+        "Impact",
+        "Who and what will be affected?"
+      ],
+      [
+        "Decision owner",
+        "What can I decide, and who else must?"
+      ],
+      [
+        "Checks",
+        "How to verify and where to return"
+      ]
+    ],
+    "foot": "A perspective for recording problems",
+    "layout": "categories"
+  }
+]

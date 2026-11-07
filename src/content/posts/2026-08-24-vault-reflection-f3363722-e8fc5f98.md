@@ -16,6 +16,15 @@ draft: false
 
 요청대로 운영 시스템을 계속 조회하면 현황판 사용량이 운영 부하로 이어질 수 있었다. 반대로 통계 DB를 사용하려면 각 지표가 어느 데이터와 상태값에 대응하는지 먼저 확인해야 했다. 지표의 뜻이 조직마다 다르게 쓰이는 문제도 남아 있었다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-24-vault-reflection-f3363722-e8fc5f98.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-24-vault-reflection-f3363722-e8fc5f98.ko.svg" alt="통계 조회를 운영계에서 분리하는 방향. 출처와 상태값: 지표별 원본 데이터 확인 → 통계 DB 경유: 운영계를 직접 읽는 부하 피하기 → 연동 전 확인: 정의·귀속·접근 권한 확정 필요. 검토한 조회 방향 · 전체 연동 완료는 아님" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>통계 조회를 운영계에서 분리하는 방향 — 검토한 조회 방향 · 전체 연동 완료는 아님</figcaption>
+</figure>
+
+
 ## 실제로 맡은 문제
 
 내가 맡은 범위는 두 현황판에 필요한 고객 관리 지표를 제공하는 쪽이었다. 통화 관련 지표는 기존 현황판 시스템이 담당하고 있었으므로, 고객 관리 시스템이 제공해야 할 데이터와 그렇지 않은 데이터를 구분해야 했다.

@@ -15,6 +15,15 @@ draft: false
 
 이 상황에서 모든 바이브코딩을 막으면 당장의 위험은 줄어든다. 대신 현업의 속도와 자율성도 함께 사라진다. 중심 고민은 금지 여부가 아니라 현업이 맡을 부분과 플랫폼이 책임질 경계를 어디에 둘지였다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-14-govern-vibe-coding-by-risk.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-14-govern-vibe-coding-by-risk.ko.svg" alt="위험에 따라 개입 수준을 나누기. 유형 확인: 시트 자동화인가, 접속형 화면인가 → 위험 확인: 민감 데이터와 읽기·쓰기 권한 → 전환 우선순위: 고위험 화면부터 표준 환경 검토. 위험 판정 기준 · 인증 연동과 이전은 남음" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>위험에 따라 개입 수준을 나누기 — 위험 판정 기준 · 인증 연동과 이전은 남음</figcaption>
+</figure>
+
+
 ## 문제를 다시 정의하기
 
 처음에는 취약한 코드를 고치는 문제처럼 보였다. 하지만 인증 함수를 추가해도 배포 주체와 접근 범위가 잘못되면 보호 장치는 무너진다. 데이터 저장소만 별도로 떼어 내는 안도 논의됐으나 기존 접속 화면이 남으면 인증 우회와 무권한 조회 위험도 그대로 남는다.

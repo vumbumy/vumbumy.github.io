@@ -17,6 +17,15 @@ This led to a decision. We should treat verification as a product before increas
 
 Verification is not only the final step before release. It is an operating system for deciding what passes. It uses effort based on risk and checks results after release.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-13-make-verification-the-product.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-13-make-verification-the-product.en.svg" alt="Verification between creation and release. Create: Standard templates and isolation → Check by risk: Automated and independent review → Release: Human approval for high-risk work. Documented principles; full rollout unverified" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Verification between creation and release — Documented principles; full rollout unverified</figcaption>
+</figure>
+
+
 ## What was the problem?
 
 The main limit was not AI's creation speed. The larger limit was that people could not review every result equally.

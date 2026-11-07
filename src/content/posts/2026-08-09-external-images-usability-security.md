@@ -13,6 +13,15 @@ draft: false
 
 사용자는 작성한 콘텐츠가 원래 모습대로 보이길 기대한다. 운영 도구라면 이미지를 넣을 때마다 출처와 보안 방식을 따져야 하는 부담도 적어야 한다. 그렇다고 편의를 이유로 외부 자원을 무조건 허용할 수는 없었다. 이번 작업의 핵심은 이미지를 표시할지 말지가 아니라, 누가 이미지를 제공하게 할지에 있었다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-09-external-images-usability-security.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-09-external-images-usability-security.ko.svg" alt="외부 이미지의 제공 경로를 바꾸기. 기존 경로: 방문자가 외부 이미지를 직접 요청 → 선택한 방향: 이미지를 내부 저장소로 가져오기 → 제공 방식: 내부에서 방문자에게 이미지 제공. 선택한 제공 경로의 개념도 · 구현 상세는 생략" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>외부 이미지의 제공 경로를 바꾸기 — 선택한 제공 경로의 개념도 · 구현 상세는 생략</figcaption>
+</figure>
+
+
 ## 문제를 다시 정의하기
 
 처음 접수된 문제는 외부 이미지가 보이지 않는 현상이었다. 이를 단순한 화면 오류로 다루면 외부 주소를 직접 읽도록 되돌리는 방법이 가장 짧다. 그러나 그렇게 고치면 사용자가 콘텐츠를 보는 동안 제3자가 방문 사실을 알 수 있는 여지가 생긴다.

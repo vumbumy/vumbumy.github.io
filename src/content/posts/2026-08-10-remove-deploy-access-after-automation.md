@@ -13,6 +13,15 @@ draft: false
 
 이번에는 권한 회수부터 시작하지 않았다. 저장소 기반 자동 배포가 실제로 정상 동작하는지 먼저 확인하고, 그 결과를 바탕으로 직접 접근 인원을 줄이는 순서를 택했다. 권한 축소와 운영 연속성을 따로 보지 않은 판단이었다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-10-remove-deploy-access-after-automation.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-10-remove-deploy-access-after-automation.ko.svg" alt="접근 권한을 줄이기 전의 순서. 대체 경로: 저장소 기반 자동 배포로 전환 → 동작 검증: 자동 배포가 실제 작동하는지 확인 → 권한 정리: 직접 접근을 최소화할 준비. 자동 배포 검증 완료 · 권한 회수 완료와 구분" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>접근 권한을 줄이기 전의 순서 — 자동 배포 검증 완료 · 권한 회수 완료와 구분</figcaption>
+</figure>
+
+
 ## 문제를 다시 정의하기
 
 처음 보이는 문제는 직접 배포 권한이 넓게 열려 있다는 것이었다. 하지만 권한 보유자 수만 줄이는 방식으로 접근하면 자동 배포 경로의 준비 상태를 놓칠 수 있었다.

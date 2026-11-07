@@ -13,6 +13,15 @@ I recently read [an article about Staff Engineers at Stripe in 2026](https://new
 
 My work environment is different from Stripe. Still, the article helped me review my recent work. My role is already moving beyond finishing one project well. I needed to define what I own now and what I should improve next.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.en.svg" alt="Hands-on work and support across teams. Build and operate: Own product and operating problems → Frame the problem: Clarify scope, choices, and unknowns → Support and verify: Help others act and review results. Current scope; higher personal output is not the goal" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Hands-on work and support across teams — Current scope; higher personal output is not the goal</figcaption>
+</figure>
+
+
 ## The problem I owned
 
 My recent work did not fit one simple job name. I designed and operated an internal content system. I scoped a web service to replace manual support work. I helped non-developers build tools with vibe coding. I also reviewed deployment access, security alerts, bot hosting, and domain migration.

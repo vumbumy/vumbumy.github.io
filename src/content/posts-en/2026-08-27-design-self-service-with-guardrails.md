@@ -13,6 +13,15 @@ People needed a way to build campaign pages with AI coding tools and release the
 
 I separated page design from the parts that needed shared control. People could build static pages. Reusable code and repository rules handled forms, data transfer, tracking, and release checks.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-27-design-self-service-with-guardrails.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-27-design-self-service-with-guardrails.en.svg" alt="Page creation and shared responsibilities. Business teams: Campaign screens and content → Shared foundation: Forms, data, tracking, release checks → Further checks: Identity for sensitive data. Form and repository handed over; identity work remains" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Page creation and shared responsibilities — Form and repository handed over; identity work remains</figcaption>
+</figure>
+
+
 ## The problem I owned
 
 My work had two parts. First, I separated the existing contact form into a web component package. It could be used on any page.

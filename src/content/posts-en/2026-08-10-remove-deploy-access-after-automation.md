@@ -13,6 +13,15 @@ More people with direct access to the deployment platform means more risk to man
 
 This time, I did not start by removing access. I first checked whether repository-based automated deployment worked correctly. I then used the result to decide when to reduce direct access. I treated access control and service continuity as one issue.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-10-remove-deploy-access-after-automation.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-10-remove-deploy-access-after-automation.en.svg" alt="Before reducing deployment access. Alternative path: Move to repository-based releases → Verify: Confirm automated deployment works → Access review: Ready to reduce direct access. Automation verified; access removal not established" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Before reducing deployment access — Automation verified; access removal not established</figcaption>
+</figure>
+
+
 ## What was the problem?
 
 The first visible problem was that too many people had direct deployment access. But simply reducing that number could hide another issue. The automated deployment path might not be ready.

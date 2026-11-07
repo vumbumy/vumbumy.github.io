@@ -9,6 +9,15 @@ outcome: "We set the direction for the first work, but the exact limits of added
 draft: false
 ---
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-08-define-an-extensible-api-scope.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-08-define-an-extensible-api-scope.en.svg" alt="Separate starting work from overlap review. Current request: Check whether needs have changed → Decision: Proceed with the current request → Further review: Check API overlap and extensions. Direction agreed; detailed boundaries pending" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Separate starting work from overlap review — Direction agreed; detailed boundaries pending</figcaption>
+</figure>
+
+
 ## What was the problem?
 
 The hard part of reviewing an API request is often its scope, not the development itself. At first, this request seemed to be for a second API supporting one work function. However, another related group was preparing a broader public API at about the same time. Starting without checking their scope could cause duplicate work.

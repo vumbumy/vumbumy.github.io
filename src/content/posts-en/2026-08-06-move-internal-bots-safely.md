@@ -13,6 +13,15 @@ Several internal bots were running on one small computer. They worked, but the s
 
 Moving them to the cloud was more than moving files. It was a chance to set better rules for network access, human access, and separation from other systems.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-06-move-internal-bots-safely.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-06-move-internal-bots-safely.en.svg" alt="Operating boundaries for bots. Connection: The bot connects outward → Operator access: Central identity and audit → Runtime: A separate network segment. Connection, access, and isolation choices" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Operating boundaries for bots — Connection, access, and isolation choices</figcaption>
+</figure>
+
+
 ## What was the problem?
 
 The main question was not where the server should run. We needed to decide how the bots would connect to an outside service.

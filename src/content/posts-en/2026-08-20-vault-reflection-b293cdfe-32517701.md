@@ -13,6 +13,15 @@ An internal user built an app for reporting time away from work. I was asked to 
 
 I reviewed the code and checked how the app received and stored access information. The server limited access to the file. The file was also excluded from version control. However, the stored information was not encrypted. It had no expiry date and was not deleted automatically.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-20-vault-reflection-b293cdfe-32517701.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-20-vault-reflection-b293cdfe-32517701.en.svg" alt="Stop a deployment that stores personal access. App dependency: Access to several personal accounts → Operating need: Keep that access on the server → Deployment decision: Reject until the feature is removed. Deployment rejected; alternatives not implemented" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Stop a deployment that stores personal access — Deployment rejected; alternatives not implemented</figcaption>
+</figure>
+
+
 ## The problem I owned
 
 The main request was to provide a server that could run the internal app all the time. However, the app could change a user's profile and status for them. Keeping this feature would collect several users' personal account access on one server.

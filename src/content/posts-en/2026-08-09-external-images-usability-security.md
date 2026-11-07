@@ -13,6 +13,15 @@ After a release, a request came in about external HTTPS images. They did not app
 
 Users expect their content to look as they created it. In an operations tool, adding an image should not require a security review each time. Still, I could not allow all external content only for convenience. The key question was not whether to show images. It was who should provide them.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-09-external-images-usability-security.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-09-external-images-usability-security.en.svg" alt="Change how external images are served. Original path: Visitors request an external image → Chosen direction: Import the image into storage → Serving path: Serve the image from within. Chosen serving path; implementation details omitted" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Change how external images are served — Chosen serving path; implementation details omitted</figcaption>
+</figure>
+
+
 ## What was the problem?
 
 The first reported problem was that external images did not appear. The shortest fix was to load them directly from their original addresses. However, this could let a third party know when someone viewed the content.

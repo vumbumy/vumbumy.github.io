@@ -13,6 +13,15 @@ draft: false
 
 Stripe의 환경을 그대로 내 상황에 대입할 수는 없다. 다만 최근 몇 달 동안 맡았던 일을 돌아보니, 내 역할도 이미 한 프로젝트의 구현을 잘 끝내는 데서 멀어지고 있었다. 지금 무엇을 맡고 있고 어디까지 넓혀야 하는지 정리할 필요가 있었다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-20-define-my-staff-engineer-scope-in-the-ai-era.ko.svg" alt="직접 실행과 조직 지원을 함께. 직접 구축: 제품을 만들고 운영 문제 해결 → 문제 구조화: 범위·선택·미정 사항을 명확하게 → 동료 지원과 검증: 지원·검토로 다른 사람의 실행 연결. 현재 역할 정리 · 혼자 더 많이 처리하는 것이 목표는 아님" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>직접 실행과 조직 지원을 함께 — 현재 역할 정리 · 혼자 더 많이 처리하는 것이 목표는 아님</figcaption>
+</figure>
+
+
 ## 실제로 맡은 문제
 
 최근 업무는 한 직무 이름으로 묶기 어려웠다. 내부 CMS를 직접 설계하고 운영했고, 고객지원 조직의 수기 업무를 웹 서비스로 옮기기 위한 범위를 정리했다. 비개발자가 바이브코딩으로 업무 도구를 만들 수 있도록 온보딩했고, 배포 권한과 보안 알림, 사내 봇의 운영 환경, 도메인 이전 같은 문제도 함께 다뤘다.

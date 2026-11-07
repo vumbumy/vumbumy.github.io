@@ -15,6 +15,15 @@ Vibe coding was not the problem. One reviewed service handled employee names, te
 
 Stopping all vibe coding would reduce immediate risk. However, it would also remove the speed and freedom of business teams. The main question was not whether to ban it. The question was where to divide responsibility between business teams and the platform team.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-14-govern-vibe-coding-by-risk.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-14-govern-vibe-coding-by-risk.en.svg" alt="Match oversight to service risk. Service type: Sheet automation or a web app? → Risk: Sensitive data and read/write access → Priority: Review high-risk apps first. Risk criteria; identity and migration work remain" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Match oversight to service risk — Risk criteria; identity and migration work remain</figcaption>
+</figure>
+
+
 ## What was the problem?
 
 At first, this looked like a problem with weak code. However, adding a login function was not enough. Protection could still fail if release ownership or access scope was wrong.

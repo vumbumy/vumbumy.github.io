@@ -14,6 +14,15 @@ draft: false
 
 나는 빠른 제작 실적과 운영 전환을 거친 프로젝트의 이력을 함께 확인했다. 같은 화면 수라도 어디까지 끝난 작업인지에 따라 일정에 쓸 수 있는 범위가 달랐다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-10-18-fast-screens-and-launch-estimates.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-10-18-fast-screens-and-launch-estimates.ko.svg" alt="화면 제작 실적과 오픈 일정을 분리하기. 빠른 제작 이력: 활동 날짜·화면·API·테이블 → 비교할 완료 범위: 외부 연동·운영 전환·후속 수정 → 일정 재산정: 작업 종류별 근거를 따로 적용. 추정 근거 재검토 · 최종 일정과 결과는 미확인" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>화면 제작 실적과 오픈 일정을 분리하기 — 추정 근거 재검토 · 최종 일정과 결과는 미확인</figcaption>
+</figure>
+
+
 ## 빠른 제작 실적을 어디까지 적용할 수 있을까
 
 먼저 Git 이력에서 활동 날짜와 화면, API, 테이블 수를 정리했다. 기능을 만드는 속도를 확인할 수는 있었지만, 활동 날짜를 그대로 투입 일수로 볼 수는 없었다. 커밋이 남은 날에도 다른 업무를 병행했고, 하루 전체를 이 프로젝트에 썼는지는 알 수 없었다.

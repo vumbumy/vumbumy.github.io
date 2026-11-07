@@ -13,6 +13,15 @@ API 요청을 검토할 때 어려운 점은 구현 자체보다 범위를 어�
 
 그렇다고 예정된 API의 전체 범위가 정리될 때까지 현재 요청을 멈추는 것도 적절하지 않았다. 당장 필요한 기능은 분명했고, 앞으로 상태 변경이나 보류 처리, 첨부서류, 메모와 댓글까지 요구가 늘어날 가능성도 이미 제기된 상태였다. 지금 필요한 범위와 이후 확장될 범위를 한 덩어리로 다루지 않는 판단이 필요했다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-08-define-an-extensible-api-scope.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-08-define-an-extensible-api-scope.ko.svg" alt="착수와 중복 검토를 분리했다. 현재 요청: 변경 필요 여부 확인 → 진행 판단: 요청 범위는 착수하기로 결정 → 추가 논의: 겹치는 API와 확장 범위 확인. 진행 방향 결정 · 세부 경계는 추가 논의" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>착수와 중복 검토를 분리했다 — 진행 방향 결정 · 세부 경계는 추가 논의</figcaption>
+</figure>
+
+
 ## 문제를 다시 정의하기
 
 처음에는 현재 요청이 다른 조직의 작업과 겹치는지를 확인하는 문제처럼 보였다. 실제로는 중복 여부만 가리는 일이 아니었다. 현재 필요한 기능의 착수를 늦추지 않으면서 예정된 Open API와의 경계를 어디에서 확인할지 정해야 했다.

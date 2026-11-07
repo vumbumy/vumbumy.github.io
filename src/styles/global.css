@@ -134,6 +134,11 @@ section[aria-labelledby="recent-posts"] { max-width: 820px; padding: 52px 0 0; }
 .prose li + li { margin-top: .38em; }
 .prose blockquote { margin: 1.8em 0; padding: 2px 0 2px 20px; border-left: 3px solid var(--ink); color: var(--muted); font-style: italic; }
 .prose strong { font-weight: 700; }
+.prose .article-figure { margin: 1.7em 0; }
+.article-figure > a { display: block; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; text-decoration: none; }
+.article-figure img { display: block; width: 100%; height: auto; aspect-ratio: 760 / 700; }
+.article-figure figcaption { margin-top: .7em; color: var(--muted); font-family: var(--sans); font-size: .78rem; line-height: 1.6; letter-spacing: 0; }
+.article-figure > a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .prose code { padding: .16em .38em; border-radius: 4px; background: var(--surface-soft); font-family: ui-monospace, monospace; font-size: .86em; }
 .prose pre { padding: 20px; border-radius: 6px; background: var(--surface-soft); overflow-x: auto; }
 

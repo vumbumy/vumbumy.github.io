@@ -15,6 +15,15 @@ draft: false
 
 AX 빌더 팀장과 CTO Staff를 겸하면서 여러 팀의 작업을 지원하고 있다. 각자 만드는 서비스는 달라도, 진행하다 멈추는 지점에는 공통점이 있었다. 구현 방법을 찾지 못해서가 아니라, 제작자 혼자 정하기 어려운 일을 만났을 때였다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-11-08-ai-builders-and-centralized-decisions.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-11-08-ai-builders-and-centralized-decisions.ko.svg" alt="질문마다 다른 응답이 필요했다. 이미 있는 답: 절차와 예제로 찾기 쉽게 → 담당자의 실행: 등록·승인의 담당과 순서 명시 → 아직 없는 결정: 업무 기준을 정할 책임자와 논의. 지원 경험에서 나눈 질문 유형 · 대기 시간 감소는 미검증" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>질문마다 다른 응답이 필요했다 — 지원 경험에서 나눈 질문 유형 · 대기 시간 감소는 미검증</figcaption>
+</figure>
+
+
 ## 코드로 정할 수 없는 것들이 남았다
 
 HR 업무 도구의 기반을 준비할 때였다. 관리자·임직원·외부 접수용 앱을 나누고 베타 배포까지 마련했다. 하지만 기존 DB와 어떤 관계를 맺을지, 작성자와 수정자를 무엇으로 식별할지, 사번은 어디를 기준으로 삼을지는 정해지지 않았다.

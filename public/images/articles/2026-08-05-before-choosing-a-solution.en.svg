@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="700" viewBox="0 0 760 700" role="img" aria-labelledby="title description">
+<title id="title">Before choosing a solution</title>
+<desc id="description">Impact: Who and what will be affected?; Decision owner: What can I decide, and who else must?; Checks: How to verify and where to return. A perspective for recording problems</desc>
+<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#cfd9de"/></pattern></defs>
+<rect width="760" height="700" rx="24" fill="#f4f7f8"/>
+<rect width="760" height="700" rx="24" fill="url(#dots)" opacity=".45"/>
+<g font-family="Noto Sans CJK KR,Apple SD Gothic Neo,Malgun Gothic,Arial,sans-serif">
+<rect x="40" y="40" width="5" height="26" rx="2" fill="#267c82"/>
+<text x="58" y="60" font-size="18" fill="#426b70" font-weight="700">AT A GLANCE</text>
+<text x="40" y="110" font-size="25" fill="#24384a" font-weight="700">Before choosing a solution</text>
+<rect x="40" y="148" width="680" height="118" rx="16" fill="#fff" stroke="#d6e0e4"/>
+<rect x="62" y="175" width="48" height="48" rx="15" fill="#e5f1f0"/>
+<text x="73" y="207" font-size="23" fill="#216f75" font-weight="700">01</text>
+<text x="132" y="194" font-size="29" fill="#24384a" font-weight="700">Impact</text>
+<text x="132" y="233" font-size="23" fill="#536874" font-weight="400">Who and what will be affected?</text>
+<rect x="40" y="293" width="680" height="118" rx="16" fill="#fff" stroke="#d6e0e4"/>
+<rect x="62" y="320" width="48" height="48" rx="15" fill="#e5f1f0"/>
+<text x="73" y="352" font-size="23" fill="#216f75" font-weight="700">02</text>
+<text x="132" y="339" font-size="29" fill="#24384a" font-weight="700">Decision owner</text>
+<text x="132" y="378" font-size="23" fill="#536874" font-weight="400">What can I decide, and who else must?</text>
+<rect x="40" y="438" width="680" height="118" rx="16" fill="#fff" stroke="#d6e0e4"/>
+<rect x="62" y="465" width="48" height="48" rx="15" fill="#e5f1f0"/>
+<text x="73" y="497" font-size="23" fill="#216f75" font-weight="700">03</text>
+<text x="132" y="484" font-size="29" fill="#24384a" font-weight="700">Checks</text>
+<text x="132" y="523" font-size="23" fill="#536874" font-weight="400">How to verify and where to return</text>
+<path d="M40 598h680" stroke="#d1dce1"/>
+<text x="40" y="634" font-size="19" fill="#536874" font-weight="400">A perspective for recording problems</text>
+<text x="40" y="672" font-size="13" fill="#6b8089" font-weight="600">HANBEOM  /  WORK NOTES</text>
+</g></svg>

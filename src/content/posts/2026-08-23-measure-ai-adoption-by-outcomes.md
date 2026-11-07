@@ -14,6 +14,15 @@ AI 도구의 사용량을 예산과 좌석 운영에 활용해야 했지만, 그
 
 초기 분석에서는 실제 누락도 확인했다. 한 실행 환경만 골라 사용자별 로그를 집계한 탓에 같은 도구를 다른 두 환경에서 쓴 기록이 빠졌다. 총량 메트릭에는 세 환경이 모두 포함돼 사용자별 분석과 전체 사용량이 서로 다른 범위를 보고 있었다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-23-measure-ai-adoption-by-outcomes.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-23-measure-ai-adoption-by-outcomes.ko.svg" alt="다른 범위를 보던 관측값 맞추기. 전체 메트릭: 모든 실행 환경의 총 소비량 → 사용자 로그: 환경 누락·표본·보존기간 확인 → 운영 판단: 집계·추천과 실제 변경을 분리. 운영 지표의 기준 정리 · 성과나 실제 결제액과 구분" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>다른 범위를 보던 관측값 맞추기 — 운영 지표의 기준 정리 · 성과나 실제 결제액과 구분</figcaption>
+</figure>
+
+
 ## 실제로 맡은 문제
 
 예산을 잡고 유료 좌석을 조정하려면 누가 어느 정도 쓰는지 알아야 했다. 사용량이 많다는 사실만으로 업무 성과가 높다고 말할 근거는 없었다. 하루치 값도 좌석을 바꾸는 기준으로 쓰기 어려웠다. 실제 측정에서는 같은 사용자가 하루 차이로 낮은 등급과 높은 등급을 오갔다. 일부 팀은 원격 측정이 연결되지 않아 관측 밖에 있었다.

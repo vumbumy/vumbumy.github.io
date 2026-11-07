@@ -13,6 +13,15 @@ draft: false
 
 하지만 다음 온보딩 대상자도 예정돼 있었다. 같은 설명을 다시 하는 대신, 이번에 확인한 설정 과정을 다른 사람이 재사용할 수 있는 문서로 남기기로 했다. 지원의 완료 조건을 한 사람의 문제 해결에서 다음 사람의 자력 설정까지 넓힌 셈이다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-07-turn-support-into-onboarding-docs.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-07-turn-support-into-onboarding-docs.ko.svg" alt="한 사람의 지원에서 다음 온보딩으로. 지금의 막힘: 개발 DB 연결을 함께 확인 → 남긴 결과: 붙여넣어 시작하는 설정 가이드 → 다음 확인: 다른 사용자의 단독 실행 여부. 가이드 작성 완료 · 다음 사용자 검증은 남음" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>한 사람의 지원에서 다음 온보딩으로 — 가이드 작성 완료 · 다음 사용자 검증은 남음</figcaption>
+</figure>
+
+
 ## 문제를 다시 정의하기
 
 처음 보이는 문제는 접속 실패였지만, 반복해서 사람의 설명이 필요한 구조도 함께 다뤄야 했다. 한 번 연결해 주는 데 그치면 현재 사용자는 앞으로 나아갈 수 있어도 다음 사용자는 같은 지점에서 다시 도움을 요청할 수 있다.

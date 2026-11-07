@@ -13,6 +13,15 @@ draft: false
 
 나는 앱의 코드를 살펴보고 권한을 받는 과정과 저장 방식을 확인했다. 서버의 파일 권한을 제한하고 해당 파일을 버전 관리에서 제외하는 조치는 있었지만, 저장된 권한 정보는 암호화되지 않았고 만료되거나 자동으로 삭제되는 처리도 없었다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-20-vault-reflection-b293cdfe-32517701.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-20-vault-reflection-b293cdfe-32517701.ko.svg" alt="개인 권한을 보관하는 배포를 멈추다. 앱의 의존성: 여러 사용자의 개인 계정 권한 → 운영 요구: 서버에서 권한을 계속 보관 → 배포 판단: 해당 기능을 제외하기 전에는 반려. 서버 배포 반려 완료 · 대안 적용은 미완료" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>개인 권한을 보관하는 배포를 멈추다 — 서버 배포 반려 완료 · 대안 적용은 미완료</figcaption>
+</figure>
+
+
 ## 실제로 맡은 문제
 
 요청의 핵심은 내부 앱을 상시 가동할 서버를 마련하는 일이었다. 다만 앱에는 사용자의 프로필과 상태를 대신 바꾸는 기능이 포함돼 있었다. 이 기능을 유지한 채 배포하면 여러 사람의 개인 계정 권한이 한 서버에 모이게 된다.

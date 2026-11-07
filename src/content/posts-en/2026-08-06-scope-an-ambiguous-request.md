@@ -13,6 +13,15 @@ The request sounded simple: move manual work into an internal web service. The g
 
 The source had thirty tabs and links to other internal services. If we had started at once, the target would have kept changing.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-06-scope-an-ambiguous-request.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-08-06-scope-an-ambiguous-request.en.svg" alt="From a broad request to a smaller release. Inspect the source: Separate empty tabs and copies → Define scope: Confirm seven target sections → Release plan: Link existing services first. Scope agreed; service launch not established" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>From a broad request to a smaller release — Scope agreed; service launch not established</figcaption>
+</figure>
+
+
 ## What was the problem?
 
 I first split the request into clear needs. These included data storage, manual input, links to other systems, login, and access by role.

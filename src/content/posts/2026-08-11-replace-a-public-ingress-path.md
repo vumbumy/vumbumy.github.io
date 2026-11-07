@@ -13,6 +13,15 @@ draft: false
 
 이번 작업에서는 전체 전환에 앞서 작은 테스트 대상을 먼저 정했다. 새 구조가 동작하는지 살피는 데 필요한 범위는 확보하되, 확인되지 않은 조건이 다른 서비스에 미치는 영향은 제한하려는 선택이었다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-11-replace-a-public-ingress-path.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-11-replace-a-public-ingress-path.ko.svg" alt="인입 전환 전에 확인할 조건. 작은 대상: 영향을 제한할 테스트 선정 → 접근 경로: 네트워크와 방화벽 정책 검토 → 전환 조건: 안전한 접근 확인 뒤 진행. 테스트 대상 선정 · 실제 전환은 선행 조건 확인 후" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>인입 전환 전에 확인할 조건 — 테스트 대상 선정 · 실제 전환은 선행 조건 확인 후</figcaption>
+</figure>
+
+
 ## 문제를 다시 정의하기
 
 처음 보이는 문제는 기존 프록시 서비스를 새 구조로 옮기는 것이었다. 그러나 테스트 대상을 검토하면서 실제 문제는 구조 변경 자체보다 새 인입 경로가 내부 서버까지 안전하게 이어질 수 있는지 확인하는 데 있다는 점이 드러났다.

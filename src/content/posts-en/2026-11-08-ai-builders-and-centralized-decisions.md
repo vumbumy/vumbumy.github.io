@@ -15,6 +15,15 @@ Alongside “Can you build this feature?” came questions such as “I built th
 
 I support several teams as both the AX Builder team lead and a member of the CTO staff. They build different services, but they often stop at similar points. They have reached a decision they cannot make alone, rather than a coding problem they cannot solve.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-11-08-ai-builders-and-centralized-decisions.en.svg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size diagram">
+    <img src="/images/articles/2026-11-08-ai-builders-and-centralized-decisions.en.svg" alt="Different questions need different responses. An existing answer: Make instructions easy to find → An action by an owner: Name who registers and approves → An open decision: Find the business decision owner. Types of support questions; wait-time impact unmeasured" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Different questions need different responses — Types of support questions; wait-time impact unmeasured</figcaption>
+</figure>
+
+
 ## Some decisions could not be made in code
 
 When preparing the base for HR tools, I separated the admin, employee, and external intake apps and set up beta deployment. But several questions remained open: how the new database should relate to the existing one, how to identify authors and editors, and which record should be the source for employee IDs.

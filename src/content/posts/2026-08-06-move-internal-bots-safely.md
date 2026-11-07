@@ -11,6 +11,15 @@ draft: false
 
 여러 내부 자동화 봇이 작은 장비 한 대에서 돌아가고 있었다. 기능에는 문제가 없었지만, 24시간 안정적으로 운영하기에는 한계가 있었다. 클라우드 이전을 검토한 이유는 단순히 실행 장소를 바꾸려는 것이 아니었다. 운영 안정성을 높이는 동시에 접근 경로와 보안 경계를 다시 정할 필요가 있었다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-06-move-internal-bots-safely.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-06-move-internal-bots-safely.ko.svg" alt="봇 이전에서 정한 운영 경계. 연결 방식: 봇이 먼저 외부로 연결 → 운영자 접근: 중앙 권한과 접근 기록 → 실행 환경: 분리된 네트워크 구역. 연결·접근·격리 원칙을 정한 단계" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>봇 이전에서 정한 운영 경계 — 연결·접근·격리 원칙을 정한 단계</figcaption>
+</figure>
+
+
 ## 문제를 다시 정의하기
 
 이전의 핵심은 서버 위치가 아니라 운영 경계를 다시 정하는 일이었다. 외부 플랫폼과 어떻게 연결할지, 운영자가 어떤 방식으로 접근할지, 다른 클라우드 자원과 어디까지 분리할지를 함께 결정해야 했다.

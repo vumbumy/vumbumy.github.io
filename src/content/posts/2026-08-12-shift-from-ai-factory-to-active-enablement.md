@@ -13,6 +13,15 @@ draft: false
 
 현장 인터뷰는 이 출발점을 흔들었다. 관계 부서들은 이미 자연어 기반 도구로 필요한 것을 만들고 있었다. 어려움은 그 뒤에 시작됐다. 데이터의 위치를 알기 어렵고, 안전성과 정확성을 검증할 곳이 없으며, 공용 데이터나 외부 연동처럼 혼자 풀 수 없는 문제가 쌓여 있었다.
 
+
+<figure class="article-figure">
+  <a href="/images/articles/2026-08-12-shift-from-ai-factory-to-active-enablement.ko.svg" target="_blank" rel="noopener noreferrer" aria-label="이미지 크게 보기">
+    <img src="/images/articles/2026-08-12-shift-from-ai-factory-to-active-enablement.ko.svg" alt="중앙 조직이 맡을 일의 변화. 이미 있는 것: 현업이 직접 만드는 AI 도구 → 선택한 역할: 서비스에 참여해 위험과 막힘 확인 → 남은 합의: 전담 조직·투자·성과 기준. 역할 방향의 정리 · 조직 운영 효과는 미검증" width="760" height="700" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>중앙 조직이 맡을 일의 변화 — 역할 방향의 정리 · 조직 운영 효과는 미검증</figcaption>
+</figure>
+
+
 ## 문제를 다시 정의하기
 
 중앙에서 또 하나의 생성 도구를 제공하면 현장의 선택지만 늘어날 가능성이 컸다. 운영 중인 도구는 흩어진 채 남고, 개인 계정과 저장소의 데이터도 돌아오지 않는다. 검증과 연동 병목 역시 생성 기능만으로는 풀리지 않는다.
