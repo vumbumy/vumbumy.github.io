@@ -74,10 +74,10 @@ const imageUrl = new URL(`${base}og/ko/${post.id}.png`, Astro.site);
       <p>제 소개와 개인적으로 만든 프로젝트를 따로 정리해 두었습니다.</p>
       <a href="https://vumy.kr/?utm_source=insight_blog&utm_medium=referral&utm_campaign=profile_link">프로필·프로젝트 보기 <span aria-hidden="true">→</span></a>
     </aside>
-    <nav class="post-pagination" aria-label="이전 글과 다음 글">
+    <nav data-link-placement="previous_next" class="post-pagination" aria-label="이전 글과 다음 글">
       {previous ? <a href={`${base}posts/${previous.id}/`}><span>이전 글</span><strong>{previous.data.title}</strong></a> : <span></span>}
       {next && <a class="next" href={`${base}posts/${next.id}/`}><span>다음 글</span><strong>{next.data.title}</strong></a>}
     </nav>
-    {related.length > 0 && <section class="related-posts"><div class="section-title"><h2>관련 글</h2></div><div class="post-list compact-list">{related.map((item) => <PostCard post={item} href={`${base}posts/${item.id}/`} />)}</div></section>}
+    {related.length > 0 && <section class="related-posts" data-link-placement="related"><div class="section-title"><h2>관련 글</h2></div><div class="post-list compact-list">{related.map((item) => <PostCard post={item} href={`${base}posts/${item.id}/`} />)}</div></section>}
   </article>
 </BaseLayout>

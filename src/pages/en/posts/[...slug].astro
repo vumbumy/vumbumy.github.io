@@ -75,10 +75,10 @@ const imageUrl = new URL(`${base}og/en/${post.id}.png`, Astro.site);
       <p>I keep my profile and personal projects on a separate page.</p>
       <a href="https://vumy.kr/?utm_source=insight_blog&utm_medium=referral&utm_campaign=profile_link">View profile · projects <span aria-hidden="true">→</span></a>
     </aside>
-    <nav class="post-pagination" aria-label="Previous and next posts">
+    <nav data-link-placement="previous_next" class="post-pagination" aria-label="Previous and next posts">
       {previous ? <a href={`${base}en/posts/${previous.id}/`}><span>Previous</span><strong>{previous.data.title}</strong></a> : <span></span>}
       {next && <a class="next" href={`${base}en/posts/${next.id}/`}><span>Next</span><strong>{next.data.title}</strong></a>}
     </nav>
-    {related.length > 0 && <section class="related-posts"><div class="section-title"><h2>Related posts</h2></div><div class="post-list compact-list">{related.map((item) => <PostCard post={item} href={`${base}en/posts/${item.id}/`} lang="en" />)}</div></section>}
+    {related.length > 0 && <section class="related-posts" data-link-placement="related"><div class="section-title"><h2>Related posts</h2></div><div class="post-list compact-list">{related.map((item) => <PostCard post={item} href={`${base}en/posts/${item.id}/`} lang="en" />)}</div></section>}
   </article>
 </BaseLayout>

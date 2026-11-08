@@ -195,26 +195,7 @@ const jsonLd = breadcrumbs.length
         });
       })();
     </script>
-    {gaMeasurementId && (
-      <script is:inline>
-        (() => {
-          document.addEventListener("click", (event) => {
-            const link = event.target instanceof Element ? event.target.closest("a") : null;
-            if (!link) return;
-            const url = new URL(link.href, location.href);
-            if (url.hostname !== "vumy.kr" && url.hostname !== "www.vumy.kr") return;
-            const eventData = {
-              event: "service_link_click",
-              link_url: url.href,
-              link_text: link.textContent?.trim() || "",
-              source_path: location.pathname,
-            };
-            if (typeof window.gtag === "function") {
-              window.gtag("event", "service_link_click", eventData);
-            }
-          });
-        })();
-      </script>
-    )}
+    {gaMeasurementId && <script is:inline defer src={`${home}scripts/engagement.js`}></script>}
+
   </body>
 </html>
