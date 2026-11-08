@@ -166,5 +166,13 @@
     "publicPath": "/images/illustrations/2026-11-08-ai-builders-and-centralized-decisions.webp",
     "width": 1536,
     "height": 1024
+  },
+  {
+    "id": "2026-11-08-account-access-lifecycle",
+    "altKo": "공동 작업 공간을 나서며 열쇠와 출입증을 돌려주는 협업자",
+    "altEn": "A collaborator returning a key and visitor badge when leaving a shared workspace",
+    "publicPath": "/images/illustrations/2026-11-08-account-access-lifecycle.webp",
+    "width": 1536,
+    "height": 1024
   }
 ]
